@@ -1,0 +1,60 @@
+// ? Media queries
+
+// * Max-width 280px - for Galaxy fold and smaller
+@mixin galaxy-fold-and-lower {
+  @media (max-width: 280px) {
+    @content;
+  }
+}
+
+// * 768 tablet breakpoint!
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+// * 1024 desktop breakpoint!
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+// * PC and larger!
+@mixin large-desktop {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
+
+// ? Flex Displays
+// Flex Wrap Justify Center
+@mixin flex-wrap-center-column {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin space-between-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin align-and-justify-flex-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+// ? Box shadows
+
+@mixin subtle-box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@mixin faded-box-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

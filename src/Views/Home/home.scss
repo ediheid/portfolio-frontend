@@ -1,0 +1,661 @@
+// ? mobile (and universal layouts)
+
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// * Title section
+
+.title-section {
+  width: 100vw;
+  height: 100vh;
+  background: $sun-yellow;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-heading {
+  font-family: $intro-font-family;
+  color: $hot-pink;
+  font-size: 4rem;
+}
+
+.sub-heading {
+  font-family: $sub-headings;
+  font-size: 2.2rem;
+
+  color: $main-site-blue;
+
+  &:nth-of-type(1) {
+    margin-bottom: 2rem;
+  }
+
+  &:nth-of-type(2) {
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+// * Bio section
+
+.bio-container {
+  // height: 100vh;
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+
+  color: $main-site-blue;
+}
+
+.bio-heading {
+  font-family: $intro-font-family;
+  text-align: center;
+  font-size: 3rem;
+  margin: 10rem 0 3rem 0;
+}
+
+.bio-paragraphs {
+  text-align: center;
+  font-family: $main-font-light-font-family;
+
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.1rem;
+  margin: 3rem 1rem 5rem 1rem;
+
+  padding: 1rem 1rem 0 1rem;
+
+  .bio-emphasized-text-p-1,
+  .bio-emphasized-text-p-2 {
+    font-family: $intro-font-family;
+    font-size: 2.2rem;
+  }
+
+  .bio-emphasized-text-p-1 {
+    &:nth-of-type(1) {
+      font-size: 2.8rem;
+    }
+  }
+
+  .bio-emphasized-text-p-1 {
+    &:nth-of-type(2) {
+      font-size: 2rem;
+    }
+  }
+
+  .bio-emphasized-text-p-1 {
+    &:nth-of-type(3) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// * Tech icons section
+// Same sizing across all devices - not visible on Galaxy Fold
+// Margin bottom varies on tablet +
+
+.toolkit-heading {
+  font-family: $intro-font-family;
+  font-size: 3rem;
+  margin: 5rem 0 2rem 0;
+  color: $main-site-blue;
+  text-align: center;
+}
+
+.tech-icons-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 100px 0 0 0;
+
+  width: 300px;
+  height: 380px;
+}
+
+.tech-icon {
+  // * Relative to Section container!
+  position: absolute;
+  z-index: 5;
+  font-size: 25px;
+  color: $main-site-blue;
+  padding: 5px;
+
+  // React
+  &:nth-of-type(1) {
+    top: 110px;
+    left: 60px;
+  }
+
+  // VSC
+  &:nth-of-type(2) {
+    top: 160px;
+    left: 90px;
+  }
+  // Bootstrap
+  &:nth-of-type(3) {
+    top: 140px;
+    left: 130px;
+  }
+
+  // HTML 5
+  &:nth-of-type(4) {
+    top: 200px;
+    left: 135px;
+    font-size: 20px;
+  }
+
+  // CSS 3
+  &:nth-of-type(5) {
+    top: 95px;
+    left: 190px;
+  }
+
+  // Sass
+  &:nth-of-type(6) {
+    top: 150px;
+    left: 170px;
+    font-size: 30px;
+  }
+
+  // JavaScript
+  &:nth-of-type(7) {
+    top: 25px;
+    left: 145px;
+  }
+
+  // Node
+  &:nth-of-type(8) {
+    top: 60px;
+    left: 30px;
+  }
+
+  // Express
+  &:nth-of-type(9) {
+    top: 90px;
+    left: 135px;
+  }
+
+  // Mongo
+  &:nth-of-type(10) {
+    top: 15px;
+    left: 270px;
+  }
+
+  // GitHub
+  &:nth-of-type(11) {
+    top: 105px;
+    left: 250px;
+  }
+
+  // Git
+  &:nth-of-type(12) {
+    top: 20px;
+    left: -5px;
+  }
+
+  // Photoshop
+  &:nth-of-type(13) {
+    top: 60px;
+    left: 85px;
+  }
+
+  // Figma
+  &:nth-of-type(14) {
+    top: 5px;
+    left: 75px;
+  }
+
+  // npm
+  &:nth-of-type(15) {
+    top: 100px;
+    left: 5px;
+  }
+
+  // Chrome (dev tools)
+  &:nth-of-type(16) {
+    top: -5px;
+    left: 200px;
+    font-size: 20px;
+  }
+
+  // Postman
+  &:nth-of-type(17) {
+    top: 50px;
+    left: 230px;
+    font-size: 20px;
+  }
+}
+
+.hands {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  z-index: -5;
+  width: 300px;
+}
+
+// ! Linked Pages section
+
+.links-to-pages-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.links-to-pages-heading {
+  font-family: $intro-font-family;
+  color: $main-site-blue;
+  text-align: center;
+  font-size: 3rem;
+  margin: 10rem 0 5rem 0;
+}
+
+.projects-link-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+// ? original circle
+.page-links-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+
+  // margin: 20px;
+
+  background-color: $sun-yellow;
+
+  &:hover {
+    color: $bright-red;
+    background-color: $pink-lace;
+
+    text-decoration: none;
+    font-size: 2.3rem;
+  }
+}
+
+// Link - circle whole circle is the link
+.circle-link {
+  z-index: 2;
+  text-decoration: underline 3px;
+  text-underline-offset: 4px;
+
+  color: $hot-pink;
+  font-family: $intro-font-family;
+  font-size: 2rem;
+
+  text-align: center;
+  line-height: 2.8rem;
+  // letter-spacing: 1px;
+
+  text-transform: capitalize;
+
+  // ! Box shadow test !!!
+  box-shadow: rgba(46, 10, 250, 0.2) 5px 17px 49px 0px;
+
+  span {
+    margin-top: 3px;
+  }
+}
+
+.page-description {
+  width: 250px;
+  text-align: center;
+
+  font-size: 1.8rem;
+
+  font-family: $main-font-light-font-family;
+  color: $main-site-blue;
+  line-height: 2.8rem;
+
+  margin-top: 1.5rem;
+}
+
+//  ! Animation section..
+//  Outer circle to set animation path pon
+.outer-animation-circle {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+
+  margin: 30px;
+}
+
+// <p> to be animated - containing all the spans
+.animated-circle-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  animation-name: rotateText;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+// Path of span letters to circle inner circle
+.span-rotate {
+  position: absolute;
+  left: 50%;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  // ? Has to be half of origin (circle)
+  transform-origin: 0 100px;
+
+  font-family: $intro-font-family;
+  color: $hot-pink;
+
+  &:nth-of-type(1) {
+    transform: rotate(0deg);
+  }
+  &:nth-of-type(2) {
+    transform: rotate(10deg);
+  }
+  &:nth-of-type(3) {
+    transform: rotate(20deg);
+  }
+  &:nth-of-type(4) {
+    transform: rotate(30deg);
+  }
+  &:nth-of-type(5) {
+    transform: rotate(40deg);
+  }
+  &:nth-of-type(6) {
+    transform: rotate(50deg);
+  }
+  &:nth-of-type(7) {
+    transform: rotate(60deg);
+  }
+  &:nth-of-type(8) {
+    transform: rotate(70deg);
+  }
+  &:nth-of-type(9) {
+    transform: rotate(80deg);
+  }
+  &:nth-of-type(10) {
+    transform: rotate(90deg);
+  }
+  &:nth-of-type(11) {
+    transform: rotate(100deg);
+  }
+  &:nth-of-type(12) {
+    transform: rotate(110deg);
+  }
+  &:nth-of-type(13) {
+    transform: rotate(120deg);
+  }
+  &:nth-of-type(14) {
+    transform: rotate(130deg);
+  }
+  &:nth-of-type(15) {
+    transform: rotate(140deg);
+  }
+  &:nth-of-type(16) {
+    transform: rotate(150deg);
+  }
+  &:nth-of-type(17) {
+    transform: rotate(160deg);
+  }
+  &:nth-of-type(18) {
+    transform: rotate(170deg);
+  }
+  &:nth-of-type(19) {
+    transform: rotate(180deg);
+  }
+  &:nth-of-type(20) {
+    transform: rotate(190deg);
+  }
+  &:nth-of-type(21) {
+    transform: rotate(200deg);
+  }
+  &:nth-of-type(22) {
+    transform: rotate(210deg);
+  }
+  &:nth-of-type(23) {
+    transform: rotate(220deg);
+  }
+  &:nth-of-type(24) {
+    transform: rotate(230deg);
+  }
+  &:nth-of-type(25) {
+    transform: rotate(240deg);
+  }
+  &:nth-of-type(26) {
+    transform: rotate(250deg);
+  }
+  &:nth-of-type(27) {
+    transform: rotate(260deg);
+  }
+  &:nth-of-type(28) {
+    transform: rotate(270deg);
+  }
+  &:nth-of-type(29) {
+    transform: rotate(280deg);
+  }
+  &:nth-of-type(30) {
+    transform: rotate(290deg);
+  }
+  &:nth-of-type(31) {
+    transform: rotate(300deg);
+  }
+  &:nth-of-type(32) {
+    transform: rotate(310deg);
+  }
+  &:nth-of-type(33) {
+    transform: rotate(320deg);
+  }
+  &:nth-of-type(34) {
+    transform: rotate(330deg);
+  }
+  &:nth-of-type(35) {
+    transform: rotate(340deg);
+  }
+  &:nth-of-type(36) {
+    transform: rotate(345deg);
+  }
+}
+
+// ! =======
+
+// ? Galaxy fold! Max-width 280px
+@include galaxy-fold-and-lower {
+  .bio-paragraphs {
+    font-size: 1rem;
+
+    .bio-emphasized-text-p-1,
+    .bio-emphasized-text-p-2 {
+      font-family: $main-font-regular-font-family;
+      font-size: 1.3rem;
+    }
+
+    .bio-emphasized-text-p-1 {
+      &:nth-of-type(1) {
+        font-size: 1.4rem;
+      }
+    }
+
+    .bio-emphasized-text-p-2 {
+      &:nth-of-type(2) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .tech-icons-section {
+    display: none;
+  }
+
+  .toolkit-heading {
+    display: none;
+  }
+}
+
+// ? Tablet
+@include tablet {
+  // * Title
+  .title-container {
+    @include subtle-box-shadow;
+  }
+  .name-heading {
+    font-size: 5.3rem;
+  }
+  .sub-heading {
+    font-size: 3rem;
+    &:nth-of-type(2) {
+      font-size: 2rem;
+    }
+  }
+
+  // * Bio
+  .bio-container {
+    width: 600px;
+    margin: 5rem;
+
+    .bio-paragraphs {
+      font-size: 2.8rem;
+      line-height: 4.2rem;
+      letter-spacing: 0.3rem;
+
+      margin: 1.4rem 0 5rem 0;
+
+      .bio-emphasized-text-p-1,
+      .bio-emphasized-text-p-2 {
+        font-family: $intro-font-family;
+        font-size: 3.2rem;
+      }
+
+      .bio-emphasized-text-p-1 {
+        &:nth-of-type(1) {
+          font-size: 4.5rem;
+        }
+      }
+
+      .bio-emphasized-text-p-2 {
+        &:nth-of-type(3) {
+          font-size: 4.5rem;
+        }
+      }
+    }
+  }
+
+  .toolkit-heading {
+    margin-bottom: 10rem;
+  }
+
+  .tech-icons-section {
+    margin: 20px 0 50px 0;
+  }
+}
+
+// ? Desktop
+
+@media (min-width: 1024px) {
+  // * Title
+
+  .title-container {
+    max-width: 1300px;
+  }
+  .name-heading {
+    font-size: 6.3rem;
+  }
+  .sub-heading {
+    font-size: 2.5rem;
+    &:nth-of-type(2) {
+      font-size: 1.5rem;
+    }
+  }
+
+  // * Bio
+  .bio-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px 60px 100px 60px;
+    width: 600px;
+
+    .bio-paragraphs {
+      font-size: 2.2rem;
+      letter-spacing: 0.1rem;
+      line-height: 4rem;
+
+      margin: 2rem;
+
+      &:nth-of-type(1),
+      &:nth-of-type(3) {
+        margin-bottom: 5rem;
+      }
+
+      .bio-emphasized-text-p-1,
+      .bio-emphasized-text-p-2 {
+        font-family: $main-font-regular-font-family;
+        font-size: 2.5rem;
+        position: relative;
+        top: 0.2rem;
+      }
+
+      .bio-emphasized-text-p-1 {
+        &:nth-of-type(1) {
+          font-size: 3.3rem;
+        }
+      }
+
+      .bio-emphasized-text-p-1 {
+        &:nth-of-type(3) {
+          font-size: 3.8rem;
+        }
+      }
+
+      .bio-emphasized-text-p-2 {
+        &:nth-of-type(3) {
+          font-size: 3.2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+// ? Mobile and Tablet (and universal layout)
+
+.navigation {
+  display: none;
+}
+
+// Extra home link be displayed in mobile hamburger version. Logo/home-link will disappear when hamburger menu is opened..
+#nav-home-link {
+  display: flex;
+}
+
+// Container for both mobile and desktop nav
+.nav-bar {
+  position: fixed;
+  z-index: 6000;
+}
+
+// bgChange class from React useState to change colour of nav background -
+// Set to transparent in overall nav styling -
+.bgChange {
+  background: $sun-yellow;
+}
+
+// ? Overall Nav styling for all devices..
+nav {
+  position: fixed;
+  // top: 0;
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 2em 2em 1em;
+
+  transition: "top 0.9s";
+
+  // Set to transparent so it can be changed on scroll up with .bgChange useState
+  background: transparent;
+
+  // Logo/home-container
+  .logo-home-container {
+    margin-left: 10px;
+
+    // Logo/home-link
+    .logo-link {
+      text-decoration: none;
+    }
+
+    .logo-text {
+      font-family: $sub-headings;
+      font-size: 2.5rem;
+      color: $hot-pink;
+
+      &::first-letter {
+        font-size: 4rem;
+      }
+
+      &:active {
+        color: $cotton-candy;
+        transform: scale(1.2);
+        transition: ease-in-out;
+      }
+    }
+  }
+
+  // !!! @media (hover:hover) to solve sticky hover states on mobile devices
+  @media (hover: hover) {
+    .logo-text:hover {
+      color: $cotton-candy;
+      transform: scale(1.1);
+      transition: ease-in-out;
+    }
+  }
+
+  .nav-links {
+    text-decoration: none;
+    color: $main-site-blue;
+    font-family: $nav-links-font-family;
+    font-size: 1.6em;
+    margin: 5px 0 5px 0;
+
+    &:hover {
+      font-weight: bold;
+      color: $pink-lace;
+    }
+  }
+
+  // Mobile links container
+  .mobile-ul-links-container {
+    // z-index: 1000;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $cotton-candy;
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hamburger-container {
+    z-index: 7000;
+
+    margin-right: 5%;
+    top: 20px;
+    padding: 5px;
+
+    color: $hot-pink;
+  }
+}
+
+// ? Desktop
+
+@include desktop {
+  .mobile-navigation {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    width: 100%;
+  }
+
+  .logo-home-container {
+    font-size: 3.5rem;
+    &:hover {
+      transform: scale(1.1);
+      transition: ease;
+    }
+
+    // Logo/home-link
+    .logo-link {
+      .logo {
+        width: 14rem;
+        height: 14rem;
+      }
+    }
+  }
+
+  #nav-home-link {
+    display: none;
+  }
+
+  .ul-links-container {
+    display: flex;
+    width: 40rem;
+    justify-content: space-around;
+
+    list-style: none;
+    margin: 0.8em 0 0.8em 0;
+
+    .nav-links {
+      font-size: 1.8rem;
+      color: $main-site-blue;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+
+      font-family: $sub-headings;
+
+      &:hover {
+        color: $hot-pink;
+        font-weight: 800;
+        font-size: 1.85rem;
+      }
+    }
+  }
+}

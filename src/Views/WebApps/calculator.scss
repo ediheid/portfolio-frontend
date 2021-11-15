@@ -1,0 +1,83 @@
+.calculator {
+  @include flex-wrap-center-column;
+  background-color: $calculator-pink;
+  height: 500px;
+  width: 300px;
+  border-radius: 1em;
+
+  margin: 20px;
+
+  // box-shadow: 2px 2px 15px $calculator-pink;
+}
+
+.result-display {
+  box-shadow: inset -2px -2px 10px $button-pink;
+  border-radius: 30px;
+  height: 90px;
+  width: 80%;
+  margin-bottom: 20px;
+
+  padding: 0 20px 15px 0;
+  color: $white;
+  font-size: 3.5rem;
+  font-family: sans-serif;
+  font-weight: lighter;
+
+  .display-content {
+    @include align-and-justify-flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin: 10px 0 0 20px;
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+  }
+}
+
+.keypad {
+  @include space-between-wrap;
+  height: 300px;
+  width: 85%;
+
+  button {
+    height: 5rem;
+    margin: 6px;
+    font-size: 2rem;
+    color: $white;
+
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 6px $button-pink;
+
+    cursor: pointer;
+
+    background: linear-gradient(315deg, $button-pink, $calculator-pink);
+
+    &:active {
+      background: linear-gradient(315deg, $calculator-pink, $button-pink);
+    }
+  }
+
+  .round-button {
+    width: 5rem;
+    border-radius: 50%;
+  }
+
+  .oval-button {
+    width: 10rem;
+    border-radius: 30px;
+  }
+
+  #delete-button {
+    font-size: 1.6rem;
+  }
+}
+
+// ? Breakpoints
+
+// ! Special breakpoint for Galaxy Fold
+
+// @media (max-width: 320px) {
+//   .calculator-container {
+//   }
+// }

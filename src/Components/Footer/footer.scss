@@ -1,0 +1,110 @@
+// ? Mobile and universal base styles
+
+.footer-container {
+  position: relative;
+  height: 180px;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-dividing-line {
+  background-color: $cotton-candy;
+  opacity: 0.5;
+  height: 3px;
+  margin: 0 40px 10px 40px;
+}
+
+.contact-button-container {
+  @include subtle-box-shadow;
+  background: $sun-yellow;
+
+  padding: 10px 30px 10px 30px;
+  margin: 25px;
+  border-radius: 4rem;
+
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+    transition: ease;
+  }
+
+  .contact-button-link {
+    font-family: $intro-font-family;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $hot-pink;
+    letter-spacing: 1px;
+  }
+}
+
+.copyright-span {
+  color: $main-site-blue;
+  font-family: $main-font-thin-font-family;
+  font-size: 1rem;
+}
+
+.link-icon-container {
+  margin: 25px;
+}
+
+.link-icon {
+  color: $main-site-blue;
+  font-size: 2.6rem;
+  padding: 4px;
+
+  &:hover {
+    color: $blue-jeans;
+    // font-size: 3rem;
+    // transition: ease;
+  }
+}
+
+.back-to-top {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+
+  font-size: 3rem;
+
+  color: $hot-pink;
+  cursor: pointer;
+
+  &:hover {
+    color: $dark-pastel-green;
+  }
+}
+
+// ? Tablet +
+
+@include tablet {
+  .footer-dividing-line {
+    margin-bottom: 40px;
+  }
+
+  .copyright-span {
+    font-size: 1.4rem;
+  }
+
+  .link-icon {
+    font-size: 3rem;
+    padding: 6px;
+  }
+}
+
+// ? Desktop +
+
+@include desktop {
+  .copyright-span {
+    font-size: 1.2rem;
+  }
+
+  .back-to-top {
+    font-size: 4rem;
+  }
+}
