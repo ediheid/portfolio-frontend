@@ -27,7 +27,7 @@ const Bio = () => {
           <span className="bio-emphasized-text-p-1">fine arts</span>, looking
           for an exciting{" "}
           <span className="bio-emphasized-text-p-1"> job opportunity </span> and
-          to keep learning.
+          to continue growing and blossoming into a professional developer.
         </p>
 
         {/*  'Where?' */}

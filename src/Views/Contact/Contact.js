@@ -13,13 +13,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 toast.configure();
 
-// ! URI for nodemailer POST request..
-
-// let URL =
-//   process.env.NODE_ENV === "development"
-//     ? process.env.REACT_APP_DEV_URL
-//     : process.env.REACT_APP_PROD_URL;
-
+// process.env for server is saved in Vercel
 let URL = process.env.REACT_APP_BACKEND_URL;
 
 // ? Main Contact component
