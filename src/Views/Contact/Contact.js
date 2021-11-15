@@ -20,7 +20,7 @@ toast.configure();
 //     ? process.env.REACT_APP_DEV_URL
 //     : process.env.REACT_APP_PROD_URL;
 
-let URL = "http://localhost:5000";
+let URL = process.env.REACT_APP_BACKEND_URL;
 
 // ? Main Contact component
 const Contact = () => {
