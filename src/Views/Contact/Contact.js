@@ -15,10 +15,12 @@ toast.configure();
 
 // ! URI for nodemailer POST request..
 
-let URL =
-  process.env.NODE_ENV === "development"
-    ? process.env.REACT_APP_DEV_URL
-    : process.env.REACT_APP_PROD_URL;
+// let URL =
+//   process.env.NODE_ENV === "development"
+//     ? process.env.REACT_APP_DEV_URL
+//     : process.env.REACT_APP_PROD_URL;
+
+let URL = "http://localhost:5000";
 
 // ? Main Contact component
 const Contact = () => {
