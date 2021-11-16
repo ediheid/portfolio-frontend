@@ -6,11 +6,8 @@ import { ImLinkedin } from "react-icons/im";
 import { MdOutlineArrowUpward } from "react-icons/md";
 
 //  Footer Component
-const Footer = () => {
-  //  Back to top ARROW to top function
-  const backToTop = () => {
-    window.scrollTo(0, 0);
-  };
+const Footer = (props) => {
+  //  ? Back to top ARROW to top function passed down from App.js
 
   //  Get date and year to pass into copyright
   let currentTime = new Date();
@@ -23,12 +20,12 @@ const Footer = () => {
       {/* Footer container */}
       <footer className="footer-container">
         {/* BACK TO TOP */}
-        <div onClick={backToTop} className="back-to-top">
+        <div onClick={props.backToTop} className="back-to-top">
           <MdOutlineArrowUpward />
         </div>
 
         {/* Contact button/link for footer - directs to contact page - as well as having it in the main menu */}
-        <div onClick={backToTop} className="contact-button-container">
+        <div onClick={props.backToTop} className="contact-button-container">
           <Link className="contact-button-link" to="/home/contact">
             Contact
           </Link>

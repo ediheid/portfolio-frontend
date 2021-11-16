@@ -23,6 +23,12 @@ const App = () => {
     window.scrollTo(0, 0);
   };
 
+  //  Back to top ARROW to top function
+  const backToTop = () => {
+    // Top is at 81 because NavBar height is 80 - otherwise NavBar will not display on jump to top
+    window.scrollTo(0, 81);
+  };
+
   return (
     <div className="app-container">
       <Router>
@@ -45,7 +51,7 @@ const App = () => {
             <Redirect to="/" exact />
           </Switch>
         </main>
-        <Footer />
+        <Footer backToTop={backToTop} />
       </Router>
     </div>
   );
