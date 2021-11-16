@@ -18,19 +18,26 @@
 // bgChange class from React useState to change colour of nav background -
 // Set to transparent in overall nav styling -
 .bgChange {
-  background: $sun-yellow;
+  background: url(transparent-wave.png);
+
+  background-repeat: no-repeat;
+
+  background-size: 100% 200px;
+
+  background-position: center;
 }
 
 // ? Overall Nav styling for all devices..
 nav {
   position: fixed;
-  // top: 0;
-  height: 50px;
+
+  height: 80px;
+
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 2em 2em 1em;
+  padding: 1em 2em 2em 1em;
 
   transition: "top 0.9s";
 
@@ -127,6 +134,7 @@ nav {
   .navigation {
     display: flex;
     width: 100%;
+    // opacity: 1;
   }
 
   .logo-home-container {
