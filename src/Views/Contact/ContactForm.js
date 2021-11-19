@@ -85,7 +85,7 @@ const ContactForm = (props) => {
       <div className="my-email-container">
         {/* //!! add my host email once I get it.. */}
         <span className="my-email-spans">Or reach out to me at</span>
-        <span className="my-email-spans">eheidmann.dev@gmail.com</span>
+        <span className="my-email-spans">contact@edithsdev.com</span>
       </div>
     </div>
   );

@@ -193,7 +193,6 @@ const Contact = () => {
           userMessage={userMessage}
         />
       </main>
-      ;
     </>
   );
 };
