@@ -42,7 +42,7 @@ const App = () => {
 
             {/* <Route path="/home/about" exact component={About} /> */}
 
-            {/* // !! <Route path="/home/webapps" exact component={WebApps} /> */}
+            <Route path="/home/webapps" exact component={WebApps} />
 
             {/* //* Created path to contact still need to add content */}
             <Route path="/home/contact" exact component={Contact} />

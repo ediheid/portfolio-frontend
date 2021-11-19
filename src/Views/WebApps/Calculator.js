@@ -10,10 +10,13 @@ const Calculator = () => {
   let [calc, setCalc] = useState("");
   const [result, setResult] = useState("");
 
+  //! Testing disabled function...
+  const [disable, setDisable] = useState(false);
+
   // Array of operators
   const ops = ["/", ".", "+", "*", "-"];
 
-  // ! Update function - trying with function
+  //  Update function
   const updateCalc = (value) => {
     if (calc.length > 0) {
       const last = calc[calc.length - 1];
@@ -71,13 +74,23 @@ const Calculator = () => {
     }
   };
 
-  // Delete button function to clear the last entered digit or operator
+  // !!!!
+  console.log("!!!!!!!!", result);
+
+  // !!! Need to come back and fix delete error
+  // !!! Delete button function to clear the last entered digit or operator
   const deleteLast = () => {
+    // !
+    if (result.length >= 1 && calc.length >= 1) {
+      setDisable(true);
+      return;
+    }
+
     if (calc === "") {
       return;
     }
-    const value = calc.slice(0, -1);
 
+    const value = calc.slice(0, -1);
     setCalc(value);
   };
 

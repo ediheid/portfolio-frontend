@@ -1,37 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Calculator from "./Calculator";
 import NavBar from "../../Components/NavBar/NavBar";
-// import axios from "axios";
 
-// import MobileNavigation from "../../Components/NavBar/MobileNavigation";
-// import { motion } from "framer-motion";
+// AOS
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const WebApps = () => {
-  // ! Axios test with coffee API..
-  // const [image, setImage] = useState("");
-
-  // useEffect(() => {
-  //   console.log("Test!");
-  //   axios.get("http://localhost:5000/").then(function (response) {
-  //     console.log(response.data);
-  //     setImage(response.data);
-  //   });
-  // }, []);
-
+  // AOS functionality
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true });
+  }, []);
   return (
-    <>
+    <div className="web-apps-page-main-container">
       <NavBar />
 
-      {/* rename page-container */}
-      <main className="web-apps-page-container">
-        <div className="apps-container">
-          {/* // ! Axios test with coffee API.. */}
-          {/* <img src={image} /> */}
-
+      <main>
+        <div className="apps-content-container" data-aos="fade-down">
           <Calculator />
+          <h2 className="coming-soon-notice">
+            Stay Tuned, <br /> More coming soon!
+          </h2>
         </div>
       </main>
-    </>
+    </div>
   );
 };
 
