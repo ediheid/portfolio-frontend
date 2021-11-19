@@ -18,26 +18,28 @@
 // bgChange class from React useState to change colour of nav background -
 // Set to transparent in overall nav styling -
 .bgChange {
-  background: url(transparent-wave.png);
+  // background: url(transparent-wave.png);
 
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
 
-  background-size: 100% 200px;
+  // background-size: 100% 200px;
 
-  background-position: center;
+  // background-position: center;
+
+  background-color: $snow;
 }
 
 // ? Overall Nav styling for all devices..
 nav {
   position: fixed;
 
-  height: 80px;
+  height: 70px;
 
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em 2em 1em;
+  padding: 1em 2em 1em 1em;
 
   transition: "top 0.9s";
 

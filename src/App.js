@@ -23,10 +23,9 @@ const App = () => {
     window.scrollTo(0, 0);
   };
 
-  //  Back to top ARROW to top function
+  // ? Back to top ARROW to top function
   const backToTop = () => {
-    // Top is at 81 because NavBar height is 80 - otherwise NavBar will not display on jump to top
-    window.scrollTo(0, 81);
+    window.scrollTo(0, 0);
   };
 
   return (
