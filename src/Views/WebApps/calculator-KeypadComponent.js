@@ -6,16 +6,22 @@ const KeypadComponent = (props) => {
     // Keypad container
     <div className="keypad">
       {/* Clear */}
-      <button className="oval-button" value="" onClick={props.clearFunction}>
+      <button className="oval-button " value="" onClick={props.clearFunction}>
         Clear
       </button>
-      {/* Delete */}
+
+      {/* // !!! Come back to fix the error
+      // ! Error = calc.slice is not a function after I try to use delete after making a sum
+       */}
+      {/*  Delete */}
       <button
+        disabled={true}
         id="delete-button"
         className="round-button"
         onClick={props.deleteLast}
       >
-        Del
+        {/* // !! Comment back in once fixed */}
+        {/* Del */}
       </button>
       {/* Divide */}
       <button
