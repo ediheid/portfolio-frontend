@@ -1,0 +1,89 @@
+// ? Mobile
+
+.project-page-main-container {
+  width: 100vw;
+
+  margin-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// !!! To delete under construction once I have added more
+.under-construction {
+  font-family: $intro-font-family;
+  font-size: 3rem;
+  color: $salmon;
+  text-align: center;
+  margin: 50px;
+}
+
+.project-page-heading {
+  margin: 130px 0 0 0;
+
+  font-family: $intro-font-family;
+  font-size: 3.5rem;
+  color: $main-site-blue;
+}
+
+.projects-subheading {
+  margin: 40px 0 0 0;
+  width: 250px;
+
+  font-family: $main-font-regular-font-family;
+  color: $main-site-blue;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.all-cards {
+  margin-top: 50px;
+
+  width: 100vw;
+  height: 400px;
+}
+
+.project-card-japanese-api {
+  background-color: $sun-yellow;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-img-view {
+  height: 80%;
+  width: auto;
+
+  border-radius: 2rem;
+}
+
+// ? Tablet
+@include tablet {
+  .all-cards {
+    width: 80vw;
+    height: 600px;
+  }
+}
+
+// ? Desktop
+@include desktop {
+  .all-cards {
+    margin-top: 70px;
+
+    max-width: 1100px;
+    height: 700px;
+  }
+
+  .project-page-heading {
+    margin: 170px 0 0 0;
+    font-size: 4.5rem;
+  }
+
+  .projects-subheading {
+    font-size: 2.5rem;
+    width: 400px;
+  }
+}

@@ -12,6 +12,7 @@ import "./Styling/App.scss";
 import WebApps from "./Views/WebApps/WebApps";
 import Home from "./Views/Home/Home";
 import Contact from "./Views/Contact/Contact";
+import Projects from "./Views/Projects/Projects";
 // ? Components
 import Footer from "./Components/Footer/Footer";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
@@ -38,7 +39,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
 
-            {/* // !! <Route path="/home/projects" exact component={Projects} /> */}
+            <Route path="/home/projects" exact component={Projects} />
 
             {/* <Route path="/home/about" exact component={About} /> */}
 
