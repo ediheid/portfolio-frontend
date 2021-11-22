@@ -1,6 +1,12 @@
-# Created with 'Create React App'
+# My Portfolio client side
+
+## Hosted at..
 
 https://www.edithsdev.com/
+
+### Created with 'Create React App'
+
+## Setup
 
 ### Install node packages
 
@@ -8,7 +14,7 @@ https://www.edithsdev.com/
 
 node version 14.x
 
-### `npm start`
+`npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -20,20 +26,17 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Deployment
 
-- Deployed on Vercel via GitHub
-- DNS setup in Vercel
-- Backend is deployed to Heroku
+- Deployed on Vercel
 - Deploys on push to Main branch
+- Backend is deployed separately
 
 ### Build
 
 - Build Command - 'CI=false npm run build' - overide in Vercel
-
 - environmental variables added to Vercel
 
 ### Hosting
 
 - Domain hosted by Ionos
 - Email hosting DNS setup in Vercel
-
-- Webmail hosted by (https://mail.ionos.de/) and forwarded to gmail. Setup is in backend using Nodemailer
+- Webmail hosted by https://mail.ionos.de/ and forwarded to gmail. Setup is in backend using Nodemailer
