@@ -11,6 +11,9 @@ import { CgArrowLeftO } from "react-icons/cg";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
 
+import { BsArrowRightCircle } from "react-icons/bs";
+import { BsArrowLeftCircle } from "react-icons/bs";
+
 const Projects = () => {
   //  React-card-flip state hook
   const [isFlipped, setIsFlipped] = useState(false);
@@ -40,8 +43,8 @@ const Projects = () => {
           isFlipped={isFlipped}
           flipDirection="horizontal"
           // Default speed is 0.6
-          // flipSpeedBackToFront="0.4"
-          // flipSpeedFrontToBack="0.4"
+          flipSpeedBackToFront="0.8"
+          flipSpeedFrontToBack="0.8"
           // True rotates the card in the same direction..
           infinite="true"
         >
@@ -58,7 +61,7 @@ const Projects = () => {
               className="flip-button front-button"
               onClick={handleFlipClick}
             >
-              <CgArrowRightO />
+              <BsArrowRightCircle />
             </button>
           </div>
 
@@ -92,7 +95,7 @@ const Projects = () => {
               className="flip-button back-button"
               onClick={handleFlipClick}
             >
-              <CgArrowLeftO />
+              <BsArrowLeftCircle />
             </button>
           </div>
         </ReactCardFlip>
