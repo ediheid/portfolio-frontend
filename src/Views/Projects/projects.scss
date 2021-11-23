@@ -10,16 +10,6 @@
   align-items: center;
 }
 
-// !!! To delete under construction once I have added more
-.under-construction {
-  font-family: $intro-font-family;
-  font-size: 3rem;
-  color: $salmon;
-  text-align: center;
-  margin: 50px;
-}
-// !!! ====================================
-
 .project-page-heading {
   margin: 130px 0 0 0;
 
@@ -50,13 +40,53 @@
   height: 400px;
 }
 
-// ! Back card-dimensions
+// ! Back card-dimensions and overall styling!
 .back-card {
   width: 80vw;
-  height: 80vh;
+  height: 600px;
+  font-family: $main-font-thin-font-family;
+  color: $main-site-blue;
+
+  letter-spacing: 2px;
+
+  .back-card-heading {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .back-card-paragraph {
+    font-size: 1.5rem;
+    // font-family: $main-font-regular-font-family;
+    line-height: 2rem;
+
+    text-align: center;
+    width: 80%;
+
+    padding: 1rem;
+  }
+
+  .website-link {
+    margin: 5rem 0 0 0;
+    font-size: 1.6rem;
+    font-family: $sub-headings;
+    // color: $main-site-blue;
+    text-underline-offset: 0.3rem;
+
+    &:focus {
+      transform: scale(1.1);
+      color: $main-site-blue;
+    }
+  }
 }
 
-// Japanese Project Card
+@media (hover: hover) {
+  .website-link:hover {
+    transform: scale(1.1);
+    color: $main-site-blue;
+  }
+}
+
+// ? Japanese Project Card
 .project-card-japanese-api {
   background-color: $sun-yellow;
 
@@ -64,6 +94,20 @@
   justify-content: center;
   align-items: center;
 }
+
+.japanese-api-back {
+  display: flex;
+  flex-direction: column;
+  // Flex justify and align passed down from .project-card-japanese-api
+
+  .itadakimasu-quote-span {
+    display: block;
+    font-size: 1.8rem;
+    margin: 1rem 0 0 0;
+  }
+}
+
+// ? ====================
 
 .mobile-img-view {
   height: 80%;
@@ -83,7 +127,14 @@
   border: none;
   // React-icon Component inside button
   font-size: 3rem;
-  color: $hot-pink;
+  color: $main-site-blue;
+
+  cursor: pointer;
+
+  &:focus {
+    transform: scale(1.1);
+    color: $salmon;
+  }
 }
 
 .front-button {
@@ -94,6 +145,15 @@
 .back-button {
   bottom: 5%;
   left: 5%;
+}
+
+// So hover effects don't stick on touch screen devices
+@media (hover: hover) {
+  .front-button:hover,
+  .back-button:hover {
+    transform: scale(1.1);
+    color: $salmon;
+  }
 }
 
 // ? Tablet
