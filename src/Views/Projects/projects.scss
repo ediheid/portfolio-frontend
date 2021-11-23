@@ -127,13 +127,13 @@
   border: none;
   // React-icon Component inside button
   font-size: 3rem;
-  color: $main-site-blue;
+  color: $salmon;
 
   cursor: pointer;
 
   &:focus {
     transform: scale(1.1);
-    color: $salmon;
+    color: $portland-orange;
   }
 }
 
@@ -152,7 +152,7 @@
   .front-button:hover,
   .back-button:hover {
     transform: scale(1.1);
-    color: $salmon;
+    color: $portland-orange;
   }
 }
 
