@@ -42,7 +42,7 @@
 
 // ! Back card-dimensions and overall styling!
 .back-card {
-  width: 80vw;
+  width: 100vw;
   // height: 600px;
   height: auto;
 
@@ -167,7 +167,7 @@
 // ? Tablet
 @include tablet {
   .front-cards {
-    width: 80vw;
+    width: 100vw;
     height: 600px;
   }
 
