@@ -29,7 +29,7 @@
   letter-spacing: 1px;
 }
 
-.all-cards {
+.front-cards {
   // position relative so flip buttons can be positioned absolute
   position: relative;
   // ? Setting z-index lower than .flip-button for functionality
@@ -42,8 +42,14 @@
 
 // ! Back card-dimensions and overall styling!
 .back-card {
-  width: 80vw;
-  height: 600px;
+  width: 100vw;
+  // height: 600px;
+  height: auto;
+
+  padding: 60px 0 60px 0;
+
+  margin-top: 70px;
+
   font-family: $main-font-thin-font-family;
   color: $main-site-blue;
 
@@ -96,9 +102,11 @@
 }
 
 .japanese-api-back {
+  background-color: $sun-yellow;
   display: flex;
   flex-direction: column;
-  // Flex justify and align passed down from .project-card-japanese-api
+  justify-content: center;
+  align-items: center;
 
   .itadakimasu-quote-span {
     display: block;
@@ -158,8 +166,8 @@
 
 // ? Tablet
 @include tablet {
-  .all-cards {
-    width: 80vw;
+  .front-cards {
+    width: 100vw;
     height: 600px;
   }
 
@@ -171,7 +179,7 @@
 
 // ? Desktop
 @include desktop {
-  .all-cards {
+  .front-cards {
     margin-top: 70px;
 
     max-width: 1100px;
@@ -186,5 +194,9 @@
   .projects-subheading {
     font-size: 2.5rem;
     width: 400px;
+  }
+
+  .back-card {
+    max-width: 1100px;
   }
 }
