@@ -66,7 +66,7 @@ const Projects = () => {
           </div>
 
           {/* // ?  Back */}
-          <div className="project-card-japanese-api all-cards back-card japanese-api-back">
+          <div className=" all-cards back-card japanese-api-back">
             <h2 className="back-card-heading">Itadakimasu</h2>
 
             <p className="back-card-paragraph">
