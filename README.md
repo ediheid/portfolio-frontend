@@ -30,7 +30,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 - Deploys on push to Main branch
 - Backend is deployed separately
 
-### Build
+Sensitive notes are commented out for my own use in original file
+
+<!-- ### Build
 
 - Build Command - 'CI=false npm run build' - overide in Vercel
 - environmental variables added to Vercel
@@ -39,4 +41,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 - Domain hosted by Ionos
 - Email hosting DNS setup in Vercel
-- Webmail hosted by https://mail.ionos.de/ and forwarded to gmail. Setup is in backend using Nodemailer
+- Webmail hosted by https://mail.ionos.de/ and forwarded to gmail. Setup is in backend using Nodemailer -->
