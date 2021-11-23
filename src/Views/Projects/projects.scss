@@ -18,6 +18,7 @@
   text-align: center;
   margin: 50px;
 }
+// !!! ====================================
 
 .project-page-heading {
   margin: 130px 0 0 0;
@@ -39,12 +40,23 @@
 }
 
 .all-cards {
-  margin-top: 50px;
+  // position relative so flip buttons can be positioned absolute
+  position: relative;
+  // ? Setting z-index lower than .flip-button for functionality
+  z-index: 1;
 
+  margin-top: 50px;
   width: 100vw;
   height: 400px;
 }
 
+// ! Back card-dimensions
+.back-card {
+  width: 80vw;
+  height: 80vh;
+}
+
+// Japanese Project Card
 .project-card-japanese-api {
   background-color: $sun-yellow;
 
@@ -60,11 +72,40 @@
   border-radius: 2rem;
 }
 
+// ! Flip Buttons
+.flip-button {
+  // position absolute - relative to .all-cards
+  position: absolute;
+  // ? Setting z-index higher than .all-cards for functionality
+  z-index: 20;
+
+  background: transparent;
+  border: none;
+  // React-icon Component inside button
+  font-size: 3rem;
+  color: $hot-pink;
+}
+
+.front-button {
+  bottom: 5%;
+  right: 5%;
+}
+
+.back-button {
+  bottom: 5%;
+  left: 5%;
+}
+
 // ? Tablet
 @include tablet {
   .all-cards {
     width: 80vw;
     height: 600px;
+  }
+
+  // ! Flip button
+  .flip-button {
+    font-size: 4rem;
   }
 }
 
@@ -74,7 +115,7 @@
     margin-top: 70px;
 
     max-width: 1100px;
-    height: 700px;
+    height: 600px;
   }
 
   .project-page-heading {
