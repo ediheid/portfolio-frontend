@@ -1,33 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import NavBar from "../../Components/NavBar/NavBar";
-
-import JapaneseApiCardFront from "./JapaneseApiCardFront";
-import JapaneseApiCardBack from "./JapaneseApiCardBack";
-
-// React-card-flip
-import ReactCardFlip from "react-card-flip";
-// Icons
-import { BsArrowRightCircle } from "react-icons/bs";
-import { BsArrowLeftCircle } from "react-icons/bs";
+// Card Components
+import ItadakimasuCard from "./ItadakimasuCard";
 
 const Projects = () => {
-  //  React-card-flip state hook - original!
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  //  Handle click for card-flip - original!
-  const handleFlipClick = (event) => {
-    event.preventDefault();
-    setIsFlipped(!isFlipped);
-  };
-
-  // ! DEBUG - Different event handler for each ReactCardFlip Component, otherwise it takes on the state of all with the same event handler function name
-  //  React-card-flip state hook - version 2 for testing
-  const [isFlippedTwo, setIsFlippedTwo] = useState(false);
-  //  Handle click for card-flip - version 2 for testing
-  const handleFlipClickTwo = (event) => {
-    event.preventDefault();
-    setIsFlippedTwo(!isFlippedTwo);
-  };
+  // Open and toggle state is in each individual card component so the state is not changed on every toggle
 
   return (
     <>
@@ -41,50 +18,8 @@ const Projects = () => {
 
         {/* Cards container.. */}
         <section className="cards-container">
-          {/* // * Note: ReactCardFlip component needs TWO children in order to function */}
-          {/* // ? Japanese Api Card.. */}
-          <ReactCardFlip
-            isFlipped={isFlipped}
-            flipDirection="horizontal"
-            // Default speed is 0.6
-            flipSpeedBackToFront="0.3"
-            flipSpeedFrontToBack="0.3"
-            // True rotates the card in the same direction - default is set to "false"
-            // infinite="true"
-          >
-            {/* // Front component */}
-            <JapaneseApiCardFront
-              BsArrowRightCircle={BsArrowRightCircle}
-              handleFlipClick={handleFlipClick}
-            />
-
-            {/* // Back component */}
-            <JapaneseApiCardBack
-              handleFlipClick={handleFlipClick}
-              BsArrowLeftCircle={BsArrowLeftCircle}
-            />
-          </ReactCardFlip>
-
-          {/* // !!! Duplicate for testing */}
-          {/* <ReactCardFlip
-            isFlipped={isFlippedTwo}
-            flipDirection="horizontal"
-            // Default speed is 0.6
-            flipSpeedBackToFront="0.8"
-            flipSpeedFrontToBack="0.8"
-            // True rotates the card in the same direction - default is set to "false"
-            infinite="true"
-          >
-            <JapaneseApiCardFront
-              BsArrowRightCircle={BsArrowRightCircle}
-              handleFlipClick={handleFlipClickTwo}
-            />
-
-            <JapaneseApiCardBack
-              handleFlipClick={handleFlipClickTwo}
-              BsArrowLeftCircle={BsArrowLeftCircle}
-            />
-          </ReactCardFlip> */}
+          {/* Itadakimasu Recipe API Card */}
+          <ItadakimasuCard />
         </section>
       </main>
     </>

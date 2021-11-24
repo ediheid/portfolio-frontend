@@ -47,6 +47,16 @@
   z-index: 1;
   width: 100vw;
   height: 400px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 90%;
 }
 
 // Styling of screenshot iphone 6/7/8 Plus on front card
@@ -116,36 +126,36 @@
 }
 // ? End ====================
 
-// ? Flip Buttons
-.flip-button {
-  // position absolute - relative to .all-cards
-  position: absolute;
-  //  Setting z-index higher than .all-cards for functionality
-  z-index: 20;
-  background: transparent;
-  border: none;
+// !!! Flip Buttons
+// .flip-button {
+//   // position absolute - relative to .all-cards
+//   position: absolute;
+//   //  Setting z-index higher than .all-cards for functionality
+//   z-index: 20;
+//   background: transparent;
+//   border: none;
 
-  // React-icon Component inside button
-  font-size: 3rem;
-  color: $salmon;
-  cursor: pointer;
+//   // React-icon Component inside button
+//   font-size: 3rem;
+//   color: $salmon;
+//   cursor: pointer;
 
-  // For mobile devices instead of hover
-  &:focus {
-    transform: scale(1.1);
-    color: $portland-orange;
-  }
-}
+//   // For mobile devices instead of hover
+//   &:focus {
+//     transform: scale(1.1);
+//     color: $portland-orange;
+//   }
+// }
 
-.front-button {
-  bottom: 5%;
-  right: 5%;
-}
+// .front-button {
+//   bottom: 5%;
+//   right: 5%;
+// }
 
-.back-button {
-  bottom: 5%;
-  left: 5%;
-}
+// .back-button {
+//   bottom: 5%;
+//   left: 5%;
+// }
 
 // So hover effects don't stick on touch screen devices
 @media (hover: hover) {
