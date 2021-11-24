@@ -12,16 +12,19 @@ const WebApps = () => {
     Aos.init({ duration: 1000, once: true });
   }, []);
   return (
-    <div className="web-apps-page-main-container">
-      <main>
-        <div className="apps-content-container" data-aos="fade-down">
-          <Calculator />
-          <h2 className="coming-soon-notice">
-            Stay Tuned, <br /> More coming soon!
-          </h2>
-        </div>
-      </main>
-    </div>
+    <>
+      <NavBar />
+      <div className="web-apps-page-main-container">
+        <main>
+          <div className="apps-content-container" data-aos="fade-down">
+            <Calculator />
+            <h2 className="coming-soon-notice">
+              Stay Tuned, <br /> More coming soon!
+            </h2>
+          </div>
+        </main>
+      </div>
+    </>
   );
 };
 

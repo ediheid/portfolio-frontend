@@ -24,19 +24,22 @@ const Home = () => {
   // JSX
 
   return (
-    <main className="home-page-container">
-      {/* Title Section with name and headings */}
-      <Title />
+    <>
+      <NavBar />
+      <main className="home-page-container">
+        {/* Title Section with name and headings */}
+        <Title />
 
-      {/* Bio section*/}
-      <Bio />
+        {/* Bio section*/}
+        <Bio />
 
-      {/* Tech Icons and hand animations Section */}
-      <IconAnimation />
+        {/* Tech Icons and hand animations Section */}
+        <IconAnimation />
 
-      {/* Links to web apps and projects pages */}
-      <LinksToPages />
-    </main>
+        {/* Links to web apps and projects pages */}
+        <LinksToPages />
+      </main>
+    </>
   );
 };
 

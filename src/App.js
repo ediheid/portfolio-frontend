@@ -36,8 +36,8 @@ const App = () => {
       <Router>
         {/* //!!!! - should it be above or below? - Scroll to top on route change */}
         <ScrollToTop />
-        {/* // !!! Testing NavBar here instead of in individual components */}
-        <NavBar />
+        {/* // !!! Testing NavBar here instead of in individual components
+        <NavBar /> */}
 
         <main className="main-content">
           <Switch>
