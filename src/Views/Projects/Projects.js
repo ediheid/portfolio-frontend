@@ -47,10 +47,10 @@ const Projects = () => {
             isFlipped={isFlipped}
             flipDirection="horizontal"
             // Default speed is 0.6
-            flipSpeedBackToFront="0.8"
-            flipSpeedFrontToBack="0.8"
+            flipSpeedBackToFront="0.3"
+            flipSpeedFrontToBack="0.3"
             // True rotates the card in the same direction - default is set to "false"
-            infinite="true"
+            // infinite="true"
           >
             {/* // Front component */}
             <JapaneseApiCardFront
