@@ -180,20 +180,17 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <NavBar />
-      <main className="contact-page-main-container">
-        <ContactForm
-          handleUserData={handleUserData}
-          isDisabled={isDisabled}
-          updateUserData={updateUserData}
-          userName={userName}
-          userSubject={userSubject}
-          userEmail={userEmail}
-          userMessage={userMessage}
-        />
-      </main>
-    </>
+    <main className="contact-page-main-container">
+      <ContactForm
+        handleUserData={handleUserData}
+        isDisabled={isDisabled}
+        updateUserData={updateUserData}
+        userName={userName}
+        userSubject={userSubject}
+        userEmail={userEmail}
+        userMessage={userMessage}
+      />
+    </main>
   );
 };
 

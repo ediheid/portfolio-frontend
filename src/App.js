@@ -14,6 +14,8 @@ import Home from "./Views/Home/Home";
 import Contact from "./Views/Contact/Contact";
 import Projects from "./Views/Projects/Projects";
 // ? Components
+
+import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
@@ -32,9 +34,11 @@ const App = () => {
   return (
     <div className="app-container">
       <Router>
-        {/* Scroll to top on route change */}
+        {/* //!!!! - should it be above or below? - Scroll to top on route change */}
         <ScrollToTop />
-        {/* NavBar is imported into individual pages for hamburger functionality */}
+        {/* // !!! Testing NavBar here instead of in individual components */}
+        <NavBar />
+
         <main className="main-content">
           <Switch>
             <Route path="/" exact component={Home} />

@@ -13,8 +13,6 @@ const WebApps = () => {
   }, []);
   return (
     <div className="web-apps-page-main-container">
-      <NavBar />
-
       <main>
         <div className="apps-content-container" data-aos="fade-down">
           <Calculator />
