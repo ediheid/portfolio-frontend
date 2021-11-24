@@ -7,7 +7,10 @@ import itadakimasuMobileHome from "./static/itadakimasu-mobile-home.png";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
 
-const ItadakimasuCard = () => {
+// ! Global button content variable to change button icon depending in isOpen state
+let buttonContent;
+
+const ItadakimasuCard = (props) => {
   //  State Hook - isOpen to open and close expandable area - original
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,37 +19,49 @@ const ItadakimasuCard = () => {
     setIsOpen(!isOpen);
   };
 
+  // ! Change button icon depending it expanded card area is open or closed
+  if (!isOpen) {
+    buttonContent = <props.MdOutlineExpandMore />;
+  } else {
+    buttonContent = <props.MdOutlineExpandLess />;
+  }
+
   return (
     <Fragment>
       {/* // ? Main card */}
-      <div className="project-card-japanese-api front-cards">
+      <div className="project-card-itadakimasu main-card">
         <img
           className="mobile-img-view"
           src={itadakimasuMobileHome}
-          alt="Mobile view of Japanese API recipe search site, 'Itadakimasu, to eat and receive - a simple homepage with a search bar and a lantern illustration behind a glass card."
+          alt="Mobile view of site, 'Itadakimasu, to eat and receive' - a simple homepage with a search bar and a lantern illustration behind a glass card."
         />
 
-        {/*  // ! To Style */}
-
+        {/*  // !!! To Style */}
+        {/* Links and buttons live here */}
         <div className="options-container">
           <a
-            // className="website-link"
+            className="link-icon"
             href="https://epic-hypatia-0d24fe.netlify.app/"
             target="_blank"
             rel="noreferrer noopener"
           >
-            Link to site
+            {/* Link Icon imported on Projects Component page */}
+
+            <props.BsLink45Deg />
           </a>
 
-          <button onClick={handleToggle}>More</button>
+          <button className="more-button" onClick={handleToggle}>
+            {/* Button content variable - changes on state on isOpen state */}
+            {buttonContent}
+          </button>
         </div>
       </div>
 
       {/* // ? Expanded section */}
       <Expand open={isOpen}>
         <div className="expanded-card-area">
-          <h2 className="back-card-heading">Itadakimasu</h2>
-          <p className="back-card-paragraph">
+          <h2 className="expanded-card-heading">Itadakimasu</h2>
+          <p className="expanded-card-paragraph">
             A simple React app utilising a recipe search API - with custom
             parameters, conditions and styling, resulting in the user being able
             to effortlessly search for their favourite Japanese dish.
@@ -58,13 +73,16 @@ const ItadakimasuCard = () => {
           </p>
 
           <a
-            className="website-link"
+            className="website-written-link"
             href="https://epic-hypatia-0d24fe.netlify.app/"
             target="_blank"
             rel="noreferrer noopener"
           >
             Link to site
           </a>
+
+          {/* // ! Maybe for underline */}
+          <div className="expanded-card-underline"></div>
         </div>
       </Expand>
     </Fragment>

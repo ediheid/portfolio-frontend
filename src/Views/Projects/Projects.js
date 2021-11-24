@@ -3,6 +3,13 @@ import NavBar from "../../Components/NavBar/NavBar";
 // Card Components
 import ItadakimasuCard from "./ItadakimasuCard";
 
+// Icons
+// link icon
+import { BsLink45Deg } from "react-icons/bs";
+// less/more icons
+import { MdOutlineExpandMore } from "react-icons/md";
+import { MdOutlineExpandLess } from "react-icons/md";
+
 const Projects = () => {
   // Open and toggle state is in each individual card component so the state is not changed on every toggle
 
@@ -16,10 +23,14 @@ const Projects = () => {
           design concepts.
         </p>
 
-        {/* Cards container.. */}
+        {/*  Cards Section.. */}
         <section className="cards-container">
-          {/* Itadakimasu Recipe API Card */}
-          <ItadakimasuCard />
+          {/* // ? Itadakimasu Recipe API Card */}
+          <ItadakimasuCard
+            BsLink45Deg={BsLink45Deg}
+            MdOutlineExpandMore={MdOutlineExpandMore}
+            MdOutlineExpandLess={MdOutlineExpandLess}
+          />
         </section>
       </main>
     </>
