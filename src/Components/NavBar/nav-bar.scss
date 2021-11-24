@@ -26,7 +26,9 @@
 
   // background-position: center;
 
-  background-color: $snow;
+  // background-color: $snow;
+  // ! Testing with opacity
+  background-color: rgba($color: $snow, $alpha: 0.5);
 }
 
 // ? Overall Nav styling for all devices..
