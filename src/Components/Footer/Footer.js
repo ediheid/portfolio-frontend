@@ -19,13 +19,18 @@ const Footer = (props) => {
       <div className="footer-dividing-line"></div>
       {/* Footer container */}
       <footer className="footer-container">
+        {/* // ? Commented out for now - testing if I should keep or not? */}
         {/* BACK TO TOP */}
-        <div onClick={props.backToTop} className="back-to-top">
+        {/* <div onClick={props.backToTop} className="back-to-top">
           <MdOutlineArrowUpward />
-        </div>
+        </div> */}
 
         {/* Contact button/link for footer - directs to contact page - as well as having it in the main menu */}
-        <div onClick={props.backToTop} className="contact-button-container">
+        <div
+          // ? Also commenting out - contact button will not jump to top of contact page anymore - test if I like this or not?
+          // onClick={props.backToTop}
+          className="contact-button-container"
+        >
           <Link className="contact-button-link" to="/home/contact">
             Contact
           </Link>
