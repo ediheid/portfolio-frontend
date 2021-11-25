@@ -1,8 +1,6 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 
-import { CgArrowLongDown } from "react-icons/cg";
-
 import { AiFillDownCircle } from "react-icons/ai";
 
 const Title = () => {

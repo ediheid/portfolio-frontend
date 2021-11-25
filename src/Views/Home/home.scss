@@ -13,9 +13,8 @@
   width: 100vw;
   height: 100vh;
   background: $sun-yellow;
-
-  position: relative;
-
+  // ! Removed position relative - not sure why it was here?
+  // ! Note in case I get a bug
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -52,11 +51,11 @@
 
 .hashlink-container {
   margin-top: 3rem;
+  width: 100vw;
 
   .down-chevron {
     font-size: 3.5rem;
     margin-top: 2rem;
-    // color: $black;
   }
 }
 
@@ -86,15 +85,31 @@
 // * Bio section
 
 .bio-container {
-  // height: 100vh;
   width: 80%;
-  position: relative;
+  // ! Removed position relative - not sure why it was here?
+  // ! Note in case I get a bug
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 
   color: $main-site-blue;
+}
+
+.image-container {
+  align-self: center;
+
+  margin: 1rem;
+}
+
+.portrait {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.code-img {
+  border-radius: 3em;
+  width: 250px;
 }
 
 .bio-heading {
@@ -562,6 +577,11 @@
     }
   }
 
+  .portrait,
+  .code-img {
+    width: 200px;
+  }
+
   .tech-icons-section {
     display: none;
   }
@@ -623,6 +643,12 @@
     }
   }
 
+  .portrait,
+  .code-img {
+    width: 320px;
+    margin-top: 2rem;
+  }
+
   .toolkit-heading {
     margin-bottom: 10rem;
   }
@@ -648,10 +674,6 @@
     &:nth-of-type(2) {
       font-size: 2rem;
     }
-  }
-
-  .hashlink-container {
-    width: 60%;
   }
 
   // * Bio
@@ -701,5 +723,10 @@
         }
       }
     }
+  }
+
+  .portrait,
+  .code-img {
+    width: 350px;
   }
 }
