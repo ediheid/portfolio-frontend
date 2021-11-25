@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 
 const animateFrom = { opacity: 0, y: -40 };
@@ -19,6 +20,17 @@ const MobileNavLinks = (props) => {
         transition={{ delay: 0.1 }}
         className="nav-links"
       >
+        <HashLink className="nav-links" to="/home/#about">
+          About
+        </HashLink>
+      </motion.li>
+
+      <motion.li
+        initial={animateFrom}
+        animate={animateTo}
+        transition={{ delay: 0.2 }}
+        className="nav-links"
+      >
         <Link className="nav-links" to="/home/projects">
           Projects
         </Link>
@@ -27,7 +39,7 @@ const MobileNavLinks = (props) => {
       <motion.li
         initial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.3 }}
         className="nav-links"
       >
         <Link className="nav-links" to="/home/webapps">
@@ -38,7 +50,7 @@ const MobileNavLinks = (props) => {
       <motion.li
         initial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.3 }}
+        transition={{ delay: 0.4 }}
         className="nav-links"
       >
         <Link className="nav-links" to="/home/contact">

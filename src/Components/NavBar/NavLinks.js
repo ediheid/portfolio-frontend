@@ -1,10 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
-const NavLinks = (props) => {
+const NavLinks = () => {
   return (
     // Unordered list - links container
     <ul className="ul-links-container">
+      <li className="nav-links">
+        <HashLink className="nav-links" to="/home/#about">
+          About
+        </HashLink>
+      </li>
+
       {/* Projects link */}
       <li className="nav-links">
         <Link className="nav-links" to="/home/projects">

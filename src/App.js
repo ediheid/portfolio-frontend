@@ -14,8 +14,6 @@ import Home from "./Views/Home/Home";
 import Contact from "./Views/Contact/Contact";
 import Projects from "./Views/Projects/Projects";
 // ? Components
-
-import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
@@ -27,6 +25,7 @@ const App = () => {
   };
 
   // ! NavBar disappears until scrolling again - also used on contact button in Footer
+  // ! Removed from contact button and back to top arrow is commented out
   // ? Back to top ARROW to top function
   const backToTop = () => {
     window.scrollTo(0, 0);
@@ -38,7 +37,7 @@ const App = () => {
         {/* // ! Scroll to top bugging when clicking backToTop function - NavBar disappears until scrolling again */}
         <ScrollToTop />
         {/* NavBar needs to be in individual view Component rather than App.js for mobile nav functionality */}
-        {/* <NavBar />  */}
+
         <main className="main-content">
           <Switch>
             <Route path="/" exact component={Home} />
