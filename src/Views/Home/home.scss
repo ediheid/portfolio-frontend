@@ -29,6 +29,10 @@
 
   text-decoration: none;
   text-align: center;
+
+  &:active {
+    color: $blue-jeans;
+  }
 }
 
 .sub-heading {
@@ -47,6 +51,54 @@
     line-height: 3rem;
     margin-top: 2rem;
     font-size: 1.5rem;
+  }
+}
+
+.hashlink-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 40%;
+  max-width: 50rem;
+
+  margin: 2.5rem;
+}
+
+.title-hashlinks {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+
+  font-family: $main-font-semi-bold-font-family;
+  color: $salmon;
+}
+
+// For mobile devices mainly
+.title-hashlinks:active {
+  transform: scale(1.5);
+  color: $pink-lace;
+  transition: ease-in-out;
+}
+
+// hover effects on devices that won't 'stick'
+@media (hover: hover) {
+  .hashlink-hover:hover {
+    transform: scale(1.5);
+    color: $pink-lace;
+    transition: ease-in-out;
+  }
+}
+
+@media (hover: hover) {
+  .name-heading:hover {
+    // transform: scale(1.1);
+    // transition: ease-in-out 0.5s;
+    color: $blue-jeans;
   }
 }
 
@@ -554,6 +606,10 @@
     }
   }
 
+  .title-hashlinks {
+    font-size: 3rem;
+  }
+
   // * Bio
   .bio-container {
     width: 600px;
@@ -607,10 +663,14 @@
     font-size: 6.3rem;
   }
   .sub-heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
     &:nth-of-type(2) {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
+  }
+
+  .hashlink-container {
+    width: 60%;
   }
 
   // * Bio

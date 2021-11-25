@@ -1,5 +1,4 @@
 import React from "react";
-
 import { HashLink } from "react-router-hash-link";
 
 const Title = () => {
@@ -22,12 +21,24 @@ const Title = () => {
       </HashLink>
 
       <h3 data-aos="fade-left" className="sub-heading">
-        User eXperience | User Interface
+        Simple Design | Creative Programming
       </h3>
-      {/* React router HashLinks to home page sections */}
-      <HashLink to="/home/#who">Who?</HashLink>
-      <HashLink to="/home/#what">What?</HashLink>
-      <HashLink to="/home/#where">Where?</HashLink>
+
+      <div className="hashlink-container">
+        {/* React router HashLinks to home page sections */}
+
+        <HashLink className="title-hashlinks hashlink-hover" to="/home/#who">
+          Who
+        </HashLink>
+        <span className="title-hashlinks "> · </span>
+        <HashLink className="title-hashlinks hashlink-hover" to="/home/#what">
+          What
+        </HashLink>
+        <span className="title-hashlinks"> · </span>
+        <HashLink className="title-hashlinks hashlink-hover" to="/home/#where">
+          Where
+        </HashLink>
+      </div>
     </section>
   );
 };
