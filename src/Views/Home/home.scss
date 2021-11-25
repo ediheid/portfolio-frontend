@@ -20,6 +20,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  padding-top: 5rem;
 }
 
 .name-heading {
@@ -29,10 +31,6 @@
 
   text-decoration: none;
   text-align: center;
-
-  &:active {
-    color: $blue-jeans;
-  }
 }
 
 .sub-heading {
@@ -56,51 +54,44 @@
 
 .hashlink-container {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+
+  // position: absolute;
+  // bottom: 5%;
+
+  // justify-content: space-evenly;
+  // flex-wrap: wrap;
+
+  flex-direction: column;
+  align-items: center;
   width: 70%;
   max-width: 50rem;
 
-  margin: 2.5rem;
+  margin: 3rem;
+
+  .down-chevron {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    // color: $black;
+  }
 }
 
 .title-hashlinks {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-  line-height: 4rem;
-  font-size: 2.6rem;
+
+  font-size: 3rem;
   letter-spacing: 0.15rem;
   text-decoration: none;
-
-  // margin: 0 0.5rem 0 0.5rem;
 
   font-family: $main-font-semi-bold-font-family;
   color: $salmon;
 }
 
-// For mobile devices mainly
-.title-hashlinks:active {
-  transform: scale(1.5);
-  color: $pink-lace;
-  transition: ease-in-out;
-}
-
 // hover effects on devices that won't 'stick'
 @media (hover: hover) {
   .hashlink-hover:hover {
-    transform: scale(1.5);
     color: $pink-lace;
-    transition: ease-in-out;
-  }
-}
-
-@media (hover: hover) {
-  .name-heading:hover {
-    // transform: scale(1.1);
-    // transition: ease-in-out 0.5s;
-    color: $blue-jeans;
   }
 }
 

@@ -6,11 +6,11 @@ const NavLinks = () => {
   return (
     // Unordered list - links container
     <ul className="ul-links-container">
-      <li className="nav-links">
+      {/* <li className="nav-links">
         <HashLink className="nav-links" to="/#about">
           About
         </HashLink>
-      </li>
+      </li> */}
 
       {/* Projects link */}
       <li className="nav-links">

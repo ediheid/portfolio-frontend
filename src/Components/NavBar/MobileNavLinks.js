@@ -14,7 +14,7 @@ const MobileNavLinks = (props) => {
       transition={{ delay: 0.05 }}
       className="mobile-ul-links-container"
     >
-      <motion.li
+      {/* <motion.li
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.1 }}
@@ -23,7 +23,7 @@ const MobileNavLinks = (props) => {
         <HashLink className="nav-links" to="/#about">
           About
         </HashLink>
-      </motion.li>
+      </motion.li> */}
 
       <motion.li
         initial={animateFrom}

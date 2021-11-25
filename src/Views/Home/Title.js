@@ -1,6 +1,10 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 
+import { CgArrowLongDown } from "react-icons/cg";
+
+import { AiFillDownCircle } from "react-icons/ai";
+
 const Title = () => {
   return (
     <section className="title-section">
@@ -11,14 +15,13 @@ const Title = () => {
       >
         Web Developer.
       </h3>
-      <HashLink to="/#about" className="name-heading">
-        <h1 data-aos="zoom-in-up" className="name-heading">
-          Edith
-        </h1>
-        <h1 data-aos="zoom-in-down" className="name-heading">
-          Heidmann
-        </h1>
-      </HashLink>
+
+      <h1 data-aos="zoom-in-up" className="name-heading">
+        Edith
+      </h1>
+      <h1 data-aos="zoom-in-down" className="name-heading">
+        Heidmann
+      </h1>
 
       <h3 data-aos="fade-left" className="sub-heading">
         Simple Design | Creative Programming
@@ -27,7 +30,16 @@ const Title = () => {
       <div className="hashlink-container">
         {/* React router HashLinks to home page sections */}
 
-        <HashLink className="title-hashlinks hashlink-hover" to="/#who">
+        <HashLink
+          className="title-hashlinks hashlink-hover"
+          smooth
+          to="/#about"
+        >
+          about me
+          <AiFillDownCircle className="down-chevron hashlink-hover" />
+        </HashLink>
+
+        {/* <HashLink className="title-hashlinks hashlink-hover" to="/#who">
           Who
         </HashLink>
         <span className="title-hashlinks "> · </span>
@@ -37,7 +49,7 @@ const Title = () => {
         <span className="title-hashlinks"> · </span>
         <HashLink className="title-hashlinks hashlink-hover" to="/#where">
           Where
-        </HashLink>
+        </HashLink> */}
       </div>
     </section>
   );
