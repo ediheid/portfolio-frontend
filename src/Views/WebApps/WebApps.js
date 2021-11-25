@@ -20,7 +20,7 @@ const WebApps = () => {
           <div className="apps-content-container" data-aos="fade-down">
             <Calculator />
             <h2 className="coming-soon-notice">
-              Stay Tuned, <br /> More coming soon!
+              Under construction, <br /> More coming soon! 🙂
             </h2>
           </div>
         </main>

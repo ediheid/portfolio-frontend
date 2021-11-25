@@ -33,6 +33,10 @@ const Projects = () => {
             MdOutlineExpandLess={MdOutlineExpandLess}
           />
         </section>
+
+        <div className="underConstruction">
+          Under construction - more coming soon 🙂{" "}
+        </div>
       </main>
     </>
   );
