@@ -26,6 +26,7 @@ const App = () => {
     window.scrollTo(0, 0);
   };
 
+  // ! NavBar disappears until scrolling again - also used on contact button in Footer
   // ? Back to top ARROW to top function
   const backToTop = () => {
     window.scrollTo(0, 0);
@@ -34,11 +35,10 @@ const App = () => {
   return (
     <div className="app-container">
       <Router>
-        {/* //!!!! - should it be above or below? - Scroll to top on route change */}
+        {/* // ! Scroll to top bugging when clicking backToTop function - NavBar disappears until scrolling again */}
         <ScrollToTop />
-        {/* // !!! Testing NavBar here instead of in individual components
-        <NavBar /> */}
-
+        {/* NavBar needs to be in individual view Component rather than App.js for mobile nav functionality */}
+        {/* <NavBar />  */}
         <main className="main-content">
           <Switch>
             <Route path="/" exact component={Home} />

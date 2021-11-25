@@ -25,6 +25,7 @@ const Home = () => {
 
   return (
     <>
+      {/* NavBar needs to be in individual view Component rather than App.js for mobile nav functionality */}
       <NavBar />
       <main className="home-page-container">
         {/* Title Section with name and headings */}

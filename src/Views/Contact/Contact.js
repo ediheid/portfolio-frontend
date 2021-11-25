@@ -181,6 +181,7 @@ const Contact = () => {
 
   return (
     <>
+      {/* NavBar needs to be in individual view Component rather than App.js for mobile nav functionality */}
       <NavBar />
       <main className="contact-page-main-container">
         <ContactForm

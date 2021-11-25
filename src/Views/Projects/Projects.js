@@ -15,6 +15,7 @@ const Projects = () => {
 
   return (
     <>
+      {/* NavBar needs to be in individual view Component rather than App.js for mobile nav functionality */}
       <NavBar />
       <main className="project-page-main-container">
         <h1 className="project-page-heading">Projects</h1>

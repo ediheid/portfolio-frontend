@@ -13,6 +13,7 @@ const WebApps = () => {
   }, []);
   return (
     <>
+      {/* NavBar needs to be in individual view Component rather than App.js for mobile nav functionality */}
       <NavBar />
       <div className="web-apps-page-main-container">
         <main>
