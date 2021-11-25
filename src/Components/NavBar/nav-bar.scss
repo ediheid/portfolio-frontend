@@ -67,7 +67,7 @@ nav {
       }
 
       &:active {
-        color: $cotton-candy;
+        color: $blue-jeans;
         transform: scale(1.2);
         transition: ease-in-out;
       }
@@ -77,7 +77,7 @@ nav {
   // !!! @media (hover:hover) to solve sticky hover states on mobile devices
   @media (hover: hover) {
     .logo-text:hover {
-      color: $cotton-candy;
+      color: $blue-jeans;
       transform: scale(1.1);
       transition: ease-in-out;
     }
