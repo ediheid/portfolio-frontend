@@ -20,7 +20,7 @@ const MobileNavLinks = (props) => {
         transition={{ delay: 0.1 }}
         className="nav-links"
       >
-        <HashLink className="nav-links" to="/home/#about">
+        <HashLink className="nav-links" to="/#about">
           About
         </HashLink>
       </motion.li>

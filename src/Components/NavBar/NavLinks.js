@@ -7,7 +7,7 @@ const NavLinks = () => {
     // Unordered list - links container
     <ul className="ul-links-container">
       <li className="nav-links">
-        <HashLink className="nav-links" to="/home/#about">
+        <HashLink className="nav-links" to="/#about">
           About
         </HashLink>
       </li>
