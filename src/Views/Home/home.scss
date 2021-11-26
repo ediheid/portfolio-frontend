@@ -317,7 +317,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .links-to-pages-heading {
@@ -561,6 +561,16 @@
   }
 }
 
+// * Download CV section
+
+.cartoon-browser-container {
+  margin-bottom: 8rem;
+}
+
+#cartoon-browser {
+  width: 250px;
+}
+
 // ! =======
 
 // ? Galaxy fold! Max-width 280px
@@ -673,7 +683,17 @@
   }
 
   .tech-icons-section {
-    margin: 20px 0 50px 0;
+    margin: 20px 0 0 0;
+  }
+
+  // * Download CV section
+
+  .cartoon-browser-container {
+    margin: 2rem 0 10rem 0;
+  }
+
+  #cartoon-browser {
+    width: 280px;
   }
 }
 
@@ -748,5 +768,11 @@
   .code-img,
   .berlin-img {
     width: 350px;
+  }
+
+  // * Download CV section
+
+  .cartoon-browser-container {
+    margin: 1.5rem 0 12rem 0;
   }
 }

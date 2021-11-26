@@ -7,6 +7,8 @@ import Bio from "./Bio.js";
 import IconAnimation from "./IconAnimation.js";
 import LinksToPages from "./LinksToPages";
 
+import DownloadCVSection from "./DownloadCVSection";
+
 // AOS covering Component imports
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -39,6 +41,9 @@ const Home = () => {
 
         {/* Links to web apps and projects pages */}
         <LinksToPages />
+
+        {/* Download CV section */}
+        <DownloadCVSection />
       </main>
     </>
   );
