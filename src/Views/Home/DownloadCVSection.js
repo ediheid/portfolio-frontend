@@ -1,24 +1,46 @@
 import React from "react";
 import cartoonBrowser from "./Static/marginalia-229.png";
 
-// ! Setting up file-download from backend again as firefox and safari no longer support download attribute
+//  file-download from backend again as firefox and safari no longer support download attribute
 import Axios from "axios";
 import fileDownload from "js-file-download";
 
+// Toast Alerts
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+toast.configure();
+
+// ? Component
+// Toast alert for catch block in case server is down when trying to download CV
 const DownloadCVSection = () => {
-  // ! Setting up file-download from backend again as firefox and safari no longer support download attribute
-  // Download function using fileDownload package manager - CV sent from backend
-  const download = (event) => {
-    event.preventDefault();
-    Axios({
-      url: process.env.REACT_APP_BACKEND_URL,
-      method: "GET",
-      // Binary Large Object
-      responseType: "blob",
-    }).then((res) => {
-      console.log(res);
-      fileDownload(res.data, "CV-Edith-Heidmann.pdf");
+  const downloadFailedNotification = () => {
+    toast.error("Ooops! Download not working, please try again later 😘", {
+      draggable: false,
+      position: "top-center",
     });
+  };
+
+  // file-download from backend again as firefox and safari no longer support download attribute
+  // Download function using fileDownload package manager - CV sent from backend
+  const download = async (event) => {
+    event.preventDefault();
+    // async/await for error handling
+    // try
+    try {
+      await Axios({
+        url: process.env.REACT_APP_BACKEND_URL,
+        method: "GET",
+        // Binary Large Object
+        responseType: "blob",
+      }).then((res) => {
+        console.log(res);
+        fileDownload(res.data, "CV-Edith-Heidmann.pdf");
+      });
+    } catch (error) {
+      // Catch error if server is down or for any other reason CV may not dowload
+      console.log("!!!!", error);
+      downloadFailedNotification();
+    }
   };
 
   return (
@@ -48,8 +70,7 @@ const DownloadCVSection = () => {
           You can.. <br /> download..
           <br /> my CV here...
         </p>
-        {/* // ! 
-// ! Setting up file-download from backend again as firefox and safari no longer support download attribute */}
+
         {/* Download button */}
         <button
           className="download-cv-button"
