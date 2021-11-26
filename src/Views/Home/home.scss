@@ -317,7 +317,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .links-to-pages-heading {
@@ -565,21 +565,30 @@
 
 .cartoon-browser-container {
   position: relative;
+}
 
-  margin-bottom: 8rem;
-
-  border: 3px solid;
+.cv-heading {
+  margin-bottom: 5rem;
 }
 
 #cartoon-browser {
   width: 250px;
 }
 
+.cartoon-browser-text {
+  font-family: $sub-headings;
+  font-size: 1.8rem;
+
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
 .download-cv-button {
   // Position absolute and relative to .cartoon-browser-container
   position: absolute;
-  top: 50%;
-  left: 39%;
+  top: 60%;
+  left: 38%;
   cursor: pointer;
 }
 
@@ -700,9 +709,9 @@
 
   // * Download CV section
 
-  .cartoon-browser-container {
-    margin: 2rem 0 10rem 0;
-  }
+  // .cartoon-browser-container {
+  //   margin: 0 0 10rem 0;
+  // }
 
   #cartoon-browser {
     width: 280px;
@@ -785,6 +794,6 @@
   // * Download CV section
 
   .cartoon-browser-container {
-    margin: 1.5rem 0 12rem 0;
+    margin: 1.5rem 0 0 0;
   }
 }

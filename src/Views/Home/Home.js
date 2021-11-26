@@ -39,11 +39,11 @@ const Home = () => {
         {/* Tech Icons and hand animations Section */}
         <IconAnimation />
 
-        {/* Links to web apps and projects pages */}
-        <LinksToPages />
-
         {/* Download CV section */}
         <DownloadCVSection />
+
+        {/* Links to web apps and projects pages */}
+        <LinksToPages />
       </main>
     </>
   );
