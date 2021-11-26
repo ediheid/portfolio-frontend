@@ -24,6 +24,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information. -->
 
+### Mail setup
+
+- Contact form is setup with the backend using NodeMailer
+
+### Download link
+
+- From sent from backend server
+
 ### Deployment
 
 - Deployed on Vercel
