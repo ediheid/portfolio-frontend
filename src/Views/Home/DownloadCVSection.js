@@ -1,6 +1,8 @@
 import React from "react";
 import cartoonBrowser from "./Static/marginalia-229.png";
+import { Link } from "react-router-dom";
 
+// * As my personal CV is not sensitive data I have decided to run the download option through the frontend using anchor tag
 import Axios from "axios";
 import fileDownload from "js-file-download";
 
@@ -60,9 +62,13 @@ const DownloadCVSection = () => {
 
         {/* // ! Download button to style */}
         <div className="download-cv-button">
-          <a href="./CV-Edith-Heidmann.pdf" download target="_blank">
+          {/* <a href="./CV-Edith-Heidmann.pdf" target="_blank" download>
             Click to download
-          </a>
+          </a> */}
+
+          <Link to="./CV-Edith-Heidmann.pdf" target="_blank" download>
+            Download
+          </Link>
         </div>
       </div>
     </section>
