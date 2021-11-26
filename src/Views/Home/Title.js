@@ -30,7 +30,8 @@ const Title = () => {
 
         <HashLink
           className="title-hashlinks hashlink-hover"
-          smooth
+          // ! Maybe leave smooth commented out because of AOS?
+          // smooth
           to="/#about"
         >
           about me

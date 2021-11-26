@@ -112,6 +112,11 @@
   width: 250px;
 }
 
+.berlin-img {
+  width: 220px;
+  margin: 2rem 0 2rem 0;
+}
+
 .bio-heading {
   font-family: $intro-font-family;
   text-align: center;
@@ -582,6 +587,10 @@
     width: 200px;
   }
 
+  .berlin-img {
+    width: 150px;
+  }
+
   .tech-icons-section {
     display: none;
   }
@@ -644,7 +653,8 @@
   }
 
   .portrait,
-  .code-img {
+  .code-img,
+  .berlin-img {
     width: 320px;
     margin-top: 2rem;
   }
@@ -726,7 +736,8 @@
   }
 
   .portrait,
-  .code-img {
+  .code-img,
+  .berlin-img {
     width: 350px;
   }
 }

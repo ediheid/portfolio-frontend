@@ -132,7 +132,7 @@ const IconAnimation = () => {
         className="toolkit-heading"
         data-aos="fade-left"
         data-aos-once="false"
-        // data-aos-delay="500"
+        data-aos-delay="500"
         data-aos-duration="1000"
       >
         Tools and Tech

@@ -1,18 +1,18 @@
 import React from "react";
 
 import portrait from "./Static/portrait-4.png";
-import webDesign from "./Static/website-design.png";
-import programmer from "./Static/programmer.jpg";
 import code from "./Static/code.jpg";
+import berlin from "./Static/berlin-map.png";
 
 const Bio = () => {
   return (
     <section className="bio-container" id="about">
+      {/* id for react-router HashLink */}
+
       {/* <div className="paragraph-container"> */}
       {/* // ! Commenting out paragrapph-container - not sure why I have it.. */}
 
       {/* Intro 'Who?' */}
-      {/* id for react-router HashLink */}
 
       <h2
         data-aos="fade-right"
@@ -46,7 +46,11 @@ const Bio = () => {
         data-aos-delay="400"
         data-aos-duration="1000"
       >
-        <img className="portrait" src={portrait} />
+        <img
+          className="portrait"
+          src={portrait}
+          alt="Cartoonised portrait of Edith, 3 shades of blue and 1 cream, framed in a circle."
+        />
       </div>
 
       {/*  'What?' */}
@@ -98,7 +102,11 @@ const Bio = () => {
         data-aos-delay="400"
         data-aos-duration="1000"
       >
-        <img className="code-img" src={code} />
+        <img
+          className="code-img"
+          src={code}
+          alt="cartoon browser and code tab in a black and pastel universe. Made by https://www.freepik.com"
+        />
       </div>
 
       {/*  'Where?' */}
@@ -126,6 +134,21 @@ const Bio = () => {
         {/* after completing a 1 year intensive training 
           program at Digital Career Institute in Berlin. */}
       </p>
+
+      <div
+        className="image-container"
+        data-aos="fade-up"
+        data-aos-once="false"
+        data-aos-delay="400"
+        data-aos-duration="1000"
+      >
+        <img
+          className="berlin-img"
+          src={berlin}
+          alt="Cartoon like illustration of Berlin train map without names. The word Berlin in the top right corner. Source from https://www.reddit.com/r/dataisbeautiful/comments/6baefh/berlin_subway_map_compared_to_its_real_geography/"
+        />
+      </div>
+
       {/* </div> */}
     </section>
   );
