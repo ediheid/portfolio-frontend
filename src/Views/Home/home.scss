@@ -54,8 +54,8 @@
   width: 100vw;
 
   .down-chevron {
-    font-size: 3.5rem;
-    margin-top: 2rem;
+    font-size: 2.5rem;
+    margin-top: 1rem;
   }
 }
 
@@ -67,7 +67,7 @@
 
   text-align: center;
 
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 0.15rem;
   text-decoration: none;
 
@@ -618,6 +618,10 @@
 
   .title-hashlinks {
     font-size: 3rem;
+
+    .down-chevron {
+      font-size: 3.5rem;
+    }
   }
 
   // * Bio

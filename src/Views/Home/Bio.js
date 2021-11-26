@@ -72,7 +72,10 @@ const Bio = () => {
       >
         <span className="bio-emphasized-text-p-1"> In depth </span> knowledge of{" "}
         <span className="bio-emphasized-text-p-1">frontend</span>, particularly
-        React development, digital literacy and
+        with
+        <span className="bio-emphasized-text-p-1"> React</span> development and
+        <span className="bio-emphasized-text-p-1"> SASS</span>, digital literacy
+        and
         <span className="bio-emphasized-text-p-1"> UI/UX</span>, creating
         <span className="bio-emphasized-text-p-1">
           {" "}
