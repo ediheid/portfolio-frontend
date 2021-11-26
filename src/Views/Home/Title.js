@@ -22,7 +22,7 @@ const Title = () => {
       </h1>
 
       <h3 data-aos="fade-left" className="sub-heading">
-        Simple · Design · Creative · Programming
+        · Simple · Design · Creative · Programming ·
       </h3>
 
       <div className="hashlink-container">
