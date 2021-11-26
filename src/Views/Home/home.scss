@@ -577,19 +577,22 @@
 
 .cartoon-browser-text {
   font-family: $sub-headings;
-  font-size: 1.8rem;
+  font-size: 2rem;
 
   position: absolute;
   top: 25%;
   left: 10%;
+  margin: 0.8rem;
 }
 
 .download-cv-button {
   // Position absolute and relative to .cartoon-browser-container
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 38%;
   cursor: pointer;
+
+  padding: 0.3rem;
 }
 
 // ! =======
@@ -715,6 +718,10 @@
 
   #cartoon-browser {
     width: 280px;
+  }
+
+  .cartoon-browser-text {
+    font-size: 2.5rem;
   }
 }
 

@@ -5,6 +5,9 @@ import cartoonBrowser from "./Static/marginalia-229.png";
 import Axios from "axios";
 import fileDownload from "js-file-download";
 
+// React Type Animation
+import TypeAnimation from "react-type-animation";
+
 // Toast Alerts
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -66,10 +69,19 @@ const DownloadCVSection = () => {
           src={cartoonBrowser}
           alt="Cartoon browser window with pastel pink border containing a download link Edith's CV. Vector from https://icons8.com/illustrations/style--marginalia"
         ></img>
-        <p className="cartoon-browser-text">
+        {/* <p className="cartoon-browser-text">
           You can.. <br /> download..
           <br /> my CV here...
-        </p>
+        </p> */}
+
+        {/* react-type-animation */}
+        <TypeAnimation
+          className="cartoon-browser-text"
+          cursor={true}
+          sequence={["You can..  download..  my CV here...", 1000, ""]}
+          wrapper="div"
+          repeat={Infinity}
+        />
 
         {/* Download button */}
         <button
