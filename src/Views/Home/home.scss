@@ -564,11 +564,23 @@
 // * Download CV section
 
 .cartoon-browser-container {
+  position: relative;
+
   margin-bottom: 8rem;
+
+  border: 3px solid;
 }
 
 #cartoon-browser {
   width: 250px;
+}
+
+.download-cv-button {
+  // Position absolute and relative to .cartoon-browser-container
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  cursor: pointer;
 }
 
 // ! =======
