@@ -1,6 +1,8 @@
 import React from "react";
 import cartoonBrowser from "./Static/marginalia-229.png";
+
 import { Link } from "react-router-dom";
+import { saveAs } from "file-saver";
 
 // * As my personal CV is not sensitive data I have decided to run the download option through the frontend using anchor tag
 import Axios from "axios";
@@ -21,6 +23,12 @@ const DownloadCVSection = () => {
   //     fileDownload(res.data, "CV-Edith-Heidmann.pdf");
   //   });
   // };
+
+  // ! Testing save file to see if it works in Safar..
+
+  const saveFile = () => {
+    saveAs("CV-Edith-Heidmann.pdf");
+  };
 
   return (
     <section className="download-cv-section">
@@ -66,9 +74,18 @@ const DownloadCVSection = () => {
             Click to download
           </a> */}
 
-          <Link to="./CV-Edith-Heidmann.pdf" target="_blank" download>
+          {/* <Link
+            to="./CV-Edith-Heidmann.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+          >
             Download
-          </Link>
+          </Link> */}
+
+          <button className="download-cv-button" onClick={saveFile}>
+            Download
+          </button>
         </div>
       </div>
     </section>
