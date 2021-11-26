@@ -1,33 +1,24 @@
 import React from "react";
 import cartoonBrowser from "./Static/marginalia-229.png";
 
-import { Link } from "react-router-dom";
-import { saveAs } from "file-saver";
-
-// * As my personal CV is not sensitive data I have decided to run the download option through the frontend using anchor tag
+// ! Setting up file-download from backend again as firefox and safari no longer support download attribute
 import Axios from "axios";
 import fileDownload from "js-file-download";
 
 const DownloadCVSection = () => {
-  // * As my personal CV is not sensitive data I have decided to run the download option through the frontend using anchor tag
+  // ! Setting up file-download from backend again as firefox and safari no longer support download attribute
   // Download function using fileDownload package manager - CV sent from backend
-  // const download = (event) => {
-  //   event.preventDefault();
-  //   Axios({
-  //     url: process.env.REACT_APP_BACKEND_URL,
-  //     method: "GET",
-  //     // Binary Large Object
-  //     responseType: "blob",
-  //   }).then((res) => {
-  //     console.log(res);
-  //     fileDownload(res.data, "CV-Edith-Heidmann.pdf");
-  //   });
-  // };
-
-  // ! Testing save file to see if it works in Safar..
-
-  const saveFile = () => {
-    saveAs("CV-Edith-Heidmann.pdf");
+  const download = (event) => {
+    event.preventDefault();
+    Axios({
+      url: process.env.REACT_APP_BACKEND_URL,
+      method: "GET",
+      // Binary Large Object
+      responseType: "blob",
+    }).then((res) => {
+      console.log(res);
+      fileDownload(res.data, "CV-Edith-Heidmann.pdf");
+    });
   };
 
   return (
@@ -57,36 +48,15 @@ const DownloadCVSection = () => {
           You can.. <br /> download..
           <br /> my CV here...
         </p>
-
-        {/*  // * As my personal CV is not sensitive data I have decided to run the
-         // *download option through the frontend using anchor tag */}
+        {/* // ! 
+// ! Setting up file-download from backend again as firefox and safari no longer support download attribute */}
         {/* Download button */}
-        {/* <button
+        <button
           className="download-cv-button"
           onClick={(event) => download(event)}
         >
           Download
-        </button> */}
-
-        {/* // ! Download button to style */}
-        <div className="download-cv-button">
-          {/* <a href="./CV-Edith-Heidmann.pdf" target="_blank" download>
-            Click to download
-          </a> */}
-
-          {/* <Link
-            to="./CV-Edith-Heidmann.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            download
-          >
-            Download
-          </Link> */}
-
-          <button className="download-cv-button" onClick={saveFile}>
-            Download
-          </button>
-        </div>
+        </button>
       </div>
     </section>
   );
