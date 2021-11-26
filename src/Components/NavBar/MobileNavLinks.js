@@ -65,7 +65,7 @@ const MobileNavLinks = (props) => {
         className="nav-links"
       >
         <Link className="nav-links" id="nav-home-link" to="/home/">
-          Home
+          Home/About
         </Link>
       </motion.li>
     </motion.ul>

@@ -68,9 +68,13 @@ nav {
 
       &:active {
         color: $blue-jeans;
-        transform: scale(1.2);
-        transition: ease-in-out;
+        // transform: scale(1.2);
+        // transition: ease-in-out;
       }
+    }
+
+    .logo-smaller-font {
+      font-size: 1.8rem;
     }
   }
 
@@ -78,8 +82,8 @@ nav {
   @media (hover: hover) {
     .logo-text:hover {
       color: $blue-jeans;
-      transform: scale(1.1);
-      transition: ease-in-out;
+      // transform: scale(1.1);
+      // transition: ease-in-out;
     }
   }
 

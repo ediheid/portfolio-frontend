@@ -5,7 +5,9 @@ const LogoLink = () => {
   return (
     <div className="logo-home-container">
       <Link className="logo-link" to="/">
-        <h2 className="logo-text">EH.</h2>
+        <h2 className="logo-text">
+          EH:<span className="logo-smaller-font">&#123;...&#125;</span>
+        </h2>
       </Link>
     </div>
   );
