@@ -5,6 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  width: 100vw;
+  // ! Testing overflow -x hidden so you can't move around and off the page on mobile view
+  // Not sure if I should apply to all pages
+  overflow-x: hidden;
 }
 
 // * Title section
