@@ -97,8 +97,13 @@ const Bio = () => {
         >
           Well-versed in{" "}
           <span className="bio-emphasized-text-p-1">programming </span> basics
-          and <span className="bio-emphasized-text-p-1"> backend </span>{" "}
-          development - servers, databases and deployment.
+          and vanilla{" "}
+          <span className="bio-emphasized-text-p-1">JavaScript</span>, along
+          with <span className="bio-emphasized-text-p-1"> backend </span>{" "}
+          development skills - building servers and databases with{" "}
+          <span className="bio-emphasized-text-p-1">Node</span>,{" "}
+          <span className="bio-emphasized-text-p-1">Express </span> and{" "}
+          <span className="bio-emphasized-text-p-1">MongoDB.</span>
         </p>
 
         <div
