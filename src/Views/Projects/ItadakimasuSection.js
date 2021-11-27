@@ -5,7 +5,7 @@ import itadakimasuMobileHome from "./static/itadakimasu-mobile-home.png";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
 
-const ItadakimasuSection = () => {
+const ItadakimasuSection = (props) => {
   return (
     <section className="cards-container">
       {/* ? Card are - entire card contents is a link to the project */}
@@ -43,19 +43,27 @@ const ItadakimasuSection = () => {
           </span>
         </p>
 
-        {/* // ! Re-style! */}
-        {/* // ! Link to website as will as the entire card being a li */}
-        <a
-          className="website-written-link"
-          href="https://epic-hypatia-0d24fe.netlify.app/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Link to site
-        </a>
-
-        {/* // ! Maybe for underline */}
-        <div className="expanded-card-underline"></div>
+        {/* Project links container */}
+        <div className="project-links-container">
+          <a
+            className="website-project-link"
+            href="https://epic-hypatia-0d24fe.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="link to Itadakimasu website"
+          >
+            <props.ImLink />
+          </a>
+          <a
+            className="git-hub-project-link"
+            href="https://github.com/ediheid/japanese-recipe-app"
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="link to Itadakimasu GitHub repository"
+          >
+            <props.ImGithub />
+          </a>
+        </div>
       </div>
     </section>
   );

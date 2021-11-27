@@ -31,17 +31,6 @@
   color: $main-site-blue;
 }
 
-// .projects-subheading {
-//   margin: 50px 0 0 0;
-//   width: 250px;
-
-//   font-family: $main-font-regular-font-family;
-//   color: $main-site-blue;
-//   font-size: 1.7rem;
-//   text-align: center;
-//   letter-spacing: 1px;
-// }
-
 // * Cards Section
 
 .cards-container {
@@ -114,35 +103,30 @@
   width: 80%;
 }
 
-.website-written-link {
-  margin: 2rem 0 0 0;
-  font-size: 1.5rem;
-  font-family: $main-font-regular-font-family;
-  color: $main-site-blue;
+.project-links-container {
+  display: flex;
+  justify-content: space-evenly;
 
-  text-underline-offset: 0.3rem;
+  width: 9rem;
+  margin: 2.5rem 0 0 0;
 
-  &:focus {
-    transform: scale(1.1);
-    color: $blue-jeans;
+  .website-project-link,
+  .git-hub-project-link {
+    color: $main-site-blue;
+    font-size: 2.3rem;
+
+    &:active {
+      color: $salmon;
+    }
+  }
+
+  @media (hover: hover) {
+    .website-project-link:hover,
+    .git-hub-project-link:hover {
+      color: $salmon;
+    }
   }
 }
-
-@media (hover: hover) {
-  .website-written-link:hover {
-    transform: scale(1.1);
-    color: $blue-jeans;
-    transition: ease-in-out;
-  }
-}
-
-// ! Maybe for underline
-// .expanded-card-underline {
-//   height: 3.5px;
-//   width: 60%;
-//   background-color: $main-site-blue;
-//   margin: 4rem 0 0 0;
-// }
 
 // ? Itadakimasu Card Styling
 
@@ -196,11 +180,11 @@
     margin: 2rem 0 0 0;
   }
 
-  .website-written-link {
-    margin: 2.8rem 0 0 0;
-    font-size: 1.6rem;
-
-    text-underline-offset: 0.3rem;
+  .project-links-container {
+    .website-project-link,
+    .git-hub-project-link {
+      font-size: 2.8rem;
+    }
   }
 }
 

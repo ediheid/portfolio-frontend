@@ -3,6 +3,10 @@ import NavBar from "../../Components/NavBar/NavBar";
 // Card Components
 import ItadakimasuSection from "./ItadakimasuSection";
 
+// Icons to pass down via props to individual cards
+import { ImGithub } from "react-icons/im";
+import { ImLink } from "react-icons/im";
+
 // AOS
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,14 +23,10 @@ const Projects = () => {
       <NavBar />
       <main data-aos="fade-down" className="project-page-main-container">
         <h1 className="project-page-heading">Projects</h1>
-        {/* <p className="projects-subheading">
-          A collection of dynamic Single Page Applications, static websites, and
-          design concepts.
-        </p> */}
 
         {/*  Cards Section.. */}
         <section className="cards-container">
-          <ItadakimasuSection />
+          <ItadakimasuSection ImGithub={ImGithub} ImLink={ImLink} />
         </section>
 
         <div className="underConstruction">
