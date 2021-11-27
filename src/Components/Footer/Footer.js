@@ -31,7 +31,11 @@ const Footer = (props) => {
           // onClick={props.backToTop}
           className="contact-button-container"
         >
-          <Link className="contact-button-link" to="/home/contact">
+          <Link
+            className="contact-button-link"
+            to="/home/contact"
+            alt="Link to contact page"
+          >
             Contact
           </Link>
         </div>
@@ -51,6 +55,7 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/ediheid"
+            alt="link to GitHub profile"
           >
             <span>
               <ImGithub />
@@ -63,6 +68,7 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/edith-heidmann/"
+            alt="link to LinkedIn profile"
           >
             <span>
               <ImLinkedin />

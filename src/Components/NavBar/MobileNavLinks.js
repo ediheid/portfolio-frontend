@@ -14,24 +14,17 @@ const MobileNavLinks = (props) => {
       transition={{ delay: 0.05 }}
       className="mobile-ul-links-container"
     >
-      {/* <motion.li
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{ delay: 0.1 }}
-        className="nav-links"
-      >
-        <HashLink className="nav-links" to="/#about">
-          About
-        </HashLink>
-      </motion.li> */}
-
       <motion.li
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.2 }}
         className="nav-links"
       >
-        <Link className="nav-links" to="/home/projects">
+        <Link
+          className="nav-links"
+          to="/home/projects"
+          alt="Link to projects page"
+        >
           Projects
         </Link>
       </motion.li>
@@ -42,7 +35,11 @@ const MobileNavLinks = (props) => {
         transition={{ delay: 0.3 }}
         className="nav-links"
       >
-        <Link className="nav-links" to="/home/webapps">
+        <Link
+          className="nav-links"
+          to="/home/webapps"
+          alt="Link to Web Apps page"
+        >
           Web-Apps
         </Link>
       </motion.li>
@@ -53,7 +50,11 @@ const MobileNavLinks = (props) => {
         transition={{ delay: 0.4 }}
         className="nav-links"
       >
-        <Link className="nav-links" to="/home/contact">
+        <Link
+          className="nav-links"
+          to="/home/contact"
+          alt="Link to contact page"
+        >
           Contact
         </Link>
       </motion.li>
@@ -64,7 +65,12 @@ const MobileNavLinks = (props) => {
         transition={{ delay: 0.5 }}
         className="nav-links"
       >
-        <Link className="nav-links" id="nav-home-link" to="/home/">
+        <Link
+          className="nav-links"
+          id="nav-home-link"
+          to="/home/"
+          alt="Link to home/about page"
+        >
           Home/About
         </Link>
       </motion.li>

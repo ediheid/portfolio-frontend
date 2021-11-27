@@ -33,6 +33,7 @@ const Title = () => {
           // ! Maybe leave smooth commented out because of AOS?
           // smooth
           to="/#about"
+          alt="Link to about section"
         >
           about me
           <AiFillDownCircle className="down-chevron hashlink-hover" />

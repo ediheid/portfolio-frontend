@@ -64,9 +64,7 @@ const LinksToPages = () => {
             <Link
               className="page-links-circle circle-link"
               to="/home/projects"
-              // data-aos="zoom-in"
-              // data-aos-once="false"
-              // data-aos-duration="500"
+              alt="Link to projects page"
             >
               <span>Projects</span>
             </Link>
@@ -132,7 +130,11 @@ const LinksToPages = () => {
             </p>
 
             {/* // ? Inner circle with link span inside */}
-            <Link className="page-links-circle circle-link" to="/home/webapps">
+            <Link
+              className="page-links-circle circle-link"
+              to="/home/webapps"
+              alt="Link to web apps page"
+            >
               <span>Web Apps</span>
             </Link>
           </div>
