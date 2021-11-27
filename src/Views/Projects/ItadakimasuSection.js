@@ -38,9 +38,10 @@ const ItadakimasuSection = (props) => {
         <h2 className="project-heading">Itadakimasu</h2>
         {/* Project description */}
         <p className="project-paragraph">
-          A simple React app utilising a recipe search API - with custom
-          parameters, conditions and styling, resulting in the user being able
-          to effortlessly search for their favourite Japanese dish.
+          A simple and responsive React app utilising a recipe search API - with
+          custom parameters, conditions and styling, resulting in the user being
+          able to effortlessly search for their favourite Japanese dish. Styled
+          with SASS.
           {/* Quote for this particular card */}
           <span className="itadakimasu-quote-span">
             <RiDoubleQuotesL fontSize="2rem" />
