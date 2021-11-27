@@ -1,6 +1,7 @@
 import React from "react";
 
-import itadakimasuMobileHome from "./static/itadakimasu-mobile-home.png";
+import itadakimasuMobileHome from "./static/itadakimasu-iphone-mockup.png";
+import itadakimasuMobileHome2 from "./static/itadakimasu-iphone-mockup-2.png";
 
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
@@ -22,6 +23,11 @@ const ItadakimasuSection = (props) => {
             className="mobile-img-view"
             src={itadakimasuMobileHome}
             alt="Mobile view of site, 'Itadakimasu, to eat and receive' - a simple homepage with a search bar and a lantern illustration behind a glass card."
+          />
+          <img
+            className="mobile-img-view"
+            src={itadakimasuMobileHome2}
+            alt="Mobile view of site with search results and recipe cards, 'Itadakimasu, to eat and receive' - a simple homepage with a search bar and a lantern illustration behind a glass card."
           />
         </div>
       </a>
