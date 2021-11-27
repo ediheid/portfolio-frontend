@@ -175,6 +175,12 @@
 // Same sizing across all devices - not visible on Galaxy Fold
 // Margin bottom varies on tablet +
 
+.tools-tech-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .toolkit-heading {
   font-family: $intro-font-family;
   font-size: 3rem;
