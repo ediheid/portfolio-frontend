@@ -13,8 +13,9 @@
 }
 
 // ! UnderConstruction styling - to delete
-
 .underConstruction {
+  font-family: $main-font-regular-font-family;
+  color: $salmon;
   font-size: 2.5rem;
   text-align: center;
   width: 80%;
@@ -23,117 +24,91 @@
 // * Headings section
 
 .project-page-heading {
-  margin: 130px 0 0 0;
+  margin: 13rem 0 0 0;
 
   font-family: $intro-font-family;
   font-size: 3.5rem;
   color: $main-site-blue;
 }
 
-.projects-subheading {
-  margin: 50px 0 0 0;
-  width: 250px;
+// .projects-subheading {
+//   margin: 50px 0 0 0;
+//   width: 250px;
 
-  font-family: $main-font-regular-font-family;
-  color: $main-site-blue;
-  font-size: 1.7rem;
-  text-align: center;
-  letter-spacing: 1px;
-}
+//   font-family: $main-font-regular-font-family;
+//   color: $main-site-blue;
+//   font-size: 1.7rem;
+//   text-align: center;
+//   letter-spacing: 1px;
+// }
 
 // * Cards Section
 
 .cards-container {
-  margin: 40px 0 50px 0;
+  margin: 2.5rem 0 5rem 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-// * Overall styling for project cards
+// Lower opacity over entire card link on 'active' for mobile
+.card-link {
+  &:active {
+    opacity: 0.7;
+  }
+}
+// Lower opacity over entire card on 'hover' for devices that won't stick
+@media (hover: hover) {
+  .card-link:hover {
+    opacity: 0.7;
+  }
+}
 
-.main-card,
-.expanded-card-area {
+//  Overall styling for project cards
+.all-cards-layout {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-// ? Main card
-
-.main-card {
-  width: 100vw;
   height: 400px;
-
-  // ! Test for spacing of options container and padding on top of img
-  padding-top: 50px;
-  justify-content: space-around;
 }
 
-.options-container {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-
-  // Nested in .options-container so it does dictate style to all React Icons
-  .link-icon,
-  .more-button {
-    font-size: 3rem;
-    color: $hot-pink;
-
-    // &:focus {
-    //   transform: scale(1.1);
-    //   color: $prussian-green;
-    //   transition: ease-in-out;
-    // }
-  }
-
-  .more-button {
-    background: transparent;
-    border: none;
-    font-size: 4rem;
-    cursor: pointer;
-  }
-
-  @media (hover: hover) {
-    .link-icon:hover,
-    .more-button:hover {
-      transform: scale(1.2);
-      color: $prussian-green;
-      transition: ease-in-out;
-    }
-  }
+// Card and text are to have the same width
+.all-cards-layout,
+.project-text-container {
+  width: 100vw;
 }
 
-// Styling of screenshot iphone 6/7/8 Plus on front card
+// * Styling of screenshot iphone 6/7/8 Plus on front card
 .mobile-img-view {
   height: 80%;
   width: auto;
   border-radius: 2rem;
 }
 
-// ? Expanded area
+// * Project text area
 
-.expanded-card-area {
-  width: 100vw;
-  height: auto;
+.project-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   font-family: $main-font-thin-font-family;
   color: $main-site-blue;
   letter-spacing: 2px;
 
-  padding: 3rem 0 5rem 0;
+  padding: 4rem 0 0 0;
 }
 
-.expanded-card-heading {
+.project-heading {
   font-size: 3rem;
-  margin: 1rem 0 2rem 0;
+  margin: 0 0 2rem 0;
 }
 
-.expanded-card-paragraph {
-  font-size: 1.5rem;
+.project-paragraph {
+  font-size: 1.6rem;
   line-height: 2rem;
   text-align: center;
   width: 80%;
@@ -178,7 +153,7 @@
 .itadakimasu-quote-span {
   display: block;
   font-size: 1.8rem;
-  margin: 1rem 0 0 0;
+  margin: 1.2rem 0 0 0;
 }
 
 // ? Tablet
@@ -193,35 +168,25 @@
   // * Cards Section
 
   .cards-container {
-    margin: 70px 0 200px 0;
+    margin: 3rem 0 4rem 0;
   }
 
-  .main-card {
-    width: 80vw;
+  .all-cards-layout {
     height: 600px;
   }
 
-  .options-container {
-    .link-icon {
-      font-size: 3.5rem;
-    }
-
-    .more-button {
-      font-size: 5rem;
-    }
-  }
-
-  .expanded-card-area {
+  // Card and text are to have the same width
+  .all-cards-layout,
+  .project-text-container {
     width: 80vw;
-    height: auto;
   }
 
-  .expanded-card-heading {
+  .project-heading {
     font-size: 3rem;
-    margin: 2rem 0 2rem 0;
+    margin: 3rem 0 2rem 0;
   }
 
-  .expanded-card-paragraph {
+  .project-paragraph {
     font-size: 2rem;
     line-height: 2.8rem;
   }
@@ -232,8 +197,8 @@
   }
 
   .website-written-link {
-    margin: 2.5rem 0 0 0;
-    font-size: 1.8rem;
+    margin: 2.8rem 0 0 0;
+    font-size: 1.6rem;
 
     text-underline-offset: 0.3rem;
   }
@@ -250,11 +215,14 @@
 
   // * Cards Section
 
-  .main-card {
-    width: 80vw;
-    max-width: 1100px;
+  .all-cards-layout {
     height: 600px;
   }
 
-  // Expanded card dimensions taken from tablet +
+  // Card and text are to have the same width
+  .all-cards-layout,
+  .project-text-container {
+    width: 80vw;
+    max-width: 1100px;
+  }
 }
