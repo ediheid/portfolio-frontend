@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // Icons
 import { ImGithub } from "react-icons/im";
 import { ImLinkedin } from "react-icons/im";
-import { MdOutlineArrowUpward } from "react-icons/md";
+// import { MdOutlineArrowUpward } from "react-icons/md";
 
 //  Footer Component
 const Footer = (props) => {
