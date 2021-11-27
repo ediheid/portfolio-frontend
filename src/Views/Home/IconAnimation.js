@@ -127,7 +127,7 @@ const IconAnimation = () => {
   return (
     /* Monitor when parent DIV of motion elements is in view.. 
          REF coming from react-intersection-observer */
-    <>
+    <div className="tools-tech-container">
       <h2
         className="toolkit-heading"
         data-aos="fade-left"
@@ -242,7 +242,7 @@ const IconAnimation = () => {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 };
 

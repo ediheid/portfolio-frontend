@@ -99,6 +99,14 @@
   color: $main-site-blue;
 }
 
+.who,
+.what,
+.where {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .image-container {
   align-self: center;
 
@@ -313,6 +321,9 @@
 
 .cartoon-browser-container {
   position: relative;
+
+  display: flex;
+  justify-content: center;
 }
 
 .cv-heading {
@@ -334,9 +345,9 @@
   font-size: 2rem;
 
   position: absolute;
-  top: 25%;
-  left: 10%;
-  margin: 0.8rem;
+  top: 13%;
+  left: 0;
+  margin: 3.8rem;
 }
 
 .download-cv-button {
@@ -355,7 +366,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
+
+  background-color: $snow;
+  padding: 10rem;
+  border-radius: 1rem;
 }
 
 .links-to-pages-heading {
@@ -721,11 +736,18 @@
   // }
 
   #cartoon-browser {
-    width: 280px;
+    width: 350px;
   }
 
   .cartoon-browser-text {
-    font-size: 2.5rem;
+    font-size: 3rem;
+  }
+
+  .download-cv-button {
+    // Position absolute and relative to .cartoon-browser-container
+    font-size: 2rem;
+    left: 35%;
+    padding: 0.5rem;
   }
 }
 
@@ -796,6 +818,17 @@
     }
   }
 
+  // !!! Tech animations and CV container to make flex row and wrap for larger devices..
+  // Container is around the two Components in Home.js
+  .tech-animation-and-cv-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin: 10rem 0 10rem 0;
+  }
+
   .portrait,
   .code-img,
   .berlin-img {
@@ -806,5 +839,43 @@
 
   .cartoon-browser-container {
     margin: 1.5rem 0 0 0;
+  }
+}
+
+@include large-desktop {
+  .name-heading {
+    font-size: 12rem;
+  }
+
+  .sub-heading {
+    font-size: 3.2rem;
+
+    &:nth-of-type(2) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .hashlink-container {
+    margin-top: 6rem;
+  }
+
+  .title-hashlinks {
+    font-size: 4rem;
+  }
+
+  .bio-container {
+    width: 100vw;
+    flex-direction: row;
+  }
+
+  .who,
+  .what,
+  .where {
+    width: 500px;
+
+    margin: 5rem 0 0 0;
+
+    // Make sure image sticks to bottom of container
+    justify-content: space-between;
   }
 }

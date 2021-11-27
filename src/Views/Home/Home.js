@@ -36,12 +36,13 @@ const Home = () => {
         {/* Bio section*/}
         <Bio />
 
-        {/* Tech Icons and hand animations Section */}
-        <IconAnimation />
+        <div className="tech-animation-and-cv-container">
+          {/* Tech Icons and hand animations Section */}
+          <IconAnimation />
 
-        {/* Download CV section */}
-        <DownloadCVSection />
-
+          {/* Download CV section */}
+          <DownloadCVSection />
+        </div>
         {/* Links to web apps and projects pages */}
         <LinksToPages />
       </main>
