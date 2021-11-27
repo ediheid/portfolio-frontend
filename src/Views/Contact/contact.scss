@@ -20,6 +20,7 @@
   .contact-page-text,
   .contact-page-heading {
     text-align: center;
+    color: $main-site-blue;
   }
 
   .contact-page-heading {
@@ -56,6 +57,8 @@
       font-family: $sub-headings;
       font-size: 1.4rem;
       margin: 8px 0 4px 0;
+
+      color: $main-site-blue;
     }
 
     .contact-form-input,
