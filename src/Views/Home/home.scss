@@ -309,7 +309,47 @@
   width: 300px;
 }
 
-// ! Linked Pages section
+// * Download CV section
+
+.cartoon-browser-container {
+  position: relative;
+}
+
+.cv-heading {
+  margin-bottom: 5rem;
+}
+
+#cartoon-browser {
+  width: 250px;
+}
+
+.cartoon-browser-text {
+  // ! Testing flex wrap to stop jumping on animation
+  display: flex;
+  flex-wrap: wrap;
+  // ! Don't know of I need word-wrap as it is not animatiable
+  // word-wrap: break-word;
+
+  font-family: $sub-headings;
+  font-size: 2rem;
+
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  margin: 0.8rem;
+}
+
+.download-cv-button {
+  // Position absolute and relative to .cartoon-browser-container
+  position: absolute;
+  top: 75%;
+  left: 38%;
+  cursor: pointer;
+
+  padding: 0.3rem;
+}
+
+// * Linked Pages section
 
 .links-to-pages-section {
   display: flex;
@@ -557,40 +597,6 @@
   &:nth-of-type(36) {
     transform: rotate(345deg);
   }
-}
-
-// * Download CV section
-
-.cartoon-browser-container {
-  position: relative;
-}
-
-.cv-heading {
-  margin-bottom: 5rem;
-}
-
-#cartoon-browser {
-  width: 250px;
-}
-
-.cartoon-browser-text {
-  font-family: $sub-headings;
-  font-size: 2rem;
-
-  position: absolute;
-  top: 25%;
-  left: 10%;
-  margin: 0.8rem;
-}
-
-.download-cv-button {
-  // Position absolute and relative to .cartoon-browser-container
-  position: absolute;
-  top: 75%;
-  left: 38%;
-  cursor: pointer;
-
-  padding: 0.3rem;
 }
 
 // ! =======
