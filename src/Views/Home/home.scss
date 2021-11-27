@@ -375,7 +375,7 @@
   margin-bottom: 10rem;
 
   background-color: $snow;
-  padding: 10rem;
+  padding: 1rem 10rem 1rem 10rem;
   border-radius: 1rem;
 }
 
@@ -755,6 +755,11 @@
     left: 35%;
     padding: 0.5rem;
   }
+
+  // * Page link section
+  .links-to-pages-section {
+    padding: 2rem 10rem 2rem 10rem;
+  }
 }
 
 // ? Desktop
@@ -845,6 +850,11 @@
 
   .cartoon-browser-container {
     margin: 1.5rem 0 0 0;
+  }
+
+  // * Page link section
+  .links-to-pages-section {
+    padding: 10rem;
   }
 }
 
