@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
-import Calculator from "./Calculator";
 import NavBar from "../../Components/NavBar/NavBar";
+
+// Web App Components
+import Calculator from "./Calculator/Calculator";
+import TodoApp from "./TodoApp/TodoApp";
 
 // AOS
 import Aos from "aos";
@@ -17,8 +20,12 @@ const WebApps = () => {
       <NavBar />
       <div className="web-apps-page-main-container">
         <main>
+          {/* App Container */}
           <div className="apps-content-container" data-aos="fade-down">
+            {/* Calculator App */}
             <Calculator />
+            {/* To-do App */}
+            <TodoApp />
             <h2 className="coming-soon-notice">
               Under construction, <br /> More coming soon! 🙂
             </h2>

@@ -1,0 +1,141 @@
+// ? Mobile
+
+.todo-app-container {
+  //  To increase for larger devices
+  width: 250px;
+  height: auto;
+  max-height: 600px;
+
+  padding: 3rem;
+  border-radius: 3rem;
+
+  // Margin to be set on ALL apps in web apps page
+  margin: 1.5rem;
+
+  background-color: $todo-background;
+  color: $snow;
+
+  font-family: $todo-main-font-font-family;
+
+  overflow: auto;
+}
+
+.todo-main-heading {
+  background-color: $black;
+  font-family: $todo-heading-font-family;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  border-radius: 3rem;
+}
+
+.input-field,
+.input-button {
+  margin: 2rem 0 0 0;
+  padding: 1rem 2rem;
+}
+
+.input-field {
+  width: 80%;
+  border-radius: 5rem;
+
+  outline: none;
+  border: none;
+}
+
+.input-button {
+  border-radius: 5rem;
+  outline: $submit-button;
+  border: 1px solid $submit-button;
+  background-color: $submit-button;
+  color: $white;
+  font-family: $todo-heading-font-family;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.todos-container .todo-form .input-item {
+  border: none;
+  background: $todo-green;
+  color: $white;
+  font-size: 1.2em;
+}
+
+.todos-container {
+  margin-top: 30px;
+}
+
+.todos-container .todos .todo-item {
+  background: $todo-item-background;
+  margin: 10px 0;
+  border-radius: 0.5rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item {
+  text-overflow: clip;
+  font-size: 1.35rem;
+  padding: 10px;
+}
+
+.done-container .done-item {
+  padding: 10px;
+  background: $todo-green;
+  margin: 10px 0;
+  border-radius: 0.5rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.done-container .done-item p {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  opacity: 0.5;
+  text-overflow: clip;
+}
+
+.btn {
+  border: none;
+  font-size: 1.2em;
+  padding: 10px;
+  border-radius: 20px;
+  width: 70px;
+  background: $todo-dark-green;
+  color: $white;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 5px;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.reDoButton {
+  background-color: $redo-button;
+}
+
+.closeButton {
+  background-color: $close-button;
+}
+
+@include tablet {
+  .todo-app-container {
+    width: 400px;
+  }
+}
