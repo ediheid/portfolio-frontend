@@ -29,7 +29,7 @@ const Projects = () => {
         <section className="cards-container">
           <ItadakimasuSection ImGithub={ImGithub} ImLink={ImLink} />
 
-          <HTMLportfolio />
+          <HTMLportfolio ImGithub={ImGithub} ImLink={ImLink} />
         </section>
 
         <div className="underConstruction">

@@ -17,7 +17,7 @@ const ItadakimasuSection = (props) => {
         rel="noreferrer noopener"
         alt="Link to Itadakimasu site"
       >
-        {/* Card withall-cards-layout and individual styling for particular project card */}
+        {/* Card with all-cards-layout and individual styling for particular project card */}
         <div className="all-cards-layout project-card-itadakimasu ">
           {/* Mobile dimension image */}
           <img
