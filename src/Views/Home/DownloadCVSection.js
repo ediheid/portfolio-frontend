@@ -78,7 +78,7 @@ const DownloadCVSection = () => {
         <TypeAnimation
           className="cartoon-browser-text"
           cursor={true}
-          sequence={["You can..  download..  my CV here...", 1000, ""]}
+          sequence={["You can..  download..  my CV here...", 500, ""]}
           wrapper="div"
           repeat={Infinity}
         />
