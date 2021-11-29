@@ -15,6 +15,7 @@ const ItadakimasuSection = (props) => {
         href="https://epic-hypatia-0d24fe.netlify.app/"
         target="_blank"
         rel="noreferrer noopener"
+        alt="Link to Itadakimasu site"
       >
         {/* Card withall-cards-layout and individual styling for particular project card */}
         <div className="all-cards-layout project-card-itadakimasu ">

@@ -70,11 +70,17 @@
   width: 100vw;
 }
 
+// ! Img styling
 // * Styling of screenshot iphone 6/7/8 Plus on front card
 .mobile-img-view {
   height: 80%;
   width: auto;
-  border-radius: 2rem;
+}
+
+.desktop-img-view {
+  width: 80%;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 // * Project text area
@@ -128,7 +134,7 @@
   }
 }
 
-// ? Itadakimasu Card Styling
+// ? Itadakimasu Card
 
 .project-card-itadakimasu {
   background-color: $sun-yellow;
@@ -138,6 +144,15 @@
   display: block;
   font-size: 1.8rem;
   margin: 1.2rem 0 0 0;
+}
+
+// ? HTML portfolio card
+
+.project-card-html-portfolio {
+  background-image: url("./static/brush-strokes.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // ? Tablet

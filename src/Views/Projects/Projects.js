@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import NavBar from "../../Components/NavBar/NavBar";
 // Card Components
 import ItadakimasuSection from "./ItadakimasuSection";
+import HTMLportfolio from "./HTMLportfolio";
 
 // Icons to pass down via props to individual cards
 import { ImGithub } from "react-icons/im";
@@ -27,6 +28,8 @@ const Projects = () => {
         {/*  Cards Section.. */}
         <section className="cards-container">
           <ItadakimasuSection ImGithub={ImGithub} ImLink={ImLink} />
+
+          <HTMLportfolio />
         </section>
 
         <div className="underConstruction">
