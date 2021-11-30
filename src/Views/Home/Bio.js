@@ -157,10 +157,14 @@ const Bio = () => {
           {" "}
           Grew up and studied{" "}
           <span className="bio-emphasized-text-p-1">fine arts</span> in{" "}
-          <span className="bio-emphasized-text-p-1">Sydney</span> - gaining many
-          years of work{" "}
+          <span className="bio-emphasized-text-p-1">Sydney</span>, majoring in
+          <span className="bio-emphasized-text-p-1"> sculpture</span> and
+          <span className="bio-emphasized-text-p-1"> photography</span>. <br />{" "}
+          Many years of work{" "}
           <span className="bio-emphasized-text-p-2">experience</span> across
-          different fields and environments in both Australia and Germany.
+          different fields and environments in both{" "}
+          <span className="bio-emphasized-text-p-1"> Australia</span> and
+          <span className="bio-emphasized-text-p-1"> Germany</span>.
         </p>
 
         <div
