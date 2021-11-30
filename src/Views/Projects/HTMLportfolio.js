@@ -30,9 +30,8 @@ const HTMLportfolio = (props) => {
         <h2 className="project-heading">Static Portfolio</h2>
         {/* Project description */}
         <p className="project-paragraph">
-          A stripped back portfolio built with HTML and CSS/scss, presented as
-          my final project of the UI basics module in the very early days of my
-          Web Development studies.
+          A straightforward, static portfolio built with HTML and CSS/scss,
+          during the UI Basics module of my web development course.
         </p>
 
         {/* Project links container */}
