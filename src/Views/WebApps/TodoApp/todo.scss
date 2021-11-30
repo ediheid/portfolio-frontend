@@ -40,6 +40,8 @@
   width: 80%;
   border-radius: 5rem;
 
+  font-size: 1.3rem;
+
   outline: none;
   border: none;
 }
@@ -83,7 +85,7 @@
 
 .todo-item {
   text-overflow: clip;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   padding: 10px;
 }
 
@@ -99,7 +101,7 @@
 }
 
 .done-container .done-item p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: line-through;
   opacity: 0.5;
   text-overflow: clip;
