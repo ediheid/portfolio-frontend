@@ -39,8 +39,8 @@
 .input-field {
   width: 80%;
   border-radius: 5rem;
-
-  font-size: 1.1rem;
+  // !!! Testing with larger font so it does not zoom in on ios
+  font-size: 1.6rem;
 
   outline: none;
   border: none;
