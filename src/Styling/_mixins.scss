@@ -1,8 +1,8 @@
 // ? Media queries
 
-// * Max-width 280px - for Galaxy fold and smaller
+// * Max-width 320px - for Galaxy fold and iphone 5
 @mixin galaxy-fold-and-lower {
-  @media (max-width: 280px) {
+  @media (max-width: 320px) {
     @content;
   }
 }

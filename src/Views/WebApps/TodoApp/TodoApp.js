@@ -54,25 +54,27 @@ const TodoApp = () => {
   };
 
   return (
-    <div className="todo-app-container">
-      <div className="todo-main-heading">To-do List</div>
+    <div className="contain-scroll-container">
+      <div className="todo-app-container">
+        <div className="todo-main-heading">To-do List</div>
 
-      {/* Child Component 2 - Input container */}
-      <InputContainer
-        onChangeProp={updateCurrentInput}
-        valueProp={currentInput.text}
-        updateToDosProp={addNewInput}
-      />
+        {/* Child Component 2 - Input container */}
+        <InputContainer
+          onChangeProp={updateCurrentInput}
+          valueProp={currentInput.text}
+          updateToDosProp={addNewInput}
+        />
 
-      {/* Child Component 3 - ToDosContainer */}
-      <ToDosContainer items={toDos} moveItemToDone={setToDoItemAsDone} />
+        {/* Child Component 3 - ToDosContainer */}
+        <ToDosContainer items={toDos} moveItemToDone={setToDoItemAsDone} />
 
-      {/* Child Component 4 - DoneContainer */}
-      <DoneContainer
-        items={doneItems}
-        reDoItem={reDoItem}
-        deleteItem={deleteItem}
-      />
+        {/* Child Component 4 - DoneContainer */}
+        <DoneContainer
+          items={doneItems}
+          reDoItem={reDoItem}
+          deleteItem={deleteItem}
+        />
+      </div>
     </div>
   );
 };

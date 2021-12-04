@@ -1,12 +1,17 @@
 // ? Mobile
 
+.contain-scroll-container {
+  background-color: $todo-background;
+  border-radius: 3rem;
+}
+
 .todo-app-container {
   //  To increase for larger devices
   width: 250px;
   height: auto;
   max-height: 400px;
 
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 3rem;
 
   // Margin to be set on ALL apps in web apps page
@@ -39,7 +44,7 @@
 .input-field {
   width: 80%;
   border-radius: 5rem;
-  // !!! Testing with larger font so it does not zoom in on ios
+  // Tested with larger font so it does not zoom in on ios and it works with it a bit larger
   font-size: 1.6rem;
 
   outline: none;
@@ -135,6 +140,14 @@
 
 .closeButton {
   background-color: $close-button;
+}
+
+// ? Galaxy fold and iphone 5/SE
+
+@include galaxy-fold-and-lower {
+  .todo-app-container {
+    width: 200px;
+  }
 }
 
 // ? Tablet +
