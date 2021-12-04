@@ -4,6 +4,7 @@ import NavBar from "../../Components/NavBar/NavBar";
 // Web App Components
 import Calculator from "./Calculator/Calculator";
 import TodoApp from "./TodoApp/TodoApp";
+import PasswordGenerator from "./Password-Generator/PasswordGenerator";
 
 // AOS
 import Aos from "aos";
@@ -26,6 +27,8 @@ const WebApps = () => {
             <Calculator />
             {/* To-do App */}
             <TodoApp />
+            {/* Password Generator */}
+            <PasswordGenerator />
             <h2 className="coming-soon-notice">
               Under construction, <br /> More coming soon! 🙂
             </h2>
