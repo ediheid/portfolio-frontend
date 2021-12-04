@@ -8,7 +8,7 @@ const PasswordGenerator = () => {
   // Password
   let [password, setPassword] = useState("");
   // length of password
-  let [passwordLength, setPasswordLength] = useState(0);
+  let [passwordLength, setPasswordLength] = useState();
   // Mixed Case
   let [mixedCase, setMixedCase] = useState(false);
 
@@ -78,39 +78,44 @@ const PasswordGenerator = () => {
     setPasswordLength("");
 
     // !!! Search how to 'uncheck' checkbox on form submit
-    setMixedCase();
+    // setMixedCase();
   };
 
   // !!!
 
   return (
     <div className="password-generator-container">
-      <h1>Random Password Generator</h1>
+      <h1 className="password-generator-heading">Random Password Generator</h1>
 
-      <label>Your new password</label>
-      <div class="output">{password}</div>
+      <label className="password-subheadings new-password">
+        Your new password:
+      </label>
+      <div className="output">{password}</div>
 
-      <form>
-        <label>
-          Choose your password length (Default length: 20 characters)
+      <form className="password-form">
+        <label className="password-subheadings">
+          Choose password length (Default = 20 characters)
         </label>
         <input
+          className="define-number-input"
           type="number"
           name="passwordLength"
-          class="define-number-input"
           onChange={collectInput}
           value={passwordLength}
+          placeholder="Password length.."
         ></input>
-        <input
-          name="mixedCase"
-          onChange={collectInput}
-          id="checkbox"
-          type="checkbox"
-          //   checked="checked"
-        />
-        <span>Use mixed cases</span>
 
-        <button class="button" onClick={definePassword}>
+        <div className="checkbox-container">
+          <span className="password-subheadings">Use mixed cases?</span>
+          <input
+            name="mixedCase"
+            onChange={collectInput}
+            id="checkbox"
+            type="checkbox"
+            //   checked="checked"
+          />
+        </div>
+        <button className="generate-button" onClick={definePassword}>
           Generate Password
         </button>
       </form>
