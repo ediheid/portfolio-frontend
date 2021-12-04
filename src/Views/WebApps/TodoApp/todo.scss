@@ -4,20 +4,20 @@
   //  To increase for larger devices
   width: 250px;
   height: auto;
-  max-height: 600px;
+  max-height: 400px;
 
   padding: 3rem;
   border-radius: 3rem;
 
   // Margin to be set on ALL apps in web apps page
-  margin: 1.5rem;
+  margin: 2.5rem 1.5rem 2.5rem 1.5rem;
 
   background-color: $todo-background;
   color: $snow;
 
   font-family: $todo-main-font-font-family;
 
-  overflow: scroll;
+  overflow: auto;
 }
 
 .todo-main-heading {
@@ -40,7 +40,7 @@
   width: 80%;
   border-radius: 5rem;
 
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 
   outline: none;
   border: none;
@@ -53,9 +53,10 @@
   background-color: $submit-button;
   color: $white;
   font-family: $todo-heading-font-family;
-  letter-spacing: 1.5px;
-  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-weight: bold;
   cursor: pointer;
+  font-size: 1.2rem;
 
   &:active {
     opacity: 0.8;
@@ -86,7 +87,7 @@
 .todo-item {
   text-overflow: clip;
   font-size: 1.2rem;
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
 }
 
 .done-container .done-item {
@@ -136,8 +137,28 @@
   background-color: $close-button;
 }
 
-@include tablet {
+// ? Tablet +
+// @include tablet {
+//   // .input-field,
+//   // .input-button {
+//   //   font-size: 1.5rem;
+//   // }
+// }
+
+// ? Desktop
+
+@include desktop {
   .todo-app-container {
     width: 400px;
+    padding: 5rem;
+    margin: 3rem;
+
+    // Todo Maybe adjust max height? - add more apps first
+    //  max-height: 600px;
+  }
+
+  .input-field,
+  .input-button {
+    font-size: 1.5rem;
   }
 }
