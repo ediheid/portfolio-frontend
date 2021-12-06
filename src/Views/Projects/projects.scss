@@ -137,13 +137,24 @@
   margin: 1.2rem 0 0 0;
 }
 
-// ? HTML portfolio card
+// ? HTML portfolio Card
 
 .project-card-html-portfolio {
   background-image: url("./static/brush-strokes.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+// ? Bootstrap Card
+
+.bootstrap-card {
+  background-image: url("./static/bootstrap-3.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 // ? Small phones..
