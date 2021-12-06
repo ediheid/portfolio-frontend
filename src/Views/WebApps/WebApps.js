@@ -25,10 +25,13 @@ const WebApps = () => {
           <div className="apps-content-container" data-aos="fade-down">
             {/* Calculator App */}
             <Calculator />
+
             {/* To-do App */}
             <TodoApp />
+
             {/* Password Generator */}
             <PasswordGenerator />
+
             <h2 className="coming-soon-notice">
               Under construction, <br /> More coming soon! 🙂
             </h2>

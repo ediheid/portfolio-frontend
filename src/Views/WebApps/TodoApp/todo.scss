@@ -3,6 +3,8 @@
 .contain-scroll-container {
   background-color: $todo-background;
   border-radius: 3rem;
+
+  margin-bottom: 4rem;
 }
 
 .todo-app-container {
@@ -15,7 +17,7 @@
   border-radius: 3rem;
 
   // Margin to be set on ALL apps in web apps page
-  margin: 2.5rem 1.5rem 2.5rem 1.5rem;
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
 
   background-color: $todo-background;
   color: $snow;
