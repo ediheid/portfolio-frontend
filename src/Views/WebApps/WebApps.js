@@ -31,10 +31,6 @@ const WebApps = () => {
 
             {/* Password Generator */}
             <PasswordGenerator />
-
-            <h2 className="coming-soon-notice">
-              Under construction, <br /> More coming soon! 🙂
-            </h2>
           </div>
         </main>
       </div>

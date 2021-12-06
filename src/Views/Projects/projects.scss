@@ -12,15 +12,6 @@
   align-items: center;
 }
 
-// ! UnderConstruction styling - to delete
-.underConstruction {
-  font-family: $main-font-regular-font-family;
-  color: $salmon;
-  font-size: 2.5rem;
-  text-align: center;
-  width: 80%;
-}
-
 // * Headings section
 
 .project-page-heading {
@@ -68,13 +59,6 @@
 .all-cards-layout,
 .project-text-container {
   width: 100vw;
-}
-
-// ! Img styling
-// * Styling of screenshot iphone 6/7/8 Plus on front card
-.mobile-img-view {
-  height: 80%;
-  width: auto;
 }
 
 .desktop-img-view {
@@ -140,6 +124,13 @@
   background-color: $sun-yellow;
 }
 
+// ! Img styling
+// * Styling of screenshot iphone 6/7/8 Plus on front card
+.mobile-img-view {
+  height: 80%;
+  width: auto;
+}
+
 .itadakimasu-quote-span {
   display: block;
   font-size: 1.8rem;
@@ -153,6 +144,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+// ? Small phones..
+
+@include galaxy-fold-and-lower {
+  // ! Img styling
+  // * Styling of screenshot iphone 6/7/8 Plus on front card
+  .mobile-img-view {
+    height: 60%;
+  }
 }
 
 // ? Tablet

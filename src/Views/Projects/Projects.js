@@ -31,10 +31,6 @@ const Projects = () => {
 
           <HTMLportfolio ImGithub={ImGithub} ImLink={ImLink} />
         </section>
-
-        <div className="underConstruction">
-          Under construction - more coming soon 👀
-        </div>
       </main>
     </>
   );
