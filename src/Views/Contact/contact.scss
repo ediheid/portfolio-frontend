@@ -35,6 +35,10 @@
     width: 240px;
 
     margin-bottom: 2rem;
+
+    &:nth-of-type(2) {
+      margin-bottom: 1rem;
+    }
   }
 
   .form-container {
@@ -105,13 +109,19 @@
 
       cursor: pointer;
 
-      &:hover {
-        background-color: $prussian-green;
+      &:focus {
+        background-color: $hot-pink;
       }
 
       &:disabled {
         opacity: 0.4;
         background: $coquelicot;
+      }
+    }
+
+    @media (hover: hover) {
+      .submit-button:hover {
+        background-color: $hot-pink;
       }
     }
 

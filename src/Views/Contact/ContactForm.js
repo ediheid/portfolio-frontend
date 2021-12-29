@@ -25,13 +25,13 @@ const ContactForm = (props) => {
         Or just want to say hi!?{" "}
       </p>
 
-      <p
+      {/* <p
         data-aos="fade-down"
         data-aos-duration="1200"
         className="contact-page-text"
       >
         Drop me a message down below..
-      </p>
+      </p> */}
 
       <div data-aos="fade-down" className="form-container">
         {/* Form */}
