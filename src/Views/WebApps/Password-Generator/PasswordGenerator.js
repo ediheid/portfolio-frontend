@@ -87,11 +87,6 @@ const PasswordGenerator = () => {
     <div className="password-generator-container">
       <h1 className="password-generator-heading">Random Password Generator</h1>
 
-      <label className="password-subheadings new-password">
-        Your new password:
-      </label>
-      <div className="output">{password}</div>
-
       <form className="password-form">
         <label className="password-subheadings">
           Choose password length (Default = 20 characters)
@@ -118,6 +113,11 @@ const PasswordGenerator = () => {
         <button className="generate-button" onClick={definePassword}>
           Generate Password
         </button>
+
+        <label className="password-subheadings new-password">
+          Your new password:
+        </label>
+        <div className="output">{password}</div>
       </form>
     </div>
   );
