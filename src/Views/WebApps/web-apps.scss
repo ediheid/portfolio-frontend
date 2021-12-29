@@ -7,10 +7,10 @@
 .web-apps-page-main-container {
   width: 100vw;
 
-  background-image: url("./Static/grid-bg.png");
+  background-image: url("./Static/brush-strokes-pink.png");
   background-position: center;
-  background-repeat: repeat;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   // !!! DEBUG weird overflow
   padding-bottom: 200px;
