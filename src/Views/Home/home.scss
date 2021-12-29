@@ -146,28 +146,14 @@
 
   padding: 1rem 1rem 0 1rem;
 
-  .bio-emphasized-text-p-1,
-  .bio-emphasized-text-p-2 {
-    font-family: $intro-font-family;
-    font-size: 2.2rem;
+  .bio-emphasized-text-p-1 {
+    font-weight: bold;
   }
 
-  .bio-emphasized-text-p-1 {
-    &:nth-of-type(1) {
-      font-size: 2.8rem;
-    }
-  }
-
-  .bio-emphasized-text-p-1 {
-    &:nth-of-type(2) {
-      font-size: 2rem;
-    }
-  }
-
-  .bio-emphasized-text-p-1 {
-    &:nth-of-type(3) {
-      font-size: 2.5rem;
-    }
+  .bio-emphasized-text-technologies {
+    font-family: $sub-headings;
+    color: $hot-pink;
+    font-weight: bold;
   }
 }
 
@@ -184,7 +170,7 @@
 .toolkit-heading {
   font-family: $intro-font-family;
   font-size: 3rem;
-  margin: 5rem 0 2rem 0;
+  margin: 4rem 0 2rem 0;
   color: $main-site-blue;
   text-align: center;
 }
@@ -330,6 +316,8 @@
 
   display: flex;
   justify-content: center;
+
+  margin-bottom: 15rem;
 }
 
 .cv-heading {
@@ -372,11 +360,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 10rem;
+  // margin-bottom: 2rem;
 
-  background-color: $snow;
   padding: 1rem 10rem 1rem 10rem;
-  border-radius: 1rem;
+  // border-radius: 1rem;
 }
 
 .links-to-pages-heading {
@@ -384,7 +371,7 @@
   color: $main-site-blue;
   text-align: center;
   font-size: 3rem;
-  margin: 10rem 0 5rem 0;
+  margin: 10rem 0 0 0;
 }
 
 .projects-link-container {
@@ -626,24 +613,6 @@
 @include galaxy-fold-and-lower {
   .bio-paragraphs {
     font-size: 1rem;
-
-    .bio-emphasized-text-p-1,
-    .bio-emphasized-text-p-2 {
-      font-family: $main-font-regular-font-family;
-      font-size: 1.3rem;
-    }
-
-    .bio-emphasized-text-p-1 {
-      &:nth-of-type(1) {
-        font-size: 1.4rem;
-      }
-    }
-
-    .bio-emphasized-text-p-2 {
-      &:nth-of-type(2) {
-        font-size: 1.6rem;
-      }
-    }
   }
 
   .portrait,
@@ -699,24 +668,6 @@
       letter-spacing: 0.3rem;
 
       margin: 1.4rem 0 5rem 0;
-
-      .bio-emphasized-text-p-1,
-      .bio-emphasized-text-p-2 {
-        font-family: $intro-font-family;
-        font-size: 3.2rem;
-      }
-
-      .bio-emphasized-text-p-1 {
-        &:nth-of-type(1) {
-          font-size: 4.5rem;
-        }
-      }
-
-      .bio-emphasized-text-p-2 {
-        &:nth-of-type(3) {
-          font-size: 4.5rem;
-        }
-      }
     }
   }
 
@@ -801,44 +752,7 @@
       &:nth-of-type(3) {
         margin-bottom: 5rem;
       }
-
-      .bio-emphasized-text-p-1,
-      .bio-emphasized-text-p-2 {
-        font-family: $main-font-regular-font-family;
-        font-size: 2.5rem;
-        position: relative;
-        top: 0.2rem;
-      }
-
-      .bio-emphasized-text-p-1 {
-        &:nth-of-type(1) {
-          font-size: 3.3rem;
-        }
-      }
-
-      .bio-emphasized-text-p-1 {
-        &:nth-of-type(3) {
-          font-size: 3.8rem;
-        }
-      }
-
-      .bio-emphasized-text-p-2 {
-        &:nth-of-type(3) {
-          font-size: 3.2rem;
-        }
-      }
     }
-  }
-
-  // !!! Tech animations and CV container to make flex row and wrap for larger devices..
-  // Container is around the two Components in Home.js
-  .tech-animation-and-cv-container {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    margin: 10rem 0 10rem 0;
   }
 
   .portrait,
@@ -850,7 +764,7 @@
   // * Download CV section
 
   .cartoon-browser-container {
-    margin: 1.5rem 0 0 0;
+    margin: 0 0 15rem 0;
   }
 
   // * Page link section
@@ -880,10 +794,10 @@
     font-size: 4rem;
   }
 
-  .bio-container {
-    width: 100vw;
-    flex-direction: row;
-  }
+  // .bio-container {
+  //   width: 100vw;
+  //   flex-direction: column;
+  // }
 
   .who,
   .what,
@@ -891,8 +805,9 @@
     width: 500px;
 
     margin: 5rem 0 0 0;
-
-    // Make sure image sticks to bottom of container
-    justify-content: space-between;
   }
+
+  //   // Make sure image sticks to bottom of container
+  //   justify-content: space-between;
+  // }
 }

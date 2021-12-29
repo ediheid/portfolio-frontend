@@ -71,10 +71,10 @@ const LinksToPages = () => {
           </div>
           <div
             className="page-description"
-            data-aos="flip-up"
-            data-aos-once="false"
-            data-aos-delay="200"
-            data-aos-duration="600"
+            // data-aos="flip-up"
+            // data-aos-once="false"
+            // data-aos-delay="200"
+            // data-aos-duration="600"
           >
             Collection of dynamic Single Page Applications, static websites, and
             design concepts.
@@ -140,10 +140,10 @@ const LinksToPages = () => {
           </div>
           <div
             className="page-description"
-            data-aos="flip-up"
-            data-aos-once="false"
-            data-aos-delay="200"
-            data-aos-duration="600"
+            // data-aos="flip-up"
+            // data-aos-once="false"
+            // data-aos-delay="200"
+            // data-aos-duration="600"
           >
             Assortment of interactive web applications.
           </div>

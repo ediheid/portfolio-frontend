@@ -49,7 +49,7 @@ const DownloadCVSection = () => {
   return (
     <section className="download-cv-section">
       <h2
-        data-aos="fade-left"
+        data-aos="fade-right"
         data-aos-once="false"
         data-aos-duration="1000"
         className="bio-heading cv-heading"
@@ -78,7 +78,7 @@ const DownloadCVSection = () => {
         <TypeAnimation
           className="cartoon-browser-text"
           cursor={true}
-          sequence={["You can..  download..  my CV here...", 500, ""]}
+          sequence={["Download..  my CV here...", 500, ""]}
           wrapper="div"
           repeat={Infinity}
         />

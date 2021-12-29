@@ -130,7 +130,7 @@ const IconAnimation = () => {
     <div className="tools-tech-container">
       <h2
         className="toolkit-heading"
-        data-aos="fade-left"
+        data-aos="fade-right"
         data-aos-once="false"
         data-aos-delay="500"
         data-aos-duration="1000"
