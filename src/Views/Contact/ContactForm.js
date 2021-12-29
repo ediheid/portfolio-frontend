@@ -14,7 +14,15 @@ const ContactForm = (props) => {
         data-aos-duration="1200"
         className="contact-page-text"
       >
-        Want to work together? Or just want to say hi!?{" "}
+        Work together?
+      </p>
+
+      <p
+        data-aos="fade-down"
+        data-aos-duration="1200"
+        className="contact-page-text"
+      >
+        Or just want to say hi!?{" "}
       </p>
 
       <p
