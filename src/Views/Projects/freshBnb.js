@@ -28,7 +28,7 @@ const FreshBnb = (props) => {
       </a>
 
       {/* ? Project text below card */}
-      <div className="project-text-container">
+      <div className="project-text-container freshbnb-text-container">
         {/* Project Heading */}
         <h2 className="project-heading">FreshBnb</h2>
         {/* Project description */}

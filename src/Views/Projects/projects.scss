@@ -138,6 +138,11 @@
   }
 }
 
+// ? Freshbnb text container
+.freshbnb-text-container {
+  margin-top: -5rem;
+}
+
 // ? FreshBnb card
 
 .project-card-freshbnb {
@@ -209,6 +214,10 @@
     padding-top: 0;
     margin-top: -10rem;
   }
+
+  .freshbnb-text-container {
+    margin-top: -10rem;
+  }
 }
 
 // ? Tablet
@@ -261,6 +270,10 @@
   .project-card-freshbnb {
     margin-top: -12rem;
   }
+
+  .freshbnb-text-container {
+    margin-top: -12rem;
+  }
 }
 
 // ? Desktop
@@ -287,5 +300,9 @@
 
   .project-card-freshbnb {
     margin-top: 1rem;
+  }
+
+  .freshbnb-text-container {
+    margin-top: 0;
   }
 }
