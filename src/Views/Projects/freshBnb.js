@@ -20,41 +20,48 @@ const FreshBnb = (props) => {
         <div className="all-cards-layout project-card-freshbnb">
           {/* Mobile dimension image */}
           <img
-            className=" fresh-bnb-img"
+            className="fresh-bnb-img"
             src={freshbnb}
             alt="Desktop view of site, 'FreshBnb'"
           />
-          {/* <img
-            className="mobile-img-view"
-            src={itadakimasuMobileHome2}
-            alt="Mobile view of site with search results and recipe cards, 'Itadakimasu, to eat and receive' - a simple homepage with a search bar and a lantern illustration behind a glass card."
-          /> */}
         </div>
       </a>
 
       {/* ? Project text below card */}
       <div className="project-text-container">
         {/* Project Heading */}
-        <h2 className="project-heading">Itadakimasu</h2>
+        <h2 className="project-heading">FreshBnb</h2>
         {/* Project description */}
         <p className="project-paragraph">
-          A simple and responsive React app utilising a recipe search API - with
-          custom parameters, conditions and styling, resulting in the user being
-          able to effortlessly search for their favourite Japanese dish. Styled
-          with SASS.
+          FreshBnb is a mock property booking and hosting platform for caravans
+          and buses. Inspired by the pandemic and airBnb. This is the final
+          group project for our one year intensive web development training at
+          the Digital Career Institute, Berlin. Made in collaboration with
+          Katharina Dobiosch, Jan Happle, Marc Lopez and Giuseppe Falcidia.
           {/* Quote for this particular card */}
-          <span className="itadakimasu-quote-span">
+          {/* <span className="itadakimasu-quote-span">
             <RiDoubleQuotesL fontSize="2rem" />
-            <i> Itadakimasu! </i>
+            <i> Time to hit the road!</i>
             <RiDoubleQuotesR />
-          </span>
+          </span> */}
+        </p>
+        <p className="project-paragraph">
+          {" "}
+          My main roles in the project were:{" "}
+          <ul>
+            <li>
+              Scrum master - organising weekly sprints and conducting daily
+              scrum meetings, ensuring a smooth, organised and finished project.
+            </li>
+            <li></li>
+          </ul>
         </p>
 
         {/* Project links container */}
         <div className="project-links-container">
           <a
             className="website-project-link"
-            href="https://epic-hypatia-0d24fe.netlify.app/"
+            href="https://frontend-dci-final-group-project.vercel.app/"
             target="_blank"
             rel="noreferrer noopener"
             alt="link to Itadakimasu website"

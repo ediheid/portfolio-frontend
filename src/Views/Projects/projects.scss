@@ -88,9 +88,13 @@
 
 .project-paragraph {
   font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   text-align: center;
   width: 80%;
+
+  &:nth-of-type(2) {
+    padding-top: 3rem;
+  }
 }
 
 .project-links-container {
@@ -123,8 +127,6 @@
 .project-card-freshbnb {
   padding-top: 2rem;
   margin-top: -8rem;
-
-  // background-color: rgba(245, 234, 207, 0.4);
 }
 
 .fresh-bnb-img {
