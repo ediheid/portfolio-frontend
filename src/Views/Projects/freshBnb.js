@@ -34,7 +34,7 @@ const FreshBnb = (props) => {
         {/* Project description */}
         <p className="project-paragraph">
           FreshBnb is a mock property booking and hosting platform for caravans
-          and buses. Inspired by the pandemic and airBnb. This is the final
+          and buses. Inspired by the pandemic and Airbnb. This is the final
           group project for our one year intensive web development training at
           the Digital Career Institute, Berlin. Made in collaboration with
           Katharina Dobiosch, Jan Happle, Marc Lopez and Giuseppe Falcidia.
@@ -50,10 +50,32 @@ const FreshBnb = (props) => {
           My main roles in the project were:{" "}
           <ul>
             <li>
-              Scrum master - organising weekly sprints and conducting daily
-              scrum meetings, ensuring a smooth, organised and finished project.
+              <b>·</b> Scrum master - organising weekly sprints and conducting
+              daily scrum meetings, ensuring a smooth, organised and completed
+              project <b>·</b>
             </li>
-            <li></li>
+            <li>
+              {" "}
+              <b>·</b> Search Component styling, implementation and
+              functionality <b>·</b>
+            </li>
+            <li>
+              <b>·</b> Google-Map API and React-Google-Autocomplete frontend
+              logic, integration and styling <b>·</b>
+            </li>
+            <li>
+              <b>·</b> Software Requirement Specification, Design Guidelines and
+              environment setup and structure <b>·</b>
+            </li>
+            <li>
+              <b>·</b> Data population from REST APIs <b>·</b>
+            </li>
+            <li>
+              <b>·</b> UI/UX features <b>·</b>
+            </li>
+            <li>
+              <b>·</b> Deployment and site maintenance <b>·</b>
+            </li>
           </ul>
         </p>
 
@@ -64,16 +86,16 @@ const FreshBnb = (props) => {
             href="https://frontend-dci-final-group-project.vercel.app/"
             target="_blank"
             rel="noreferrer noopener"
-            alt="link to Itadakimasu website"
+            alt="link to FreshBnb website"
           >
             <props.ImLink />
           </a>
           <a
             className="git-hub-project-link"
-            href="https://github.com/ediheid/japanese-recipe-app"
+            href="https://github.com/ediheid/frontend-dci-final-group-project"
             target="_blank"
             rel="noreferrer noopener"
-            alt="link to Itadakimasu GitHub repository"
+            alt="link to FreshBnb GitHub repository"
           >
             <props.ImGithub />
           </a>
