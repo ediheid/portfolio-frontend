@@ -118,6 +118,21 @@
   }
 }
 
+// ? FreshBnb card
+
+.project-card-freshbnb {
+  padding-top: 2rem;
+  margin-top: -8rem;
+
+  // background-color: rgba(245, 234, 207, 0.4);
+}
+
+.fresh-bnb-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 // ? Itadakimasu Card
 
 .project-card-itadakimasu {
@@ -157,6 +172,12 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+// ? Design Card
+
+.design-card {
+  background-color: $sun-yellow;
+}
+
 // ? Small phones..
 
 @include galaxy-fold-and-lower {
@@ -164,6 +185,11 @@
   // * Styling of screenshot iphone 6/7/8 Plus on front card
   .mobile-img-view {
     height: 60%;
+  }
+
+  .project-card-freshbnb {
+    padding-top: 0;
+    margin-top: -10rem;
   }
 }
 
@@ -213,6 +239,10 @@
       font-size: 2.8rem;
     }
   }
+
+  .project-card-freshbnb {
+    margin-top: -12rem;
+  }
 }
 
 // ? Desktop
@@ -235,5 +265,9 @@
   .project-text-container {
     width: 80vw;
     max-width: 1100px;
+  }
+
+  .project-card-freshbnb {
+    margin-top: 1rem;
   }
 }

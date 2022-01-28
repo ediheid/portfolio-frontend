@@ -8,8 +8,9 @@
 }
 
 // * 768 tablet breakpoint!
+// !!! Testing with 580....
 @mixin tablet {
-  @media (min-width: 768px) {
+  @media (min-width: 580px) {
     @content;
   }
 }

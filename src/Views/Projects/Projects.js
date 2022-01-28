@@ -4,6 +4,7 @@ import NavBar from "../../Components/NavBar/NavBar";
 import ItadakimasuSection from "./ItadakimasuSection";
 import HTMLportfolio from "./HTMLportfolio";
 import BootstrapStatic from "./BootstrapStatic";
+import FreshBnb from "./freshBnb";
 
 // Icons to pass down via props to individual cards
 import { ImGithub } from "react-icons/im";
@@ -28,6 +29,9 @@ const Projects = () => {
 
         {/*  Cards Section.. */}
         <section className="cards-container">
+          {/* FreshBnb */}
+          <FreshBnb ImGithub={ImGithub} ImLink={ImLink} />
+
           {/* Itadakimasu */}
           <ItadakimasuSection ImGithub={ImGithub} ImLink={ImLink} />
 
