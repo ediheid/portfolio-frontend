@@ -11,7 +11,7 @@ const FreshBnb = (props) => {
       {/* ? Card are - entire card contents is a link to the project */}
       <a
         className="card-link"
-        href="https://frontend-dci-final-group-project.vercel.app/"
+        href="https://freshbnb.vercel.app/"
         target="_blank"
         rel="noreferrer noopener"
         alt="Link to FreshBnb group project"
@@ -83,7 +83,7 @@ const FreshBnb = (props) => {
         <div className="project-links-container">
           <a
             className="website-project-link"
-            href="https://frontend-dci-final-group-project.vercel.app/"
+            href="https://freshbnb.vercel.app/"
             target="_blank"
             rel="noreferrer noopener"
             alt="link to FreshBnb website"
