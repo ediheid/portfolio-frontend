@@ -110,7 +110,7 @@
       cursor: pointer;
 
       &:focus {
-        background-color: $hot-pink;
+        background-color: $dark-pastel-green;
       }
 
       &:disabled {
@@ -121,7 +121,7 @@
 
     @media (hover: hover) {
       .submit-button:hover {
-        background-color: $hot-pink;
+        background-color: $dark-pastel-green;
       }
     }
 
