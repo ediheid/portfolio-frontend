@@ -107,8 +107,8 @@ const Bio = () => {
           data-aos-duration="1000"
           className="bio-paragraphs"
         >
-          Australian born, Berlin based - currently finishing up an intensive
-          one year web development course in{" "}
+          Australian born, Berlin based - recently completed an intensive one
+          year web development course in{" "}
           <span className="bio-emphasized-text-technologies">MERN</span> stack
           at the Digital Career Institute.
           {/* after completing a 1 year intensive training 

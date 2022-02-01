@@ -14,12 +14,21 @@ import "react-toastify/dist/ReactToastify.css";
 toast.configure();
 
 // ? Component
-// Toast alert for catch block in case server is down when trying to download CV
 const DownloadCVSection = () => {
+  // Toast alert for catch block in case server is down when trying to download CV
   const downloadFailedNotification = () => {
     toast.error("Ooops! Download not working, please try again later 😘", {
       draggable: false,
       position: "top-center",
+    });
+  };
+
+  // Toast alert for try block to let user know CV is downloading in case it is slow..
+  const downloadSuccessfulNotification = () => {
+    toast.success("Downloading CV ⏰ 💫 ", {
+      draggable: false,
+      position: "top-center",
+      autoClose: 3000,
     });
   };
 
@@ -36,7 +45,8 @@ const DownloadCVSection = () => {
         // Binary Large Object
         responseType: "blob",
       }).then((res) => {
-        console.log(res);
+        downloadSuccessfulNotification();
+        // console.log(res);
         fileDownload(res.data, "CV-Edith-Heidmann.pdf");
       });
     } catch (error) {

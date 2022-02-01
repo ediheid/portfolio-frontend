@@ -40,6 +40,13 @@ const Contact = () => {
     });
   };
 
+  const sendingNotification = () => {
+    toast.success("Message sending.. ", {
+      position: "top-center",
+      draggable: false,
+    });
+  };
+
   // ! incorrect email alert
   // const incorrectEmailAlert = () => {
   //   toast.error("Please enter a valid email address 📧 ", {
@@ -50,7 +57,7 @@ const Contact = () => {
 
   // Message sent alert
   const messageSentNotification = () => {
-    toast("Thanks for your message! 🎉 🌷 ", {
+    toast("Message sent! Thanks for your writing! 🎉 🌷 ", {
       position: "top-center",
       draggable: false,
     });
@@ -141,6 +148,8 @@ const Contact = () => {
       // 'try' post fetch request..
 
       try {
+        sendingNotification();
+
         const response = await fetch(
           // ! URI is defined at top of page for dev or production
           `${URL}/send`,
@@ -153,6 +162,7 @@ const Contact = () => {
             body: JSON.stringify(data),
           }
         );
+
         // Wait for the response and parse json data
         const res = await response.json();
         // console.log(response);
