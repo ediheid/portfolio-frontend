@@ -14,6 +14,9 @@ import { ImLink } from "react-icons/im";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+// Progress bar
+import ProgressBar from "react-scroll-progress-bar";
+
 const Projects = () => {
   // AOS functionality
   useEffect(() => {
@@ -24,6 +27,7 @@ const Projects = () => {
     <>
       {/* NavBar needs to be in individual view Component rather than App.js for mobile nav functionality */}
       <NavBar />
+      <ProgressBar height=".5rem" bgcolor="#d342c3" />
       <main data-aos="fade-down" className="project-page-main-container">
         <h1 className="project-page-heading">Projects</h1>
 

@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 // ? Styling
 import "./Styling/App.scss";
+
 // ? Views
 import WebApps from "./Views/WebApps/WebApps";
 import Home from "./Views/Home/Home";

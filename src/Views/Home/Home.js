@@ -6,8 +6,10 @@ import Title from "./Title.js";
 import Bio from "./Bio.js";
 import IconAnimation from "./IconAnimation.js";
 import LinksToPages from "./LinksToPages";
-
 import DownloadCVSection from "./DownloadCVSection";
+
+// Progress bar
+import ProgressBar from "react-scroll-progress-bar";
 
 // AOS covering Component imports
 import Aos from "aos";
@@ -29,6 +31,7 @@ const Home = () => {
     <>
       {/* NavBar needs to be in individual view Component rather than App.js for mobile nav functionality */}
       <NavBar />
+      <ProgressBar height=".5rem" bgcolor="#d342c3" />
       <main className="home-page-container">
         {/* Title Section with name and headings */}
         <Title />

@@ -10,6 +10,9 @@ import PasswordGenerator from "./Password-Generator/PasswordGenerator";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+// Progress bar
+import ProgressBar from "react-scroll-progress-bar";
+
 const WebApps = () => {
   // AOS functionality
   useEffect(() => {
@@ -19,6 +22,7 @@ const WebApps = () => {
     <>
       {/* NavBar needs to be in individual view Component rather than App.js for mobile nav functionality */}
       <NavBar />
+      <ProgressBar height=".5rem" bgcolor="#d342c3" />
       <div className="web-apps-page-main-container">
         <main>
           {/* App Container */}
