@@ -1,10 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import designImg from "./static/design-placeholder-image.png";
 
 const Design = () => {
   return (
     <section className="cards-container">
       {/* // ! Decide if the link to my design should open up in new page only accessible through projects page */}
-      <div></div>
+      <Link
+        className="card-link"
+        href="https://freshbnb.vercel.app/"
+        target="_blank"
+        rel="noreferrer noopener"
+        alt="Link to FreshBnb group project"
+      >
+        {/* Card with all-cards-layout and individual styling for particular project card */}
+        <div className="all-cards-layout ">
+          {/* Mobile dimension image */}
+          <img
+            className="design-card-img"
+            src={designImg}
+            // alt="Desktop view of site, 'FreshBnb'"
+          />
+        </div>
+      </Link>
 
       {/* ? Project text below card */}
       <div className="project-text-container freshbnb-text-container">
