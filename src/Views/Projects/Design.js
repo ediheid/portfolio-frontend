@@ -1,48 +1,25 @@
 import React from "react";
 
-import freshbnb from "./static/freshbnb.png";
-
-const FreshBnb = (props) => {
+const Design = () => {
   return (
     <section className="cards-container">
-      {/* ? Card are - entire card contents is a link to the project */}
-      <a
-        className="card-link"
-        href="https://freshbnb.vercel.app/"
-        target="_blank"
-        rel="noreferrer noopener"
-        alt="Link to FreshBnb group project"
-      >
-        {/* Card with all-cards-layout and individual styling for particular project card */}
-        <div className="all-cards-layout project-card-freshbnb">
-          {/* Mobile dimension image */}
-          <img
-            className="fresh-bnb-img"
-            src={freshbnb}
-            alt="Desktop view of site, 'FreshBnb'"
-          />
-        </div>
-      </a>
+      {/* // ! Decide if the link to my design should open up in new page only accessible through projects page */}
+      <div></div>
 
       {/* ? Project text below card */}
       <div className="project-text-container freshbnb-text-container">
         {/* Project Heading */}
-        <h2 className="project-heading">FreshBnb</h2>
+        <h2 className="project-heading">UI/UX Design</h2>
         {/* Project description */}
-        <p className="project-paragraph">
+        {/* <p className="project-paragraph">
           FreshBnb is a mock property booking and hosting platform for caravans
           and buses. Inspired by the pandemic and Airbnb. This is the final
           group project for our one year intensive web development training at
           the Digital Career Institute, Berlin. Made in collaboration with
           Katharina Dobiosch, Jan Happle, Marc Lopez and Giuseppe Falcidia.
-          {/* Quote for this particular card */}
-          {/* <span className="itadakimasu-quote-span">
-            <RiDoubleQuotesL fontSize="2rem" />
-            <i> Time to hit the road!</i>
-            <RiDoubleQuotesR />
-          </span> */}
-        </p>
-        <p className="project-paragraph">
+  
+        </p> */}
+        {/* <p className="project-paragraph">
           {" "}
           My main roles in the project were:{" "}
           <ul>
@@ -74,10 +51,10 @@ const FreshBnb = (props) => {
               <b>·</b> Deployment and site maintenance <b>·</b>
             </li>
           </ul>
-        </p>
+        </p> */}
 
         {/* Project links container */}
-        <div className="project-links-container">
+        {/* <div className="project-links-container">
           <a
             className="website-project-link"
             href="https://freshbnb.vercel.app/"
@@ -96,10 +73,10 @@ const FreshBnb = (props) => {
           >
             <props.ImGithub />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
 };
 
-export default FreshBnb;
+export default Design;
