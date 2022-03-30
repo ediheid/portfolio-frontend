@@ -7,6 +7,7 @@ const DesignPage = () => {
     <>
       {/* NavBar needs to be in individual view Component rather than App.js for mobile nav functionality */}
       <NavBar />
+      {/* // ! Add up the top 'back to projects' */}
       <main>
         <div>This will be the design page</div>
       </main>

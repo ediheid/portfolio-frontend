@@ -17,7 +17,7 @@ const FreshBnb = (props) => {
         <div className="all-cards-layout project-card-freshbnb">
           {/* Mobile dimension image */}
           <img
-            className="fresh-bnb-img"
+            className="desktop-img-view"
             src={freshbnb}
             alt="Desktop view of site, 'FreshBnb'"
           />
@@ -25,7 +25,7 @@ const FreshBnb = (props) => {
       </a>
 
       {/* ? Project text below card */}
-      <div className="project-text-container freshbnb-text-container">
+      <div className="project-text-container ">
         {/* Project Heading */}
         <h2 className="project-heading">FreshBnb</h2>
         {/* Project description */}

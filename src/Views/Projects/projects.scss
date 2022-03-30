@@ -138,29 +138,39 @@
   }
 }
 
-// Todo
+// !!!
+
 // ? Design Card
-.design-card-img {
-  width: 100%;
-  height: auto;
+.design-card {
+  background-image: url("./static/brush-strokes.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-// ? Freshbnb text container
-.freshbnb-text-container {
-  margin-top: -5rem;
+.design-link-container {
+  margin-top: 2rem;
+}
+
+.design-link {
+  font-size: 1.6rem;
+
+  text-decoration: underline 2px;
+  text-underline-offset: 5.5px;
+  color: $main-site-blue;
+  font-family: $main-font-light-font-family;
+}
+
+@media (hover: hover) {
+  .design-link:hover {
+    color: $salmon;
+  }
 }
 
 // ? FreshBnb card
 
 .project-card-freshbnb {
-  padding-top: 2rem;
-  margin-top: -8rem;
-}
-
-.fresh-bnb-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+  background-color: $sun-yellow;
 }
 
 // ? Itadakimasu Card
@@ -185,7 +195,7 @@
 // ? HTML portfolio Card
 
 .project-card-html-portfolio {
-  background-image: url("./static/brush-strokes.jpg");
+  background-image: url("./static/brush-strokes-pink.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -202,12 +212,6 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-// ? Design Card
-
-.design-card {
-  background-color: $sun-yellow;
-}
-
 // ? Small phones..
 
 @include galaxy-fold-and-lower {
@@ -217,14 +221,14 @@
     height: 60%;
   }
 
-  .project-card-freshbnb {
-    padding-top: 0;
-    margin-top: -10rem;
-  }
+  // .project-card-freshbnb {
+  //   padding-top: 0;
+  //   margin-top: -10rem;
+  // }
 
-  .freshbnb-text-container {
-    margin-top: -10rem;
-  }
+  // .freshbnb-text-container {
+  //   margin-top: -10rem;
+  // }
 }
 
 // ? Tablet
@@ -274,13 +278,13 @@
     }
   }
 
-  .project-card-freshbnb {
-    margin-top: -12rem;
-  }
+  // .project-card-freshbnb {
+  //   margin-top: -12rem;
+  // }
 
-  .freshbnb-text-container {
-    margin-top: -12rem;
-  }
+  // .freshbnb-text-container {
+  //   margin-top: -12rem;
+  // }
 }
 
 // ? Desktop
@@ -305,11 +309,11 @@
     max-width: 1100px;
   }
 
-  .project-card-freshbnb {
-    margin-top: 1rem;
-  }
+  // .project-card-freshbnb {
+  //   margin-top: 1rem;
+  // }
 
-  .freshbnb-text-container {
-    margin-top: 0;
-  }
+  // .freshbnb-text-container {
+  //   margin-top: 0;
+  // }
 }
