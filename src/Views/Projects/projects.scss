@@ -148,6 +148,13 @@
   background-size: cover;
 }
 
+.design-img {
+  height: 70%;
+  max-width: 95%;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
 .design-link-container {
   margin-top: 2rem;
 }
@@ -225,6 +232,10 @@
   // * Styling of screenshot iphone 6/7/8 Plus on front card
   .mobile-img-view {
     height: 60%;
+  }
+
+  .design-img {
+    max-width: 90%;
   }
 
   // .project-card-freshbnb {
@@ -325,5 +336,9 @@
 
   .freshbnb-img {
     height: 85%;
+  }
+
+  .design-img {
+    height: 80%;
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import designImg from "./static/design-placeholder-image.png";
+import designImg from "./static/design-contact-us.png";
 
 const Design = () => {
   return (
@@ -10,7 +10,7 @@ const Design = () => {
         {/* Card with all-cards-layout and individual styling for particular project card */}
         <div className="all-cards-layout design-card">
           <img
-            className="desktop-img-view"
+            className="design-img"
             src={designImg}
             alt="Mockups, wireframes and design"
           />
