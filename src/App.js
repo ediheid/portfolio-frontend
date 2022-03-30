@@ -14,6 +14,8 @@ import WebApps from "./Views/WebApps/WebApps";
 import Home from "./Views/Home/Home";
 import Contact from "./Views/Contact/Contact";
 import Projects from "./Views/Projects/Projects";
+import DesignPage from "./Views/DesignPage/DesignPage";
+
 // ? Components
 import Footer from "./Components/Footer/Footer";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
@@ -49,7 +51,8 @@ const App = () => {
 
             <Route path="/home/webapps" exact component={WebApps} />
 
-            {/* //* Created path to contact still need to add content */}
+            <Route path="/home/design" exact component={DesignPage} />
+
             <Route path="/home/contact" exact component={Contact} />
 
             <Redirect to="/" exact />

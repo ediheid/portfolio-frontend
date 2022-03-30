@@ -6,13 +6,14 @@ import designImg from "./static/design-placeholder-image.png";
 const Design = () => {
   return (
     <section className="cards-container">
-      {/* // ! Decide if the link to my design should open up in new page only accessible through projects page */}
+      {/* // ! Decide if the link to my design should open up in new page only accessible through projects page OR up the top 'back to projects' */}
       <Link
         className="card-link"
-        href="https://freshbnb.vercel.app/"
-        target="_blank"
-        rel="noreferrer noopener"
-        alt="Link to FreshBnb group project"
+        // href="https://freshbnb.vercel.app/"
+        // target="_blank"
+        // rel="noreferrer noopener"
+        to="/home/design"
+        alt="Link to design page"
       >
         {/* Card with all-cards-layout and individual styling for particular project card */}
         <div className="all-cards-layout ">
