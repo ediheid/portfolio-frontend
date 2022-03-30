@@ -170,7 +170,13 @@
 // ? FreshBnb card
 
 .project-card-freshbnb {
-  background-color: $sun-yellow;
+  background-color: lighten(#f5e7cc, 8%);
+}
+
+.freshbnb-img {
+  height: 70%;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
 }
 
 // ? Itadakimasu Card
@@ -316,4 +322,8 @@
   // .freshbnb-text-container {
   //   margin-top: 0;
   // }
+
+  .freshbnb-img {
+    height: 85%;
+  }
 }

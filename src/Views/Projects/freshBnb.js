@@ -1,6 +1,6 @@
 import React from "react";
 
-import freshbnb from "./static/freshbnb.png";
+import freshbnb from "./static/macbook-freshbnb.png";
 
 const FreshBnb = (props) => {
   return (
@@ -17,7 +17,7 @@ const FreshBnb = (props) => {
         <div className="all-cards-layout project-card-freshbnb">
           {/* Mobile dimension image */}
           <img
-            className="desktop-img-view"
+            className=" freshbnb-img"
             src={freshbnb}
             alt="Desktop view of site, 'FreshBnb'"
           />
