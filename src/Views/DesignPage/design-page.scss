@@ -1,0 +1,49 @@
+// ? Mobile
+
+// * Main Container
+
+.design-page-main-container {
+  width: 100vw;
+  margin-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// * Headings section
+
+.design-page-heading {
+  margin: 13rem 0 0 0;
+
+  font-family: $intro-font-family;
+  font-size: 3.5rem;
+  color: $main-site-blue;
+}
+
+// * Sections
+
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: $main-font-thin-font-family;
+  color: $main-site-blue;
+  letter-spacing: 2px;
+
+  padding: 4rem 0 0 0;
+}
+
+.design-section-heading {
+  font-size: 2rem;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.design-section-paragraph {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  text-align: center;
+  width: 80%;
+}

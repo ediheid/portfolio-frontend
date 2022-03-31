@@ -14,7 +14,8 @@ import WebApps from "./Views/WebApps/WebApps";
 import Home from "./Views/Home/Home";
 import Contact from "./Views/Contact/Contact";
 import Projects from "./Views/Projects/Projects";
-import DesignPage from "./Views/DesignPage/DesignPage";
+// import DesignPage from "./Views/DesignPage/DesignPage";
+import MyLola from "./Views/MyLola/MyLola";
 
 // ? Components
 import Footer from "./Components/Footer/Footer";
@@ -51,7 +52,9 @@ const App = () => {
 
             <Route path="/home/webapps" exact component={WebApps} />
 
-            <Route path="/home/design" exact component={DesignPage} />
+            {/* <Route path="/home/leverest" exact component={DesignPage} /> */}
+
+            <Route path="/home/mylola" exact component={MyLola} />
 
             <Route path="/home/contact" exact component={Contact} />
 
