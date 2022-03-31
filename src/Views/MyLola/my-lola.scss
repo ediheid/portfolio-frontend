@@ -1,0 +1,47 @@
+// ? Mobile
+
+// * Main Container
+
+.my-lola-page-main-container {
+  width: 100vw;
+
+  margin-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: $main-site-blue;
+}
+
+.my-lola-page-heading {
+  margin: 13rem 0 5rem 0;
+  font-family: $intro-font-family;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.my-lola-paragraph {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  text-align: center;
+  width: 80%;
+
+  font-family: $main-font-thin-font-family;
+}
+
+.my-lola-image-container {
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 5rem;
+}
+
+.my-lola-images {
+  width: 30rem;
+  margin: 0 0 5rem 0;
+  border-radius: 0.8rem;
+}

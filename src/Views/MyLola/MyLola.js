@@ -5,6 +5,13 @@ import NavBar from "../../Components/NavBar/NavBar";
 // Progress bar
 import ProgressBar from "react-scroll-progress-bar";
 
+// Images
+import MyLolaImg1 from "../MyLola/Static/my-lola-img1.png";
+import MyLolaImg2 from "../MyLola/Static/my-lola-img2.png";
+import MyLolaImg3 from "../MyLola/Static/my-lola-img3.png";
+import MyLolaImg4 from "../MyLola/Static/my-lola-img4.png";
+import MyLolaImg5 from "../MyLola/Static/my-lola-img5.png";
+
 const MyLola = () => {
   return (
     <>
@@ -12,13 +19,46 @@ const MyLola = () => {
       <NavBar />
       <ProgressBar height=".5rem" bgcolor="#d342c3" />
 
-      <main>
-        <h1>
-          <div></div>
-        </h1>
-      </main>
+      <main className="my-lola-page-main-container">
+        <h1 className="my-lola-page-heading">My Lola</h1>
+        <p className="my-lola-paragraph">
+          My Lola is a mock environmentally friendly period product company. I
+          created the business model and UI using simple html and css as a
+          project during the marketing module of my orientation course of my web
+          development studies.
+        </p>
+        <div className="my-lola-image-container">
+          <img
+            src={MyLolaImg1}
+            className="my-lola-images"
+            alt="Landing page of My Lola Design"
+          ></img>
 
-      <div>My Lola page will go here</div>
+          <img
+            src={MyLolaImg2}
+            className="my-lola-images"
+            alt="Landing page of My Lola Design"
+          ></img>
+
+          <img
+            src={MyLolaImg3}
+            className="my-lola-images"
+            alt="Landing page of My Lola Design"
+          ></img>
+
+          <img
+            src={MyLolaImg4}
+            className="my-lola-images"
+            alt="Landing page of My Lola Design"
+          ></img>
+
+          <img
+            src={MyLolaImg5}
+            className="my-lola-images"
+            alt="Landing page of My Lola Design"
+          ></img>
+        </div>
+      </main>
     </>
   );
 };

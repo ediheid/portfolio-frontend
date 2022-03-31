@@ -24,8 +24,6 @@ const MyLolaCard = () => {
         {/* Project description */}
         <p className="project-paragraph">
           Design for a mock environmentally friendly period product company.
-          Created in simple html and css as a final project during the
-          orientation course of my web development studies.
         </p>
 
         {/* Project links container */}
