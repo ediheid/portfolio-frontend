@@ -49,6 +49,26 @@
   box-shadow: rgba(0, 0, 0, 0.055) 0px 5px 15px;
 }
 
+.projects-view-link {
+  color: $main-site-blue;
+  font-family: $nav-links-font-family;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+
+  margin-top: 2rem;
+
+  &:active {
+    color: $salmon;
+  }
+}
+
+@media (hover: hover) {
+  .projects-view-link:hover {
+    color: $salmon;
+  }
+}
+
 // ? Tablet
 @include tablet {
   .my-lola-image-container {

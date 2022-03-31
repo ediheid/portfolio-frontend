@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import NavBar from "../../Components/NavBar/NavBar";
 
+import { Link } from "react-router-dom";
+
 // Progress bar
 import ProgressBar from "react-scroll-progress-bar";
 
@@ -69,6 +71,15 @@ const MyLola = () => {
             alt="Landing page of My Lola Design"
           ></img>
         </div>
+
+        <Link
+          data-aos="fade-up"
+          className="projects-view-link"
+          to="/home/projects"
+          alt="Link back to projects page"
+        >
+          Back to Projects
+        </Link>
       </main>
     </>
   );
