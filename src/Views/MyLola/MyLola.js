@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import NavBar from "../../Components/NavBar/NavBar";
 
 // Progress bar
@@ -12,7 +11,14 @@ import MyLolaImg3 from "../MyLola/Static/my-lola-img3.png";
 import MyLolaImg4 from "../MyLola/Static/my-lola-img4.png";
 import MyLolaImg5 from "../MyLola/Static/my-lola-img5.png";
 
+// AOS covering Component imports
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const MyLola = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: false });
+  }, []);
   return (
     <>
       {/* NavBar needs to be in individual view Component rather than App.js for mobile nav functionality */}
@@ -29,30 +35,35 @@ const MyLola = () => {
         </p>
         <div className="my-lola-image-container">
           <img
+            data-aos="fade-up"
             src={MyLolaImg1}
             className="my-lola-images"
             alt="Landing page of My Lola Design"
           ></img>
 
           <img
+            data-aos="fade-up"
             src={MyLolaImg2}
             className="my-lola-images"
             alt="Landing page of My Lola Design"
           ></img>
 
           <img
+            data-aos="fade-up"
             src={MyLolaImg3}
             className="my-lola-images"
             alt="Landing page of My Lola Design"
           ></img>
 
           <img
+            data-aos="fade-up"
             src={MyLolaImg4}
             className="my-lola-images"
             alt="Landing page of My Lola Design"
           ></img>
 
           <img
+            data-aos="fade-up"
             src={MyLolaImg5}
             className="my-lola-images"
             alt="Landing page of My Lola Design"
