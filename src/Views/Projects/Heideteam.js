@@ -1,6 +1,8 @@
 import React from "react";
 
-const Heideteam = () => {
+import heideteam from "../Projects/static/heideteam.png";
+
+const Heideteam = (props) => {
   return (
     <section className="cards-container">
       {/* ? Card are - entire card contents is a link to the project */}
@@ -13,15 +15,40 @@ const Heideteam = () => {
         alt="Link to Fahrschule Heideteam website"
       >
         {/* Card with all-cards-layout and individual styling for particular project card */}
-        <div className="all-cards-layout project-card-freshbnb">
-          {/* Mobile dimension image */}
+        <div className="all-cards-layout project-card-heideteam">
           <img
-            className=" freshbnb-img"
-            // src={freshbnb}
-            alt="Desktop view of site, 'FreshBnb'"
+            className="heideteam-img-container "
+            src={heideteam}
+            alt="Desktop view of site, Fahrschule Heideteam"
           />
         </div>
       </a>
+
+      {/* ? Project text below card */}
+      <div className="project-text-container ">
+        {/* Project Heading */}
+        <h2 className="project-heading">Fahrschule Heideteam</h2>
+
+        <h2 className="project-heading">*WIP*</h2>
+        {/* Project description */}
+        <p className="project-paragraph">
+          Freelance end to end design and development for a German driving
+          school based just outside of Dresden, still under construction.
+        </p>
+
+        {/* Project links container */}
+        <div className="project-links-container">
+          <a
+            className="website-project-link"
+            href="https://fahrschule-heideteam.vercel.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="Link to Fahrschule Heideteam website"
+          >
+            <props.ImLink />
+          </a>
+        </div>
+      </div>
     </section>
   );
 };

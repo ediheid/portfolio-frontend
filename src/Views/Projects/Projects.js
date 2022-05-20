@@ -36,7 +36,7 @@ const Projects = () => {
         {/*  Cards Section.. */}
         <section className="cards-container">
           {/* HeideTeam */}
-          <Heideteam />
+          <Heideteam ImLink={ImLink} />
 
           {/* My Lola Card */}
           <MyLolaCard />

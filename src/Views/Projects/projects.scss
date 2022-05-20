@@ -140,6 +140,21 @@
 
 // !!!
 
+// ? Heideteam Card
+
+.project-card-heideteam {
+  background-color: #196756;
+}
+
+.heideteam-img-container {
+  width: 80%;
+
+  object-fit: cover;
+
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
 // ? Design Card
 .design-card {
   background-image: url("./static/brush-strokes.jpg");
