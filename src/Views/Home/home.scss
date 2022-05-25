@@ -29,7 +29,7 @@
 .name-heading {
   font-family: $intro-font-family;
   color: $hot-pink;
-  font-size: 4rem;
+  font-size: 5rem;
 
   text-decoration: none;
   text-align: center;
@@ -38,17 +38,21 @@
 .sub-heading {
   font-family: $sub-headings;
   font-size: 2.2rem;
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 3rem;
 
   color: $main-site-blue;
 
   &:nth-of-type(1) {
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
+    // margin-top: 5rem;
+    width: 80%;
+
+    margin: 5rem 0 2rem 0;
   }
 
   &:nth-of-type(2) {
-    flex-wrap: wrap;
-    text-align: center;
-    line-height: 3rem;
     margin: 2rem 5rem 0 5rem;
     font-size: 1.5rem;
   }

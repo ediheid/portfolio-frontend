@@ -11,7 +11,7 @@ const Title = () => {
         data-aos-anchor-placement="top-bottom"
         className="sub-heading"
       >
-        Web Developer.
+        Web Development. Web Design.
       </h3>
 
       <h1 data-aos="zoom-in-up" className="name-heading">
@@ -22,7 +22,7 @@ const Title = () => {
       </h1>
 
       <h3 data-aos="fade-left" className="sub-heading">
-        · Simple · Design · Creative · Programming ·
+        · Sleek · Design · Creative · Programming ·
       </h3>
 
       <div className="hashlink-container">
