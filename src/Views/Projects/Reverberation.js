@@ -20,6 +20,8 @@ const Reverberation = (props) => {
             autoplay="autoplay"
             muted="true"
             loop="true"
+            webkit-playsinline="true"
+            playsinline="true"
             className="reverberation-video-container"
             alt="Landing page view of the Reverberation Festival website"
           >
