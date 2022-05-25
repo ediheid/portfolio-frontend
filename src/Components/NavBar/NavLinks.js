@@ -18,7 +18,7 @@ const NavLinks = () => {
           to="/home/projects"
           alt="Links to projects page"
         >
-          Projects
+          Portfolio
         </Link>
       </li>
 

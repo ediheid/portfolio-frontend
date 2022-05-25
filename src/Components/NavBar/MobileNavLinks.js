@@ -24,7 +24,7 @@ const MobileNavLinks = (props) => {
           to="/home/projects"
           alt="Link to projects page"
         >
-          Projects
+          Portfolio
         </Link>
       </motion.li>
 

@@ -66,7 +66,7 @@ const LinksToPages = () => {
               to="/home/projects"
               alt="Link to projects page"
             >
-              <span>Projects</span>
+              <span>Portfolio</span>
             </Link>
           </div>
           <div

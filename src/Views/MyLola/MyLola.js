@@ -78,7 +78,7 @@ const MyLola = () => {
           to="/home/projects"
           alt="Link back to projects page"
         >
-          Back to Projects
+          Back to Portfolio
         </Link>
       </main>
     </>
