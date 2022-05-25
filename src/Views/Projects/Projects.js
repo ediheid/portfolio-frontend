@@ -7,6 +7,7 @@ import BootstrapStatic from "./BootstrapStatic";
 import FreshBnb from "./freshBnb";
 import MyLolaCard from "./MyLolaCard";
 import Heideteam from "./Heideteam";
+import Reverberation from "./Reverberation";
 
 // Icons to pass down via props to individual cards
 import { ImGithub } from "react-icons/im";
@@ -35,6 +36,9 @@ const Projects = () => {
 
         {/*  Cards Section.. */}
         <section className="cards-container">
+          {/* Revereberation */}
+          <Reverberation ImLink={ImLink} />
+
           {/* HeideTeam */}
           <Heideteam ImLink={ImLink} />
 
