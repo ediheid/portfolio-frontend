@@ -28,11 +28,10 @@ const Bio = () => {
           data-aos-duration="1000"
           className="bio-paragraphs"
         >
-          Creative full-stack web developer, specialising in{" "}
+          Creative full-stack web developer and web designer, specialising in{" "}
           <span className="bio-emphasized-text-p-1">frontend development </span>
-          - <span className="bio-emphasized-text-p-1">design</span> focused with
-          a background in fine arts, aiming for an exciting job opportunity to
-          continue growing and blossoming into a professional developer.
+          with a background in fine arts, aiming for an exciting job opportunity
+          to continue growing and blossoming into a professional developer.
         </p>
 
         <div
@@ -110,7 +109,7 @@ const Bio = () => {
           Australian born, Berlin based - recently graduated from an intensive
           one year web development course in{" "}
           <span className="bio-emphasized-text-technologies">MERN</span> stack
-          at the Digital Career Institute.
+          at the Digital Career Institute, Berlin.
           {/* after completing a 1 year intensive training 
           program at Digital Career Institute in Berlin. */}
         </p>
