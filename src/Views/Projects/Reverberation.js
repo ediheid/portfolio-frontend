@@ -39,7 +39,8 @@ const Reverberation = (props) => {
         {/* Project description */}
         <p className="project-paragraph">
           Sole web design and development for an annual music and arts festival
-          held in Dresden. Under construction.
+          held in Dresden.
+          <br /> · Under construction ·
         </p>
 
         {/* Project links container */}

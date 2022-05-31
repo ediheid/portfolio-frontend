@@ -32,7 +32,7 @@ const Projects = () => {
       <NavBar />
       <ProgressBar height=".5rem" bgcolor="#d342c3" />
       <main data-aos="fade-down" className="project-page-main-container">
-        <h1 className="project-page-heading">Projects</h1>
+        <h1 className="project-page-heading">Portfolio</h1>
 
         {/*  Cards Section.. */}
         <section className="cards-container">

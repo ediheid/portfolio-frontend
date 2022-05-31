@@ -33,7 +33,8 @@ const Heideteam = (props) => {
         {/* Project description */}
         <p className="project-paragraph">
           Freelance end to end design and development for a German driving
-          school based just outside of Dresden, still under construction.
+          school based just outside of Dresden.
+          <br />· Under construction ·
         </p>
 
         {/* Project links container */}
