@@ -9,7 +9,7 @@ const Reverberation = (props) => {
 
       <a
         className="card-link"
-        href="https://reverberation-frontend.vercel.app/"
+        href="https://www.reverberationfest.de/"
         target="_blank"
         rel="noreferrer noopener"
         alt="Link to Reverberation Festival website"
@@ -35,24 +35,32 @@ const Reverberation = (props) => {
         {/* Project Heading */}
         <h2 className="project-heading">Reverberation Festival</h2>
 
-        <h2 className="project-heading">*WIP*</h2>
         {/* Project description */}
         <p className="project-paragraph">
-          Sole web design and development for an annual music and arts festival
-          held in Dresden.
-          <br /> · Under construction ·
+          Sole web design, developmentand maintenance for an annual music and
+          arts festival held in Dresden. Responsive React app styled with SASS.
         </p>
 
         {/* Project links container */}
         <div className="project-links-container">
           <a
             className="website-project-link"
-            href="https://reverberation-frontend.vercel.app/"
+            href="https://www.reverberationfest.de/"
             target="_blank"
             rel="noreferrer noopener"
             alt="Link to Reverberation Festival website"
           >
             <props.ImLink />
+          </a>
+
+          <a
+            className="website-project-link"
+            href="https://github.com/ediheid/reverberation-frontend"
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="Link to github repository"
+          >
+            <props.ImGitHub />
           </a>
         </div>
       </div>
