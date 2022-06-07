@@ -37,8 +37,8 @@ const Reverberation = (props) => {
 
         {/* Project description */}
         <p className="project-paragraph">
-          Sole web design, developmentand maintenance for an annual music and
-          arts festival held in Dresden. Responsive React app styled with SASS.
+          End to end web design, development and maintenance for an annual music
+          and arts festival held in Dresden.
         </p>
 
         {/* Project links container */}
