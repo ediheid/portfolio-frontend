@@ -32,7 +32,7 @@ const Heideteam = (props) => {
         <h2 className="project-heading">*WIP*</h2>
         {/* Project description */}
         <p className="project-paragraph">
-          Freelance end to end design and development for a German driving
+          Contract - end to end design and development for a German driving
           school based just outside of Dresden.
           <br />· Under construction ·
         </p>
