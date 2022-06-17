@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   const sendingNotification = () => {
-    toast.success("Message sending.. ", {
+    toast.info("Message sending.. ", {
       position: "top-center",
       draggable: false,
     });
@@ -57,7 +57,7 @@ const Contact = () => {
 
   // Message sent alert
   const messageSentNotification = () => {
-    toast("Message sent! Thanks for your writing! 🎉 🌷 ", {
+    toast("Message sent! Thanks for writing! 🎉 🌷 ", {
       position: "top-center",
       draggable: false,
     });
