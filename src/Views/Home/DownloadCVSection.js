@@ -47,7 +47,7 @@ const DownloadCVSection = () => {
       }).then((res) => {
         downloadSuccessfulNotification();
         // console.log(res);
-        fileDownload(res.data, "CV-Edith-Heidmann.pdf");
+        fileDownload(res.data, "edith-heidmann-cv.pdf");
       });
     } catch (error) {
       // Catch error if server is down or for any other reason CV may not dowload
