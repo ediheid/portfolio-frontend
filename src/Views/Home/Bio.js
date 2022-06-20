@@ -29,9 +29,10 @@ const Bio = () => {
           className="bio-paragraphs"
         >
           Creative full-stack web developer and web designer, specialising in{" "}
-          <span className="bio-emphasized-text-p-1">frontend development </span>
-          with a background in fine arts, aiming for an exciting job opportunity
-          to continue growing and blossoming into a professional developer.
+          <span className="bio-emphasized-text-p-1">frontend development</span>{" "}
+          - with a background in fine arts, aiming for an exciting job
+          opportunity to continue growing and blossoming into a professional
+          developer.
         </p>
 
         <div
@@ -67,10 +68,10 @@ const Bio = () => {
           className="bio-paragraphs"
         >
           Broad knowledge of frontend development, particularly in{" "}
-          <span className="bio-emphasized-text-technologies">React</span> and{" "}
-          <span className="bio-emphasized-text-technologies">SASS</span> with a
-          keen interest in UI/UX - creating dynamic, sophisticated and scalable
-          websites and web apps.
+          <span className="bio-emphasized-text-technologies">ReactJS</span> and{" "}
+          <span className="bio-emphasized-text-technologies">SASS/Scss</span>{" "}
+          with a keen interest in UI/UX - creating dynamic, sophisticated and
+          scalable websites and web apps.
         </p>
         <p
           data-aos="fade-up"
