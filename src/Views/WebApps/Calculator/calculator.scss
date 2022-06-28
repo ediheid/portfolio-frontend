@@ -93,5 +93,7 @@
 // ? Desktop
 
 @include desktop {
-  margin: 3rem 4rem 3rem 4rem;
+  .calculator {
+    margin: 3rem 4rem 3rem 4rem;
+  }
 }

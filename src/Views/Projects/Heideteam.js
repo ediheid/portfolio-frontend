@@ -9,7 +9,7 @@ const Heideteam = (props) => {
 
       <a
         className="card-link"
-        href="https://fahrschule-heideteam.vercel.app/"
+        href="https://www.fahrschule-heideteam.de/"
         target="_blank"
         rel="noreferrer noopener"
         alt="Link to Fahrschule Heideteam website"
@@ -41,7 +41,7 @@ const Heideteam = (props) => {
         <div className="project-links-container">
           <a
             className="website-project-link"
-            href="https://fahrschule-heideteam.vercel.app/"
+            href="https://www.fahrschule-heideteam.de/"
             target="_blank"
             rel="noreferrer noopener"
             alt="Link to Fahrschule Heideteam website"
