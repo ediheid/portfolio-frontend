@@ -17,6 +17,7 @@ const WeatherApp = () => {
           setWeatherData(response.data);
           console.log(response.data);
         });
+        setLocation("")
       } catch (e) {
         console.log(e);
       }
@@ -38,23 +39,38 @@ const WeatherApp = () => {
       </search>
 
       <div>
-        <h1>Sydney</h1>
+        <h1>{weatherData.name}</h1>
       </div>
+
       <div>
-        <h2>20</h2>
+        <h2>,{weatherData.sys.country}</h2>
       </div>
+
       <div>
-        <span>Clouds</span>
+        {weatherData.main ? <h2>{weatherData.main.temp}°c</h2> : null}
       </div>
+
       <div>
-        <span>Feels like</span>
+       Feels like:
+       {weatherData.main ?  <span>{weatherData.main.feels_like}°c</span> : null}
       </div>
+
       <div>
-        <span>Humidity</span>
+        {weatherData.weather ? <span>{weatherData.weather[0].main}</span> : null}
       </div>
+
       <div>
-        <span>Wind</span>
+        {weatherData.weather ? <span>{weatherData.weather[0].description}</span> : null}
       </div>
+     
+      <div>
+        Humidity:
+        {weatherData.main ? <span>{weatherData.main.humidity}%</span> : null}
+      </div>
+     
+
+{/* Add max and min for the day */}
+
     </div>
   );
 };
