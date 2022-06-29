@@ -5,6 +5,7 @@ import NavBar from "../../Components/NavBar/NavBar";
 import Calculator from "./Calculator/Calculator";
 import TodoApp from "./TodoApp/TodoApp";
 import PasswordGenerator from "./Password-Generator/PasswordGenerator";
+import WeatherApp from "./Weather-App/WeatherApp";
 
 // AOS
 import Aos from "aos";
@@ -32,6 +33,9 @@ const WebApps = () => {
 
             {/* To-do App */}
             <TodoApp />
+
+            {/* Weather App */}
+            <WeatherApp />
 
             {/* Password Generator */}
             <PasswordGenerator />
