@@ -21,35 +21,9 @@ const WeatherApp = () => {
         console.log(e);
       }
     }
-
-    // if(event.key === "Enter"){
-
-    // try{
-    //   fetch(weatherUrl)
-    //   .then(response => response.json())
-    //   .then(data => setWeatherData(data))
-
-    // console.log(weatherData)}
-    // catch(e){
-    //   console.log(e)
-    // }}
-
-    //   // try {
-    //   //   const response = await fetch(weatherUrl)
-    //   //   const data = await response.json();
-    //   //   setWeatherData(data);
-    //   //   console.log("test", response.data)
-    //   // } catch (e) {
-    //   //   console.log(e);
-    //   // }
-    // }
   };
 
-  // useEffect(() => {
-  //   getWeatherData(setWeatherData);
-  // }, []);
 
-  // console.log(weatherData);
 
   return (
     <div className="weather-app-container">
