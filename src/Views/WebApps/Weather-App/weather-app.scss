@@ -1,13 +1,30 @@
-.weather-app-container{
+.weather-app-container {
+  width: 50rem;
+  height: 35rem;
+  //   border: 3px solid red;
 
-    width: 50rem;
-    height: 35rem;
-    border: 3px solid red;
+  border-radius: 2rem;
+  margin: 5rem;
 
-    border-radius: 2rem;
+  // ! Just for testing
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-    // ! Just for testing
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.returned-data-container {
+  width: 80%;
+
+  margin: 0 0 5rem 0;
+  padding: 3rem;
+  justify-self: flex-end;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }

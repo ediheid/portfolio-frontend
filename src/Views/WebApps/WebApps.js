@@ -28,14 +28,14 @@ const WebApps = () => {
         <main>
           {/* App Container */}
           <div className="apps-content-container" data-aos="fade-down">
+            {/* Weather App */}
+            <WeatherApp />
+
             {/* Calculator App */}
             <Calculator />
 
             {/* To-do App */}
             <TodoApp />
-
-            {/* Weather App */}
-            <WeatherApp />
 
             {/* Password Generator */}
             <PasswordGenerator />
