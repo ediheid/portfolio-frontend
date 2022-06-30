@@ -7,8 +7,11 @@ import clearSky from "./Static/clear-sky.png";
 import fewClouds from "./Static/few-clouds.png";
 import scatteredClouds from "./Static/scattered-clouds.png";
 import brokenClouds from "./Static/broken-clouds.png";
-import lightRain from "./Static/light-rain-png";
+import lightRain from "./Static/light-rain.png";
 import rain from "./Static/rain.png";
+import thunderstorm from "./Static/thunderstorm.png";
+import snow from "./Static/snow.png";
+import mist from "./Static/mist.png";
 
 const weatherAppKey = process.env.REACT_APP_WEATHER_APP_KEY;
 // Todo: Move API call to Service folder
@@ -35,46 +38,79 @@ const WeatherApp = () => {
     }
   };
 
-  // Weather conditions backgrounds and icons
-  const weatherConditions = {
-    main: {
-      backgroundImage: mainBg,
-      alt: "Hand holding globe - By Porapak Apichodilok from Pexels.com",
-    },
-    clearSky: {
-      backgroundImage: clearSky,
-      alt: "By Francesco Ungaro: https://www.pexels.com/photo/blue-sky-281260/",
-    },
-    fewClouds: {
-      backgroundImage: fewClouds,
-      alt: "By Pixabay: https://www.pexels.com/photo/blue-skies-53594/",
-    },
-    scatteredClouds: {
-      backgroundImage: scatteredClouds,
-      alt: "By Miguel Á. Padriñán: https://www.pexels.com/photo/white-clouds-on-blue-sky-19670/",
-    },
-    brokenClouds: {
-      backgroundImage: brokenClouds,
-      alt: "By Magda Ehlers: https://www.pexels.com/photo/white-clouds-2114014/",
-    },
-    lightRain: {
-      backgroundImage: lightRain,
-      alt: "By Lum3n: https://www.pexels.com/photo/close-up-of-water-droplets-against-blue-background-311039/",
-    },
-    rain: {
-      backgroundImage: rain,
-      alt: "By Chris Kane: https://www.pexels.com/photo/reflection-of-building-on-body-of-water-at-daytime-166360/",
-    },
-  };
+  // backgroundImage: `url(${clearSky})`,
+  // alt: "By Francesco Ungaro: https://www.pexels.com/photo/blue-sky-281260/",
+
+  // ,  alt: "Hand holding globe - By Porapak Apichodilok from Pexels.com"`
+
+  //   scatteredClouds: {
+  //     backgroundImage: scatteredClouds,
+  //     alt: "By Miguel Á. Padriñán: https://www.pexels.com/photo/white-clouds-on-blue-sky-19670/",
+  //   },
+  //   brokenClouds: {
+  //     backgroundImage: brokenClouds,
+  //     alt: "By Magda Ehlers: https://www.pexels.com/photo/white-clouds-2114014/",
+  //   },
+  //   lightRain: {
+  //     backgroundImage: lightRain,
+  //     alt: "By Lum3n: https://www.pexels.com/photo/close-up-of-water-droplets-against-blue-background-311039/",
+  //   },
+  //   rain: {
+  //     backgroundImage: rain,
+  //     alt: "By Chris Kane: https://www.pexels.com/photo/reflection-of-building-on-body-of-water-at-daytime-166360/",
+  //   },
+  //   thunderstorm: {
+  //     backgroundImage: thunderstorm,
+  //     alt: "By Alexandre Bringer: https://www.pexels.com/photo/lightning-unk-on-green-grass-field-3637060/",
+  //   },
+  //   snow: {
+  //     backgroundImage: snow,
+  //     alt: "By Pixabay: https://www.pexels.com/photo/adventure-altitude-climb-clouds-273809/",
+  //   },
+  //   mist: {
+  //     backgroundImage: mist,
+  //     alt: "By Pixabay: https://www.pexels.com/photo/adventure-clouds-cold-dark-clouds-266451/",
+  //   },
 
   return (
     <div
       className="weather-app-container"
-      style={{
-        backgroundImage: `url(${mainBg})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
+      style={
+        (weatherData.main && weatherData.weather[0].icon === "01d") ||
+        (weatherData.main && weatherData.weather[0].icon === "01n")
+          ? {
+              backgroundImage: `url(${clearSky})`,
+            }
+          : (weatherData.main && weatherData.weather[0].icon === "02d") ||
+            (weatherData.main && weatherData.weather[0].icon === "02n")
+          ? {
+              backgroundImage: `url(${fewClouds}) `,
+            }
+          : (weatherData.main && weatherData.weather[0].icon === "03d") ||
+            (weatherData.main && weatherData.weather[0].icon === "03n")
+          ? { backgroundImage: `url(${scatteredClouds})` }
+          : (weatherData.main && weatherData.weather[0].icon === "04d") ||
+            (weatherData.main && weatherData.weather[0].icon === "04n")
+          ? { backgroundImage: `url(${brokenClouds})` }
+          : (weatherData.main && weatherData.weather[0].icon === "09d") ||
+            (weatherData.main && weatherData.weather[0].icon === "09n")
+          ? { backgroundImage: `url(${lightRain})` }
+          : (weatherData.main && weatherData.weather[0].icon === "10d") ||
+            (weatherData.main && weatherData.weather[0].icon === "10n")
+          ? { backgroundImage: `url(${rain})` }
+          : (weatherData.main && weatherData.weather[0].icon === "11d") ||
+            (weatherData.main && weatherData.weather[0].icon === "11n")
+          ? { backgroundImage: `url(${thunderstorm})` }
+          : (weatherData.main && weatherData.weather[0].icon === "13d") ||
+            (weatherData.main && weatherData.weather[0].icon === "13n")
+          ? { backgroundImage: `url(${snow})` }
+          : (weatherData.main && weatherData.weather[0].icon === "50d") ||
+            (weatherData.main && weatherData.weather[0].icon === "50n")
+          ? { backgroundImage: `url(${mist})` }
+          : {
+              backgroundImage: `url(${mainBg})`,
+            }
+      }
     >
       {/* Glassmorphism container for weather content only displays when data is returned */}
       <div className={weatherData.main ? "returned-data-container" : null}>
