@@ -75,6 +75,7 @@ const WeatherApp = () => {
   return (
     <div
       className="weather-app-container"
+      // Set bg based on weather condition icon parameter
       style={
         (weatherData.main && weatherData.weather[0].icon === "01d") ||
         (weatherData.main && weatherData.weather[0].icon === "01n")
@@ -114,41 +115,56 @@ const WeatherApp = () => {
     >
       {/* Glassmorphism container for weather content only displays when data is returned */}
       <div className={weatherData.main ? "returned-data-container" : null}>
-        {/* City */}
-        <h1>{weatherData.name}</h1>
+        <div className="main-weather-info-container">
+          {/* City & country */}
+          <h1 className="city-heading">
+            {weatherData.name}{" "}
+            {weatherData.main ? (
+              <span>&#40;{weatherData.sys.country}&#41;</span>
+            ) : null}
+          </h1>
 
-        {/* Country  */}
-        {weatherData.main ? <h2>,{weatherData.sys.country}</h2> : null}
-
-        {/* Temperature */}
-        {weatherData.main ? <h2>{weatherData.main.temp}°c</h2> : null}
-
-        {/*  Feels like */}
-        {weatherData.main ? (
-          <span> Feels like: {weatherData.main.feels_like}°c</span>
-        ) : null}
-
-        {/* Weather Condition */}
-        {weatherData.weather ? (
-          <span>{weatherData.weather[0].main}</span>
-        ) : null}
-
-        {/* Detail of weather condition - not sure if I should keep or not? */}
-        {/* <div>
-          {weatherData.weather ? (
-            <span>{weatherData.weather[0].description}</span>
+          {/* Temperature */}
+          {weatherData.main ? (
+            <h2 className="current-temperature"> {weatherData.main.temp}°c</h2>
           ) : null}
-        </div> */}
+        </div>
 
-        {/* Humidity */}
-        {weatherData.main ? (
-          <span> Humidity: {weatherData.main.humidity}%</span>
-        ) : null}
+        <div className="extra-weather-info-container">
+          {/*  Feels like */}
+          {weatherData.main ? (
+            <span className="extra-weather-details">
+              {" "}
+              Feels like: {weatherData.main.feels_like}°c
+            </span>
+          ) : null}
+
+          {/* Weather Condition */}
+          {/* {weatherData.weather ? (
+            <span className="extra-weather-details">{weatherData.weather[0].main}</span>
+          ) : null} */}
+
+          {/* Humidity */}
+          {weatherData.main ? (
+            <span className="extra-weather-details">
+              {" "}
+              Humidity: {weatherData.main.humidity}%
+            </span>
+          ) : null}
+
+          {/* Weather Description */}
+          {weatherData.weather ? (
+            <span className="extra-weather-details">
+              {weatherData.weather[0].description}
+            </span>
+          ) : null}
+        </div>
       </div>
 
       {/* Search Input */}
       <search>
         <input
+          className="weather-search-input"
           value={location}
           onChange={(event) => setLocation(event.target.value)}
           onKeyPress={getWeatherData}
