@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import { weatherConditions } from "./WeatherConditions";
@@ -13,6 +13,7 @@ const removeAccents = require("remove-accents-diacritics");
 
 const WeatherApp = () => {
   const [weatherData, setWeatherData] = useState({});
+  const [data, setData] = useState({});
   let [location, setLocation] = useState("");
   let [iconId, setIconId] = useState("");
   let [bgImg, setBgImg] = useState("");
@@ -27,6 +28,7 @@ const WeatherApp = () => {
       try {
         axios.get(weatherUrl).then((response) => {
           setWeatherData(response.data);
+
           setIconId(response.data.weather[0].icon);
 
           // Find correlating bg from returned data, passed into iconID and return the bg image from found object
@@ -36,7 +38,6 @@ const WeatherApp = () => {
             } else {
               return null;
             }
-
             return bgImg;
           });
 
