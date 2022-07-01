@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 // Images & icons
@@ -13,6 +13,9 @@ import thunderstorm from "./Static/thunderstorm.png";
 import snow from "./Static/snow.png";
 import mist from "./Static/mist.png";
 
+// Remove accents
+const removeAccents = require("remove-accents-diacritics");
+
 const weatherAppKey = process.env.REACT_APP_WEATHER_APP_KEY;
 // Todo: Move API call to Service folder
 // import { getWeatherData } from "./Services/GetWeatherData";
@@ -20,6 +23,8 @@ const weatherAppKey = process.env.REACT_APP_WEATHER_APP_KEY;
 const WeatherApp = () => {
   const [weatherData, setWeatherData] = useState({});
   let [location, setLocation] = useState("");
+
+  console.log("Testing accents", location);
 
   let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${weatherAppKey}&units=metric`;
 
@@ -166,7 +171,10 @@ const WeatherApp = () => {
         <input
           className="weather-search-input"
           value={location}
-          onChange={(event) => setLocation(event.target.value)}
+          onChange={(event) =>
+            // Sets location and removes accents so user can type in any language characters
+            setLocation(removeAccents.remove(event.target.value))
+          }
           onKeyPress={getWeatherData}
           placeholder="Enter location.."
           type="text"
