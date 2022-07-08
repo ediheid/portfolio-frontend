@@ -27,23 +27,26 @@ const WeatherApp = () => {
     if (event.key === "Enter") {
       try {
         axios.get(weatherUrl).then((response) => {
-          setWeatherData(response.data);
+          const returnedData = response.data;
+          const nestedData = response.data.weather[0].icon;
+          // setWeatherData(returnedData);
+          setIconId(nestedData);
 
-          setIconId(response.data.weather[0].icon);
+          console.log("!!!", returnedData, nestedData);
+
+          // console.log(response.data);
+          console.log("ID!!!", iconId);
+          // console.log("BG img", bgImg);
 
           // Find correlating bg from returned data, passed into iconID and return the bg image from found object
-          weatherConditions.map((object) => {
-            if (iconId === object.iconDay || iconId === object.iconNight) {
-              setBgImg(object.backgroundImage);
-            } else {
-              return null;
-            }
-            return bgImg;
-          });
-
-          console.log(response.data);
-          console.log("ID!!!", iconId);
-          console.log("BG img", bgImg);
+          // weatherConditions.map((object) => {
+          //   if (iconId === object.iconDay || iconId === object.iconNight) {
+          //     setBgImg(object.backgroundImage);
+          //   } else {
+          //     return null;
+          //   }
+          //   return bgImg;
+          // });
         });
 
         setLocation("");
@@ -60,16 +63,6 @@ const WeatherApp = () => {
         weatherData.main && weatherData.weather[0].icon && bgImg !== ""
           ? { backgroundImage: `url(${bgImg})` }
           : { backgroundImage: `url(${mainBg})` }
-
-        // weatherData.main &&
-        // weatherData.weather[0].icon ===
-        //   weatherConditions.filter((cond) =>
-        //     cond.iconDay || cond.iconNight
-        //       ? { backgroundImage: `url(${cond.backgroundImage})` }
-        //       : {
-        //           backgroundImage: `url(${mainBg})`,
-        //         }
-        //   )
       }
 
       // Set bg based on weather condition icon parameter
