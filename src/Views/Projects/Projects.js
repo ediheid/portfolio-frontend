@@ -42,8 +42,6 @@ const Projects = () => {
           {/* HeideTeam */}
           <Heideteam ImLink={ImLink} ImGitHub={ImGithub} />
 
-          <div>test</div>
-
           {/* My Lola Card */}
           <MyLolaCard />
 
