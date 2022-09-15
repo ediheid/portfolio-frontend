@@ -52,10 +52,10 @@ const Projects = () => {
           <ItadakimasuSection ImGithub={ImGithub} ImLink={ImLink} />
 
           {/* HTML Portfolio */}
-          <HTMLportfolio ImGithub={ImGithub} ImLink={ImLink} />
+          <HTMLportfolio ImLink={ImLink} />
 
           {/* Bootstrap Static */}
-          <BootstrapStatic ImGithub={ImGithub} ImLink={ImLink} />
+          <BootstrapStatic ImLink={ImLink} />
         </section>
       </main>
     </>

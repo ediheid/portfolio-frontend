@@ -36,15 +36,6 @@ const BootstrapStatic = (props) => {
           >
             <props.ImLink />
           </a>
-          <a
-            className="git-hub-project-link"
-            href="https://github.com/ediheid/bootstrap-static"
-            target="_blank"
-            rel="noreferrer noopener"
-            alt="link to static bootstrap repository"
-          >
-            <props.ImGithub />
-          </a>
         </div>
       </div>
     </section>

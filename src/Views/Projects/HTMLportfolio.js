@@ -45,15 +45,6 @@ const HTMLportfolio = (props) => {
           >
             <props.ImLink />
           </a>
-          <a
-            className="git-hub-project-link"
-            href="https://github.com/ediheid/projects"
-            target="_blank"
-            rel="noreferrer noopener"
-            alt="link to html portfolio GitHub repository"
-          >
-            <props.ImGithub />
-          </a>
         </div>
       </div>
     </section>

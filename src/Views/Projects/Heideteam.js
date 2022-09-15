@@ -46,6 +46,16 @@ const Heideteam = (props) => {
           >
             <props.ImLink />
           </a>
+
+          <a
+            className="website-project-link"
+            href="https://github.com/ediheid/fahrschule-heideteam"
+            target="_blank"
+            rel="noreferrer noopener"
+            alt="Link to github repository"
+          >
+            <props.ImGitHub />
+          </a>
         </div>
       </div>
     </section>
