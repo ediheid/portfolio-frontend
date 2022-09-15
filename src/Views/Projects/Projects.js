@@ -40,7 +40,7 @@ const Projects = () => {
           <Reverberation ImLink={ImLink} ImGitHub={ImGithub} />
 
           {/* HeideTeam */}
-          <Heideteam ImLink={ImLink} />
+          <Heideteam ImLink={ImLink} ImGitHub={ImGithub} />
 
           {/* My Lola Card */}
           <MyLolaCard />
